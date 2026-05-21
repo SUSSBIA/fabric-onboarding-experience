@@ -58,8 +58,6 @@ Users should not upload real confidential or restricted data for this pathway.
 
 ![Placeholder: Data analyst sandbox learning path](../../assets/images/data-analyst-hdb-resales-learning-path.png)
 
-> Image placeholder: A learning path showing a data analyst opening the HDB Resales sandbox dataset, reviewing fields, checking data quality, asking analytical questions, comparing groups, building exploratory visuals, and writing an insight summary with caveats.
-
 ## Supporting artefact
 
 The starting Power BI file for this sandbox series is stored at:
