@@ -4,7 +4,7 @@ This pathway is for users who need to build, improve, or maintain Power BI repor
 
 Report developers are expected to go beyond report consumption. They should understand how reports connect to semantic models, how visuals are designed, how measures are interpreted, and why reuse, validation, and naming conventions matter.
 
-This pathway uses the **HDB Resales** sandbox report as the common learning artefact.
+This pathway uses the **HDB Resales** sandbox report and PBIX artefact as the common learning artefact.
 
 ## Who this pathway is for
 
@@ -56,17 +56,27 @@ The HDB Resales report is used because it is based on a public and relatable dat
 
 Users should not upload real confidential or restricted data for this pathway.
 
-![Placeholder: Report developer sandbox learning path](../../assets/images/report-developer-sandbox-learning-path.png)
+![Report developer sandbox learning path](../../assets/images/report-developer-sandbox-learning-path.png)
 
-## Supporting artefact
+## Supporting artefacts
 
-The starting Power BI file for this sandbox series is stored at:
+This pathway mainly uses the HDB Resales Power BI file and its report pages as the learning artefact.
 
 ```text
 09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
 ```
 
-This file should be treated as a sandbox learning artefact and may be repurposed for onboarding activities.
+The PBIX may be used to practise:
+
+- Reviewing report structure
+- Improving report pages
+- Inspecting visuals and interactions
+- Reviewing measures and fields
+- Understanding the relationship between report pages and the semantic model
+
+If the PBIX is published into the sandbox workspace, users may also work with the published report and semantic model.
+
+Report developers may modify a copy of the PBIX or sandbox report where instructed, but should not overwrite shared starter artefacts.
 
 ## Activity 1: Review the existing report
 
@@ -362,9 +372,9 @@ Before completing this pathway, users should confirm:
 |---|---|
 | [Prepare and visualize data with Microsoft Power BI](https://learn.microsoft.com/en-us/training/paths/prepare-visualize-data-power-bi/) | Microsoft Learn pathway for connecting to data and creating interactive Power BI visuals |
 | [Design effective reports in Power BI](https://learn.microsoft.com/en-us/training/paths/power-bi-effective/) | Microsoft Learn pathway on report design, storytelling, and user-focused visualisation |
-| [Create reports in the Power BI service from Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-warehouse/reports-power-bi-service) | Explains how users can create Power BI reports from Fabric semantic models |
 | [Build Power BI reports with Direct Lake tables](https://learn.microsoft.com/en-us/fabric/fundamentals/building-reports) | Explains report creation paths in the Power BI service and Fabric portal using semantic models |
 | [Power BI semantic models in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-warehouse/semantic-models) | Explains semantic models as a business-friendly analytical layer with metrics and relationships |
+| [Direct Lake overview](https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-overview) | Explains Direct Lake as a semantic model storage mode option available in Microsoft Fabric |
 | [Power BI service basic concepts](https://learn.microsoft.com/en-us/power-bi/fundamentals/service-basic-concepts) | Explains basic Power BI concepts such as workspaces, reports, dashboards, and semantic models |
 
 ## Next pathway
