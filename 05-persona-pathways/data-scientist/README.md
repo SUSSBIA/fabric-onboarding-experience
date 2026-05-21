@@ -59,8 +59,6 @@ Users should not upload real confidential or restricted data for this pathway.
 
 ![Placeholder: Data scientist sandbox learning path](../../assets/images/data-scientist-hdb-resales-learning-path.png)
 
-> Image placeholder: A learning path showing a data scientist defining a modelling question, preparing HDB Resales features, running clustering or prediction, evaluating outputs, interpreting limitations, and connecting results back to a report.
-
 ## Supporting artefact
 
 The starting Power BI file for this sandbox series is stored at:
