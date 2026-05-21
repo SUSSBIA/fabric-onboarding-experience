@@ -6,24 +6,35 @@ This repository is designed to support Microsoft Fabric onboarding at scale. As 
 
 Instead, this repo provides a structured self-service pathway for users to learn, practise, and apply Fabric safely and progressively.
 
+## Why this repo exists
+
+Microsoft Fabric is a powerful analytics platform, but successful adoption depends on more than tool access.
+
+Users need to understand how Fabric is governed, where they should work, what data they can use, how shared capacity is consumed, and when outputs should remain experimental versus when they require review.
+
+This repo helps users answer:
+
+- What am I allowed to access?
+- Which workspace should I use?
+- What data can I use safely?
+- How do I start using Fabric?
+- Which learning pathway should I follow?
+- How do I practise without using sensitive data?
+- When does a report, model, or pipeline need review before wider use?
+- Who owns the asset after it is created?
+- Who monitors refresh, connections, and operational issues?
+
 ## Why this onboarding is layered
 
-Microsoft Fabric is not just a reporting tool. It is a shared analytics platform that may involve reports, semantic models, Lakehouses, pipelines, notebooks, dataflows, and institutional data.
+Microsoft Fabric is not just a reporting tool. It is a shared analytics platform that may involve reports, semantic models, Lakehouses, pipelines, notebooks, dataflows, warehouses, connections, refresh schedules, and institutional data.
 
-Because of this, users should not jump straight into creating Fabric items without first understanding:
+Because of this, users should not jump straight into creating Fabric items without first understanding the foundations.
 
-- What they are allowed to access
-- Which workspace they should use
-- What data they can use safely
-- How shared Fabric capacity is consumed
-- When outputs are experimental
-- When work may need review before productionisation
-
-The onboarding is therefore layered so that users start with common foundations before moving into hands-on activities and persona-specific pathways.
+The onboarding is layered so that users move progressively from awareness to safe hands-on use.
 
 ![Placeholder: Layered Fabric onboarding journey](../assets/images/layered-fabric-onboarding-journey.png)
 
-> Image placeholder: A simple left-to-right journey map showing users moving from security and access, to licensing and capacity, to workspace model, to hands-on Fabric use, to persona pathways, to sandbox experiments, and finally to review or productionisation where applicable.
+> Image placeholder: A simple left-to-right journey map showing users moving from security and access, to licensing and capacity, to workspace model, to hands-on Fabric use, to persona pathways, to deployment lifecycle, to connections and refresh monitoring, to semantic modelling, sandbox experiments, and productionisation review where applicable.
 
 ## Who this repo is for
 
@@ -33,13 +44,14 @@ This repo is intended for several groups of users.
 |---|---|
 | New Fabric users | Understand the basics before using Fabric |
 | Report consumers | Learn how to access and interpret approved reports responsibly |
-| Report developers | Learn how to work with reports, semantic models, and workspace expectations |
-| Department representatives | Understand how department workspaces fit into the operating model |
+| Report developers | Learn how to work with reports, semantic models, access expectations, and deployment considerations |
+| Department representatives | Understand how department workspaces fit into the current operating model |
 | Fabric enthusiasts | Practise safely in sandbox workspaces using safe data |
-| Data analysts | Build analytical confidence through guided activities |
-| Data engineers | Learn common Fabric data patterns such as Lakehouse, pipeline, and notebook workflows |
+| Data analysts | Build analytical confidence through guided activities and reusable patterns |
+| Data engineers | Learn common Fabric data patterns such as Lakehouse, pipeline, notebook, connection, and refresh workflows |
 | Data scientists | Explore advanced analytics experiments using synthetic or approved data |
-| BIA colleagues | Reuse onboarding materials to support adoption at scale |
+| Workspace owners | Understand ownership, access, refresh, review, and operational responsibilities |
+| BIA colleagues | Reuse onboarding materials to support Fabric adoption at scale |
 
 ## How to use this repo
 
@@ -53,7 +65,10 @@ After that, continue to:
 
 4. Start Using Fabric
 5. Persona Pathways
-6. Sandbox Experiments, if you want to practise or go deeper
+6. Deployment Lifecycle Management
+7. Connections, Refresh and Monitoring
+8. Data and Semantic Modelling
+9. Sandbox Experiments
 
 ## Recommended onboarding flow
 
@@ -69,6 +84,12 @@ Workspace Operating Model
 Start Using Fabric
    ↓
 Persona Pathway
+   ↓
+Deployment Lifecycle Management
+   ↓
+Connections, Refresh and Monitoring
+   ↓
+Data and Semantic Modelling
    ↓
 Sandbox Experiments
    ↓
@@ -92,7 +113,9 @@ It covers:
 - Workspace operating model
 - First safe activities in Fabric
 - Persona-based pathways
-- Deployment and productionisation expectations
+- Deployment and lifecycle expectations
+- Connections, credentials, refresh, and monitoring responsibilities
+- Data and semantic modelling basics
 
 ### Track 2: Analytics Thinking Sandbox
 
@@ -115,6 +138,18 @@ Sandbox experiments should use:
 
 Sandbox outputs should not be treated as official reports, validated analytics products, or production-ready assets.
 
+## Current operating model in brief
+
+The current Fabric operating model is based on three workspace patterns.
+
+| Workspace Type | Purpose |
+|---|---|
+| Sandbox Workspace | Learning, experimentation, and practice using safe data |
+| Department Workspace | Department-level exploration, development, and capability building |
+| BIA Production Workspace | BIA-managed production analytics assets |
+
+At this stage, there is no formal shared or central workspace model for cross-department analytics assets. This may evolve as analytics maturity across the University develops.
+
 ## Before you start
 
 Before doing hands-on work in Fabric, make sure you can answer these questions:
@@ -123,8 +158,10 @@ Before doing hands-on work in Fabric, make sure you can answer these questions:
 - Do I know whether I am in a sandbox, department, or production workspace?
 - Do I understand my workspace role?
 - Do I know what data I am allowed to use?
-- Do I understand whether the data is sensitive?
+- Do I understand the sensitivity label applied to the data or asset?
 - Do I know whether my output is experimental or production-facing?
+- Do I know who owns the asset after it is created?
+- Do I know who will maintain the connection or refresh?
 - Do I know who to contact if I need help?
 
 ## References and further learning
@@ -134,12 +171,10 @@ Before doing hands-on work in Fabric, make sure you can answer these questions:
 | [Microsoft Fabric documentation](https://learn.microsoft.com/en-us/fabric/) | Official Microsoft documentation for Fabric concepts, workloads, and platform capabilities |
 | [What is Microsoft Fabric?](https://learn.microsoft.com/en-us/fabric/fundamentals/microsoft-fabric-overview) | Introduction to Fabric as an end-to-end analytics platform |
 | [Power BI service basic concepts](https://learn.microsoft.com/en-us/power-bi/fundamentals/service-basic-concepts) | Helpful for users new to workspaces, reports, dashboards, and semantic models |
-| [Power BI get started documentation](https://learn.microsoft.com/en-us/power-bi/fundamentals/) | Starting point for users learning how to navigate Power BI and related concepts |
+| [Microsoft Learn: Get started with Microsoft Fabric](https://learn.microsoft.com/en-us/training/paths/get-started-fabric/) | Structured Microsoft Learn pathway for users beginning with Fabric |
 
 ## Next section
 
 Proceed to:
 
 [Security, Access and Governance](../01-security-access-governance/)
-
-Security, access, and governance should be understood before using Fabric hands-on.
