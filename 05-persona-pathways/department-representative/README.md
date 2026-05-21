@@ -55,8 +55,6 @@ Users should not upload real department data for this pathway unless explicitly 
 
 ![Placeholder: Department representative learning path](../../assets/images/department-representative-learning-path.png)
 
-> Image placeholder: A learning path showing a department representative starting in sandbox, reviewing the HDB Resales report, identifying business questions, mapping data and ownership, assessing sensitivity, and deciding whether a use case should remain exploratory or be escalated to BIA.
-
 ## Supporting artefact
 
 The starting Power BI file for this sandbox series is stored at:
