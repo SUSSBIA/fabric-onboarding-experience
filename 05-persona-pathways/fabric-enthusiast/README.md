@@ -54,8 +54,6 @@ Users should not upload real confidential or restricted data for this pathway.
 
 ![Placeholder: Fabric enthusiast learning path](../../assets/images/fabric-enthusiast-learning-path.png)
 
-> Image placeholder: A learning path showing a Fabric enthusiast starting in sandbox, opening the HDB Resales artefact, choosing a Fabric item to explore, creating a small experiment, documenting learning, and deciding whether the idea should remain sandbox or become a department use case.
-
 ## Supporting artefact
 
 The starting Power BI file for this sandbox series is stored at:
