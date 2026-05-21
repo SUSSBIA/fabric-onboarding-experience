@@ -2,7 +2,7 @@
 
 Security, access, and governance come before hands-on Fabric usage.
 
-Microsoft Fabric is a shared analytics platform. Users may interact with reports, semantic models, Lakehouses, pipelines, notebooks, dataflows, warehouses, and institutional data. This means users should understand their responsibilities before they start creating, editing, sharing, or publishing Fabric assets.
+Microsoft Fabric is a shared analytics platform. Users may interact with reports, semantic models, Lakehouses, pipelines, notebooks, dataflows, warehouses, connections, refresh schedules, and institutional data. This means users should understand their responsibilities before they start creating, editing, sharing, or publishing Fabric assets.
 
 This section explains the basic security and access principles that apply before users begin working in Fabric.
 
@@ -15,10 +15,11 @@ Before using Fabric, users should understand:
 - What they are allowed to access
 - Which workspace they should use
 - What data they are allowed to work with
-- Whether the data is public, internal, confidential, or restricted
+- Whether the data or asset is labelled as `Restricted - SUSS`, `Confidential - SUSS`, `Unrestricted - SUSS`, or `None`
 - What they are allowed to share
 - Whether they are working in a sandbox, department, or production workspace
 - Who owns the workspace or asset
+- Who owns the connection or refresh process
 - When work should remain experimental
 - When work requires review before wider use
 
@@ -26,7 +27,7 @@ The aim is not to slow users down. The aim is to help users work safely and cons
 
 ![Placeholder: Fabric access and governance layers](../assets/images/fabric-access-governance-layers.png)
 
-> Image placeholder: A layered governance diagram showing user access, workspace role, item permission, data sensitivity, sharing control, and production review as connected layers before users work with Fabric assets.
+> Image placeholder: A layered governance diagram showing user access, workspace role, item permission, sensitivity label, connection ownership, sharing control, row-level security, and production review as connected layers before users work with Fabric assets.
 
 ## Core access principles
 
@@ -35,10 +36,11 @@ The aim is not to slow users down. The aim is to help users work safely and cons
 | Least privilege | Users should only receive the access required for their role or learning need |
 | Purpose-based access | Access should be granted for a clear business, learning, or project purpose |
 | Workspace accountability | Each workspace should have a clear owner or responsible group |
-| Data sensitivity awareness | Users should understand whether data is public, internal, confidential, or restricted |
+| Sensitivity label awareness | Users should check whether an asset is labelled `Restricted - SUSS`, `Confidential - SUSS`, `Unrestricted - SUSS`, or `None` |
 | Controlled sharing | Reports, data, screenshots, and exports should only be shared with authorised users |
 | Production control | Production assets should not be changed casually or without review |
 | Reuse before duplication | Users should reuse approved assets where appropriate instead of creating unnecessary duplicates |
+| Operational ownership | Connections, credentials, refresh schedules, and failure monitoring should have clear ownership |
 
 ## Workspace roles
 
@@ -51,22 +53,51 @@ Fabric workspaces use role-based access. The exact permissions may depend on the
 | Member | Senior contributors, project leads, or trusted collaborators | Can collaborate more broadly and may manage some workspace content |
 | Admin | Workspace owner or administrator | Can manage workspace access, settings, and overall workspace governance |
 
-Having a higher workspace role does not mean a user should freely access, export, or share all data. Users must still follow data sensitivity, sharing, and production expectations.
+Having a higher workspace role does not mean a user should freely access, export, or share all data. Users must still follow sensitivity label, sharing, connection, refresh, and production expectations.
 
-## Data sensitivity expectations
+## Tenant and admin-controlled settings
 
-Users should understand the type of data they are working with before uploading, transforming, or sharing it in Fabric.
+Some Fabric capabilities may be controlled by tenant-level, capacity-level, or administrator-managed settings.
 
-| Data Category | Example | Expected Handling |
+This means a user may not be able to use a feature simply because they have workspace access. Examples may include:
+
+- Creating certain Fabric items
+- Sharing content externally
+- Exporting data
+- Applying or changing sensitivity labels
+- Using Copilot or AI-assisted features
+- Connecting to certain data sources
+- Using specific connectors or gateways
+
+Where a feature is unavailable, users should check whether the issue is related to:
+
+- User licensing
+- Workspace role
+- Workspace settings
+- Capacity assignment
+- Tenant-level settings
+- Data source or gateway configuration
+
+## Sensitivity label expectations
+
+Users should check and respect the sensitivity label applied to Fabric items, Power BI reports, semantic models, files, and related analytics assets.
+
+In our current environment, users may see sensitivity labels such as:
+
+| Sensitivity Label | General Meaning | Expected Handling |
 |---|---|---|
-| Public | Open datasets, public website information, published statistics | Suitable for demos, training, and sandbox use |
-| Internal | Non-public operational information without sensitive personal details | Use within approved internal workspaces and audiences |
-| Confidential | Student, staff, finance, donor, HR, or sensitive operational data | Restrict access, apply appropriate controls, and avoid unnecessary sharing |
-| Restricted | Highly sensitive records, personal identifiers, or regulated data | Use only with explicit approval and strong controls |
+| `Restricted - SUSS` | Highly sensitive information that requires strong access control | Use only with explicit approval. Access should be limited to authorised users with a clear need. Sharing, export, and onward circulation should be tightly controlled. |
+| `Confidential - SUSS` | Sensitive internal information that should not be shared broadly | Use only within approved internal audiences. Avoid unnecessary exports, screenshots, or sharing outside the intended group. |
+| `Unrestricted - SUSS` | Information that is not classified as confidential or restricted, but still belongs to the organisation | Can be used more broadly within appropriate work contexts, but should still be handled responsibly. |
+| `None` | No sensitivity label has been applied | Do not assume the data is safe to share. If unsure, check the data source, owner, or workspace owner before using or sharing it. |
 
-Sandbox workspaces should use mocked, synthetic, public, or approved non-sensitive data.
+Sandbox workspaces should generally use mocked, synthetic, public, or approved non-sensitive data.
 
-Real confidential or restricted data should not be uploaded into sandbox workspaces unless explicitly approved.
+Real data labelled `Restricted - SUSS` or `Confidential - SUSS` should not be uploaded into sandbox workspaces unless explicitly approved.
+
+![Placeholder: Sensitivity label dropdown in Fabric or Power BI](../assets/images/sensitivity-label-dropdown.png)
+
+> Image placeholder: Screenshot showing the available sensitivity labels: `Restricted - SUSS`, `Confidential - SUSS`, `Unrestricted - SUSS`, and `None`.
 
 ## Sharing and export expectations
 
@@ -75,13 +106,44 @@ Users should be careful when sharing Fabric content or exporting data.
 Before sharing a report, dataset, screenshot, table, file, or workspace item, users should ask:
 
 - Is the recipient authorised to see this information?
-- Does the content contain confidential or restricted data?
+- What sensitivity label is applied to the content?
+- Does the content contain restricted or confidential information?
 - Is this an official output or only an experimental sandbox output?
 - Is the report or data asset validated?
 - Is export allowed for this data?
 - Could the screenshot or export be forwarded beyond the intended audience?
 
 Sharing should follow the principle of least privilege. Users should share only what is needed, with only the people who need it.
+
+## Row-Level Security
+
+Some reports or semantic models may require Row-Level Security, commonly known as RLS.
+
+RLS is used when different users are allowed to access the same report but should only see the rows of data relevant to them. For example, users from one school or department may only be allowed to see records belonging to their own school or department.
+
+RLS should be designed, tested, and validated carefully before reports are shared more widely. Users should not assume that workspace access alone is sufficient to control what data each user can see inside a report.
+
+RLS is not a substitute for good access governance. It should be used together with appropriate workspace access, sharing controls, sensitivity labels, semantic model permissions, and validation.
+
+Detailed RLS design and testing guidance is covered in the persona pathways, data and semantic modelling section, and deployment checklist.
+
+## Connections, credentials, and refresh security
+
+Connections, credentials, gateways, and refresh settings can affect both data access and operational reliability.
+
+Users should not casually configure shared credentials, connect to restricted data sources, or set up refreshes without understanding who owns the connection and who is responsible for monitoring failures.
+
+Before configuring a connection or refresh, users should check:
+
+- Who owns the source system or file location?
+- What account or credential is being used?
+- Is the data source labelled `Restricted - SUSS` or `Confidential - SUSS`?
+- Is a gateway required?
+- Who will maintain the connection if the original creator leaves?
+- Who will monitor refresh failures?
+- Who should be contacted if refresh fails?
+
+Detailed connection, gateway, refresh, and monitoring guidance is covered in the connections, refresh, and monitoring section.
 
 ## Sandbox, department, and production boundaries
 
@@ -105,12 +167,12 @@ Before granting access to an external collaborator, consider:
 - Do they need view-only access or edit access?
 - Which workspace should they access?
 - What data will they be able to see?
-- Is the data confidential or restricted?
+- Is the data labelled `Restricted - SUSS` or `Confidential - SUSS`?
 - Is a separate license required?
 - Should access be time-bound?
 - Who is responsible for removing access later?
 
-External collaborator access should be reviewed only when the need arises and should be aligned with licensing, data sensitivity, and workspace governance expectations.
+External collaborator access should be reviewed only when the need arises and should be aligned with licensing, sensitivity label, and workspace governance expectations.
 
 ## Minimum checklist before using Fabric
 
@@ -120,10 +182,11 @@ Before doing hands-on work in Fabric, users should confirm:
 - [ ] I understand my workspace role
 - [ ] I know whether I am in a sandbox, department, or production workspace
 - [ ] I know what data I am allowed to use
-- [ ] I understand whether the data is public, internal, confidential, or restricted
+- [ ] I know whether the data or asset is labelled `Restricted - SUSS`, `Confidential - SUSS`, `Unrestricted - SUSS`, or `None`
 - [ ] I know whether sharing or export is allowed
 - [ ] I know who owns the workspace or asset
 - [ ] I understand whether my output is experimental or production-facing
+- [ ] I know who owns the connection, credentials, and refresh process
 - [ ] I know when to ask for review before wider sharing or production use
 
 ## References and further learning
@@ -131,9 +194,10 @@ Before doing hands-on work in Fabric, users should confirm:
 | Resource | Purpose |
 |---|---|
 | [Microsoft Fabric permission model](https://learn.microsoft.com/en-us/fabric/security/permission-model) | Explains how different Fabric permissions work together to control access to data |
+| [Security in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/security/security-overview) | Provides Microsoft’s overview of workspace access, item permissions, and Fabric security concepts |
 | [Roles in workspaces in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/fundamentals/roles-workspaces) | Explains workspace roles such as Admin, Member, Contributor, and Viewer |
 | [Share items in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/fundamentals/share-items) | Explains how Fabric item sharing and item permissions work |
-| [Secure data access in Microsoft Fabric](https://learn.microsoft.com/en-us/training/modules/secure-data-access-in-fabric/) | Microsoft Learn module on Fabric permissions, workspace permissions, item permissions, and granular permissions |
+| [Sensitivity labels in Power BI](https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/service-security-sensitivity-label-overview) | Explains how Microsoft Purview sensitivity labels apply to Power BI content |
 | [OneLake security access control model](https://learn.microsoft.com/en-us/fabric/onelake/security/data-access-control-model) | Explains how OneLake security interacts with workspace permissions and data access controls |
 
 ## Next section
