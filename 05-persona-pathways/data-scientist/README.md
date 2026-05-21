@@ -4,7 +4,7 @@ This pathway is for users who want to explore modelling, machine learning, segme
 
 Data science learners should understand that a model output is not the same as a decision. Modelling work requires careful framing, data preparation, evaluation, interpretation, documentation, and responsible use.
 
-This pathway uses the **HDB Resales** sandbox dataset as the common learning artefact.
+This pathway uses the **HDB Resales** sandbox dataset, prepared modelling tables, notebooks, and model output templates as the common learning materials.
 
 ## Who this pathway is for
 
@@ -27,7 +27,7 @@ By the end of this pathway, users should be able to:
 - Access the assigned sandbox workspace
 - Use the HDB Resales dataset for safe modelling practice
 - Define a suitable analytical or modelling question
-- Distinguish between descriptive analysis, segmentation, and prediction
+- Distinguish between descriptive analysis, segmentation, prediction, and explanation
 - Prepare features for a simple model or clustering exercise
 - Train or run a basic model in a sandbox notebook, where applicable
 - Evaluate outputs using appropriate metrics or profiles
@@ -57,25 +57,30 @@ The HDB Resales dataset is used because it is public, relatable, and suitable fo
 
 Users should not upload real confidential or restricted data for this pathway.
 
-![Placeholder: Data scientist sandbox learning path](../../assets/images/data-scientist-hdb-resales-learning-path.png)
+![Data scientist sandbox learning path](../../assets/images/data-scientist-hdb-resales-learning-path.png)
 
-## Supporting artefact
+## Supporting artefacts
 
-The starting Power BI file for this sandbox series is stored at:
-
-```text
-09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
-```
-
-This file should be treated as a sandbox learning artefact and may be repurposed for onboarding activities.
-
-If source data, notebooks, or model output files are provided later, they should be stored under:
+This pathway mainly uses prepared HDB Resales modelling data, notebooks, model output folders, and model documentation templates.
 
 ```text
 09-sandbox-experiments/hdb-resales/data/
 09-sandbox-experiments/hdb-resales/notebooks/
 09-sandbox-experiments/hdb-resales/model-output/
+09-sandbox-experiments/hdb-resales/templates/model-card-template.md
 ```
+
+Suggested supporting artefacts:
+
+```text
+09-sandbox-experiments/hdb-resales/data/hdb_resales_modelling_sample.csv
+09-sandbox-experiments/hdb-resales/notebooks/hdb_resales_market_segmentation.ipynb
+09-sandbox-experiments/hdb-resales/notebooks/hdb_resales_price_band_prediction.ipynb
+09-sandbox-experiments/hdb-resales/model-output/
+09-sandbox-experiments/hdb-resales/templates/model-card-template.md
+```
+
+The HDB Resales PBIX may be used to show how model outputs can be consumed in a report, but the main focus of this pathway is modelling, evaluation, responsible interpretation, and documentation.
 
 ## Activity 1: Frame the modelling question
 
@@ -212,7 +217,7 @@ Practise running a simple model or clustering exercise in a safe sandbox environ
 
 1. Open the assigned sandbox workspace.
 2. Open the provided notebook or create one if instructed.
-3. Load the prepared HDB Resales table.
+3. Load the prepared HDB Resales modelling table.
 4. Apply the selected modelling approach.
 5. Generate output, such as clusters, price bands, prediction scores, or feature importance.
 6. Save the output as a sandbox result table or file.
