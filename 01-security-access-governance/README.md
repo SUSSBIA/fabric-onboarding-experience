@@ -15,7 +15,7 @@ Before using Fabric, users should understand:
 - What they are allowed to access
 - Which workspace they should use
 - What data they are allowed to work with
-- Whether the data or asset is labelled as `Restricted - SUSS`, `Confidential - SUSS`, `Unrestricted - SUSS`, or `None`
+- Whether the data or asset is labelled as `Confidential - SUSS`, `Restricted - SUSS`, `Unrestricted - SUSS`, or `None`
 - What they are allowed to share
 - Whether they are working in a sandbox, department, or production workspace
 - Who owns the workspace or asset
@@ -25,9 +25,9 @@ Before using Fabric, users should understand:
 
 The aim is not to slow users down. The aim is to help users work safely and consistently.
 
-![Placeholder: Fabric access and governance layers](../assets/images/fabric-access-governance-layers.png)
+![Fabric access and governance layers](../assets/images/fabric-access-and-governance-layers.png)
 
-> Image placeholder: A layered governance diagram showing user access, workspace role, item permission, sensitivity label, connection ownership, sharing control, row-level security, and production review as connected layers before users work with Fabric assets.
+> Image: A layered governance diagram showing user access, workspace role, item permission, sensitivity label, sharing control, row-level security, connection ownership, refresh monitoring, and production review as connected layers before users work with Fabric assets.
 
 ## Core access principles
 
@@ -36,7 +36,7 @@ The aim is not to slow users down. The aim is to help users work safely and cons
 | Least privilege | Users should only receive the access required for their role or learning need |
 | Purpose-based access | Access should be granted for a clear business, learning, or project purpose |
 | Workspace accountability | Each workspace should have a clear owner or responsible group |
-| Sensitivity label awareness | Users should check whether an asset is labelled `Restricted - SUSS`, `Confidential - SUSS`, `Unrestricted - SUSS`, or `None` |
+| Sensitivity label awareness | Users should check whether an asset is labelled `Confidential - SUSS`, `Restricted - SUSS`, `Unrestricted - SUSS`, or `None` |
 | Controlled sharing | Reports, data, screenshots, and exports should only be shared with authorised users |
 | Production control | Production assets should not be changed casually or without review |
 | Reuse before duplication | Users should reuse approved assets where appropriate instead of creating unnecessary duplicates |
@@ -86,18 +86,14 @@ In our current environment, users may see sensitivity labels such as:
 
 | Sensitivity Label | General Meaning | Expected Handling |
 |---|---|---|
-| `Restricted - SUSS` | Highly sensitive information that requires strong access control | Use only with explicit approval. Access should be limited to authorised users with a clear need. Sharing, export, and onward circulation should be tightly controlled. |
-| `Confidential - SUSS` | Sensitive internal information that should not be shared broadly | Use only within approved internal audiences. Avoid unnecessary exports, screenshots, or sharing outside the intended group. |
+| `Confidential - SUSS` | Higher-sensitivity institutional information that should be tightly controlled | Use only with explicit approval and within authorised audiences. Avoid unnecessary exports, screenshots, or onward sharing. |
+| `Restricted - SUSS` | Sensitive institutional information that should not be shared broadly | Use only within approved internal audiences. Access, export, and sharing should be controlled. |
 | `Unrestricted - SUSS` | Information that is not classified as confidential or restricted, but still belongs to the organisation | Can be used more broadly within appropriate work contexts, but should still be handled responsibly. |
 | `None` | No sensitivity label has been applied | Do not assume the data is safe to share. If unsure, check the data source, owner, or workspace owner before using or sharing it. |
 
 Sandbox workspaces should generally use mocked, synthetic, public, or approved non-sensitive data.
 
-Real data labelled `Restricted - SUSS` or `Confidential - SUSS` should not be uploaded into sandbox workspaces unless explicitly approved.
-
-![Placeholder: Sensitivity label dropdown in Fabric or Power BI](../assets/images/sensitivity-label-dropdown.png)
-
-> Image placeholder: Screenshot showing the available sensitivity labels: `Restricted - SUSS`, `Confidential - SUSS`, `Unrestricted - SUSS`, and `None`.
+Real data labelled `Confidential - SUSS` or `Restricted - SUSS` should not be uploaded into sandbox workspaces unless explicitly approved.
 
 ## Sharing and export expectations
 
@@ -137,7 +133,7 @@ Before configuring a connection or refresh, users should check:
 
 - Who owns the source system or file location?
 - What account or credential is being used?
-- Is the data source labelled `Restricted - SUSS` or `Confidential - SUSS`?
+- Is the data source labelled `Confidential - SUSS` or `Restricted - SUSS`?
 - Is a gateway required?
 - Who will maintain the connection if the original creator leaves?
 - Who will monitor refresh failures?
@@ -167,7 +163,7 @@ Before granting access to an external collaborator, consider:
 - Do they need view-only access or edit access?
 - Which workspace should they access?
 - What data will they be able to see?
-- Is the data labelled `Restricted - SUSS` or `Confidential - SUSS`?
+- Is the data labelled `Confidential - SUSS` or `Restricted - SUSS`?
 - Is a separate license required?
 - Should access be time-bound?
 - Who is responsible for removing access later?
@@ -182,7 +178,7 @@ Before doing hands-on work in Fabric, users should confirm:
 - [ ] I understand my workspace role
 - [ ] I know whether I am in a sandbox, department, or production workspace
 - [ ] I know what data I am allowed to use
-- [ ] I know whether the data or asset is labelled `Restricted - SUSS`, `Confidential - SUSS`, `Unrestricted - SUSS`, or `None`
+- [ ] I know whether the data or asset is labelled `Confidential - SUSS`, `Restricted - SUSS`, `Unrestricted - SUSS`, or `None`
 - [ ] I know whether sharing or export is allowed
 - [ ] I know who owns the workspace or asset
 - [ ] I understand whether my output is experimental or production-facing
