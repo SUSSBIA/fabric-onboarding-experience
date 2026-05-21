@@ -4,7 +4,7 @@ This pathway is for users who are curious about Microsoft Fabric and want to exp
 
 Fabric enthusiasts are important because they may become future champions, early adopters, or informed collaborators. However, enthusiasm should be channelled safely. Exploration should happen in the sandbox workspace using safe data, and outputs should not be treated as official or production-ready.
 
-This pathway uses the **HDB Resales** sandbox artefact as a safe and relatable starting point for exploration.
+This pathway uses the **HDB Resales Sandbox Series** as the common learning catalogue.
 
 ## Who this pathway is for
 
@@ -24,7 +24,7 @@ By the end of this pathway, users should be able to:
 
 - Access the assigned sandbox workspace
 - Explain why sandbox is the correct place for early experimentation
-- Open or use the HDB Resales sandbox artefact
+- Use one or more artefacts from the HDB Resales Sandbox Series
 - Try at least one Fabric item or activity safely
 - Document what was created or explored
 - Explain what was learned
@@ -48,34 +48,44 @@ Users should also know which sandbox workspace they have been assigned to.
 
 All hands-on activities in this pathway should be completed in the assigned sandbox workspace.
 
-The HDB Resales artefact is used because it is based on public data and can support many types of exploration, including report consumption, dashboard design, data analysis, data engineering, semantic modelling, and advanced analytics.
+The HDB Resales Sandbox Series is used because it is based on public data and can support many types of exploration, including report consumption, dashboard design, data analysis, data engineering, semantic modelling, and advanced analytics.
 
 Users should not upload real confidential or restricted data for this pathway.
 
-![Placeholder: Fabric enthusiast learning path](../../assets/images/fabric-enthusiast-learning-path.png)
+![Fabric enthusiast learning path](../../assets/images/fabric-enthusiast-learning-path.png)
 
-## Supporting artefact
+## Supporting artefacts
 
-The starting Power BI file for this sandbox series is stored at:
+This pathway uses the full HDB Resales Sandbox Series as a learning catalogue.
+
+```text
+09-sandbox-experiments/hdb-resales/
+```
+
+Learners may choose from different artefacts depending on their interest:
 
 ```text
 09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
+09-sandbox-experiments/hdb-resales/data/
+09-sandbox-experiments/hdb-resales/notebooks/
+09-sandbox-experiments/hdb-resales/templates/
+09-sandbox-experiments/hdb-resales/model-output/
 ```
 
-This file should be treated as a sandbox learning artefact and may be repurposed for onboarding activities.
+The PBIX is useful for report exploration and dashboard design. The data folder is useful for analysis and data engineering. The notebooks and model-output folders are useful for advanced analytics exploration. The templates are useful for documenting thinking, assumptions, and next steps.
 
-## Activity 1: Explore the HDB Resales artefact
+## Activity 1: Explore the HDB Resales Sandbox Series
 
 ### Goal
 
-Get familiar with the HDB Resales sandbox artefact before creating anything new.
+Get familiar with the available HDB Resales sandbox artefacts before creating anything new.
 
 ### Steps
 
 1. Open the assigned sandbox workspace.
-2. Locate the HDB Resales report or artefact.
-3. Review the available report pages, visuals, fields, or data assets.
-4. Identify what the artefact appears to show.
+2. Locate the HDB Resales artefacts provided for onboarding.
+3. Review the available report, data, notebooks, or templates.
+4. Identify what the sandbox series appears to support.
 5. Identify one area that interests you.
 6. Write down one question you would like to explore.
 
@@ -84,8 +94,8 @@ Get familiar with the HDB Resales sandbox artefact before creating anything new.
 Users should complete:
 
 ```text
-Artefact name:
-What it appears to show:
+Artefacts reviewed:
+What the sandbox series appears to support:
 Interesting area:
 Question I want to explore:
 Why this interests me:
@@ -93,20 +103,20 @@ Why this interests me:
 
 ### Reflection questions
 
-- What makes this artefact useful for learning?
-- What is easy to understand?
-- What is unclear?
+- What makes this sandbox series useful for learning?
+- Which artefact is easiest to understand?
+- Which artefact feels most unfamiliar?
 - What would you like to try next?
 
-## Activity 2: Choose one Fabric item to explore
+## Activity 2: Choose one Fabric capability to explore
 
 ### Goal
 
-Practise choosing a Fabric item based on learning interest.
+Practise choosing a Fabric capability based on learning interest.
 
 ### Options
 
-| Fabric Item | Explore this if you want to learn... |
+| Fabric Capability | Explore this if you want to learn... |
 |---|---|
 | Power BI Report | How users consume and interpret dashboards |
 | Semantic Model | How measures, relationships, and business definitions support reporting |
@@ -118,10 +128,10 @@ Practise choosing a Fabric item based on learning interest.
 
 ### Steps
 
-1. Select one Fabric item type to explore.
+1. Select one Fabric capability to explore.
 2. Explain why you chose it.
-3. Identify the HDB Resales activity that is related to it.
-4. Spend a short amount of time exploring the item.
+3. Identify which HDB Resales artefact is related to it.
+4. Spend a short amount of time exploring the artefact.
 5. Document what you observed.
 
 ### Expected output
@@ -129,8 +139,9 @@ Practise choosing a Fabric item based on learning interest.
 Users should complete:
 
 ```text
-Fabric item selected:
+Fabric capability selected:
 Reason for selection:
+Artefact used:
 What I explored:
 What I learned:
 What I found confusing:
@@ -138,7 +149,7 @@ What I found confusing:
 
 ### Reflection questions
 
-- Was the item easier or harder to understand than expected?
+- Was the capability easier or harder to understand than expected?
 - What prior knowledge would help?
 - What would you need to learn next?
 
@@ -146,7 +157,7 @@ What I found confusing:
 
 ### Goal
 
-Create a small, low-risk experiment using the HDB Resales artefact.
+Create a small, low-risk experiment using the HDB Resales Sandbox Series.
 
 ### Example experiments
 
@@ -158,6 +169,7 @@ Load a public HDB resale file into a Lakehouse
 Create a cleaned version of a small sample table
 Run a basic notebook to summarise resale prices
 Create a short insight note from one report page
+Review a template and complete a short reflection
 ```
 
 ### Steps
@@ -175,7 +187,8 @@ Users should complete:
 
 ```text
 Experiment title:
-Fabric item used:
+Fabric capability used:
+Artefact used:
 Data used:
 What I created or changed:
 File or item name:
@@ -297,8 +310,8 @@ Recommended pathway to continue:
 
 At the end of this pathway, users should be able to provide:
 
-- A short note on the HDB Resales artefact
-- A selected Fabric item to explore
+- A short note on the HDB Resales Sandbox Series
+- A selected Fabric capability to explore
 - One small sandbox experiment
 - An analytics thinking reflection
 - A sandbox-versus-use-case decision
@@ -322,8 +335,8 @@ Before completing this pathway, users should confirm:
 
 - [ ] I understand that sandbox is for learning and experimentation
 - [ ] I can access the assigned sandbox workspace
-- [ ] I can open or use the HDB Resales artefact
-- [ ] I selected one Fabric item to explore
+- [ ] I can locate the HDB Resales Sandbox Series artefacts
+- [ ] I selected one Fabric capability to explore
 - [ ] I completed one small sandbox experiment
 - [ ] I used only safe data
 - [ ] I named my work clearly
