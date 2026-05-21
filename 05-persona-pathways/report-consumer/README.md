@@ -4,6 +4,8 @@ This pathway is for users who mainly need to view, filter, interpret, and use Po
 
 Report consumers are not expected to build data pipelines, create Lakehouses, write notebooks, or design semantic models. Their main responsibility is to understand how to use reports safely, interpret outputs correctly, and avoid inappropriate sharing or export.
 
+This pathway uses the **HDB Resales** sandbox report as the common learning artefact.
+
 ## Who this pathway is for
 
 Choose this pathway if you mainly need to:
@@ -21,12 +23,12 @@ Choose this pathway if you mainly need to:
 By the end of this pathway, users should be able to:
 
 - Access the assigned sandbox workspace
-- Open a sample report
+- Open the HDB Resales sandbox report
 - Navigate report pages
 - Use filters, slicers, and basic visual interactions
 - Check report title, owner, refresh date, and sensitivity label, if applicable
 - Understand the difference between sandbox output and production output
-- Explain one insight from a report with appropriate caveats
+- Explain one insight from the report with appropriate caveats
 - Know when to ask for clarification or escalate an issue
 
 ## Prerequisites
@@ -45,48 +47,45 @@ Users should also know which sandbox workspace they have been assigned to.
 
 All hands-on activities in this pathway should be completed in the assigned sandbox workspace.
 
-The sandbox report should use:
-
-- Mocked data
-- Synthetic data
-- Public data
-- Approved non-sensitive data
+The HDB Resales report is used because it is based on a public and relatable dataset. It allows users to practise report consumption and interpretation without using confidential institutional data.
 
 Users should not upload real confidential or restricted data for this pathway.
 
 ![Placeholder: Report consumer sandbox learning path](../../assets/images/report-consumer-sandbox-learning-path.png)
 
-> Image placeholder: A simple learning path showing a report consumer opening a sandbox workspace, accessing a sample report, checking report context, using filters and slicers, interpreting results, and raising questions responsibly.
+> Image placeholder: A simple learning path showing a report consumer opening the sandbox workspace, accessing the HDB Resales report, checking report context, using filters and slicers, interpreting results, and raising questions responsibly.
 
-## Activity 1: Open the sample report
+## Activity 1: Open the HDB Resales sandbox report
 
 ### Goal
 
-Learn how to find and open a report in the sandbox workspace.
+Learn how to find and open a report in the sandbox workspace using the HDB Resales report.
 
 ### Steps
 
 1. Sign in to Microsoft Fabric.
 2. Open the assigned sandbox workspace.
-3. Locate the sample report provided for this pathway.
+3. Locate the HDB Resales report.
 4. Open the report in reading mode.
 5. Identify the report title and purpose.
-6. Identify whether the report is clearly marked as sandbox, sample, or training material.
+6. Confirm that the report is a sandbox learning artefact.
 
 ### Expected output
 
 Users should be able to state:
 
-- The name of the report
-- The purpose of the report
-- The workspace where the report is stored
-- Whether the report is sandbox, departmental, or production-facing
+```text
+Report name:
+Workspace:
+Report purpose:
+Report status: Sandbox / learning artefact
+```
 
 ### Reflection questions
 
-- Is it clear who the intended audience is?
+- Is it clear what the report is about?
 - Is it clear whether this report is official or only for learning?
-- What would you need to know before using this report for a real decision?
+- What would you need to know before using this type of report for a real decision?
 
 ## Activity 2: Check report context
 
@@ -133,8 +132,8 @@ Learn how filters and slicers affect what is shown in a report.
 
 ### Steps
 
-1. Open the sample report.
-2. Select one slicer or filter.
+1. Open the HDB Resales report.
+2. Select one slicer or filter, such as town, flat type, year, or resale price range.
 3. Observe how the visuals change.
 4. Clear the filter.
 5. Apply a different filter.
@@ -199,7 +198,7 @@ Practise writing a simple interpretation without overclaiming.
 
 ### Steps
 
-1. Choose one chart or KPI from the sample report.
+1. Choose one chart or KPI from the HDB Resales report.
 2. Apply one appropriate filter, if useful.
 3. Write one observation.
 4. Add one caveat.
@@ -224,13 +223,13 @@ Before using this for a real decision, I would ask...
 
 ```text
 Observation:
-The report appears to show that engagement is lower in Week 3 than in Week 1.
+The report appears to show that resale prices differ across towns and flat types.
 
 Caveat:
-This may depend on the selected course, cohort size, or whether all activity types are captured.
+This should be interpreted carefully because price differences may also be affected by flat size, remaining lease, storey range, transaction year, and location-specific factors.
 
 Follow-up question:
-I would ask whether the engagement measure includes only logins or also learning activities such as quizzes, videos, and submissions.
+Before using this for a real decision, I would ask whether the report controls for flat type, floor area, remaining lease, and transaction period.
 ```
 
 ## Activity 6: Know what not to do
@@ -243,16 +242,16 @@ Report consumers should not:
 
 - Treat sandbox reports as official reports
 - Export data unless permitted
-- Forward screenshots containing sensitive information
+- Forward screenshots without context
 - Share report links with unauthorised users
-- Assume that all numbers are validated
+- Assume that all numbers are validated for production use
 - Ignore filters or slicers that may affect the view
 - Use outdated reports for current decisions
 - Interpret a visual without understanding the definition behind it
 
 ### Reflection questions
 
-- What could go wrong if a screenshot is forwarded outside the intended audience?
+- What could go wrong if a screenshot is forwarded without the applied filters?
 - What could go wrong if a filtered view is mistaken for the full picture?
 - What could go wrong if a sandbox report is treated as production-ready?
 
@@ -260,7 +259,7 @@ Report consumers should not:
 
 At the end of this pathway, users should be able to provide:
 
-- The name of the sample report used
+- The name of the HDB Resales report used
 - A completed report context note
 - One filter or slicer observation
 - One visual interaction observation
@@ -269,24 +268,30 @@ At the end of this pathway, users should be able to provide:
 
 ## Related sandbox experiments
 
-Recommended sandbox activities for report consumers:
+Recommended sandbox activity for report consumers:
 
 | Sandbox Experiment | Purpose | Status |
 |---|---|---|
-| Sample Dashboard Walkthrough | Practise opening and interpreting a report | Planned |
-| Course Feedback Dashboard Review | Practise interpreting ratings, trends, and caveats | Planned |
-| Student Engagement Dashboard Review | Practise reading engagement signals responsibly | Planned |
+| [HDB Resales: Report Consumer Walkthrough](../../09-sandbox-experiments/hdb-resales/01-report-consumer-walkthrough/) | Practise opening, filtering, and interpreting a Power BI report using public HDB resale data | Planned |
 
-These detailed activities will be maintained in:
+The HDB Resales sandbox series uses public HDB resale flat data as a safe and relatable dataset for Fabric onboarding.
 
-[Sandbox Experiments](../../09-sandbox-experiments/)
+## Supporting artefact
+
+The starting Power BI file for this sandbox series is stored at:
+
+```text
+09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
+```
+
+This file should be treated as a sandbox learning artefact and may be repurposed for onboarding activities.
 
 ## Minimum checklist
 
 Before completing this pathway, users should confirm:
 
 - [ ] I can access the assigned sandbox workspace
-- [ ] I can open a sample report
+- [ ] I can open the HDB Resales report
 - [ ] I can identify the report purpose
 - [ ] I can check report owner, refresh date, and sensitivity label, if available
 - [ ] I can use filters and slicers
