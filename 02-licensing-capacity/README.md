@@ -39,7 +39,7 @@ Access must still follow:
 - Least privilege
 - Purpose-based access
 - Workspace ownership
-- Data sensitivity expectations
+- Sensitivity label expectations
 - Production control
 
 ## Fabric capacity
@@ -112,23 +112,26 @@ Production workloads should be more carefully managed because they may support o
 
 External collaborators are not covered by the University’s staff licensing arrangement.
 
-If an external collaborator needs to create, edit, publish, or collaborate on Fabric or Power BI items, a separate Power BI Pro license may be required.
+If an external collaborator needs to access Fabric or Power BI content in the University environment, they may need to be invited as a Microsoft Entra B2B guest user in the University tenant. This allows external sharing and access to be governed centrally through Microsoft Entra.
 
-These cases should be considered only when the need arises.
+Licensing must also be reviewed. If an external collaborator needs to create, edit, publish, or collaborate on Fabric or Power BI items, a separate Power BI Pro or Premium Per User license may be required. This license may come from their own organisation or be assigned by the University, depending on the scenario.
+
+For some viewing scenarios, licensing requirements may differ if the content is hosted in a Premium capacity or Fabric capacity such as F64 or greater. These cases should be reviewed when the need arises.
 
 Before onboarding an external collaborator, users should consider:
 
 - What does the collaborator need to do?
 - Do they need view-only access or edit access?
-- Are they creating Fabric items or only viewing outputs?
+- Do they need to create, edit, publish, or collaborate on Fabric items?
+- Do they need to be invited as a Microsoft Entra B2B guest user?
 - Which workspace do they need access to?
 - What data will they be able to see?
 - Is the data labelled `Confidential - SUSS` or `Restricted - SUSS`?
-- Is a separate Power BI Pro license required?
+- Is a separate Power BI Pro or Premium Per User license required?
 - Should access be time-bound?
 - Who will review and remove access later?
 
-External collaborator access should be reviewed together with security, governance, licensing, and data sensitivity considerations.
+External collaborator access should be reviewed together with security, governance, licensing, identity, and data sensitivity considerations.
 
 ## Common misconceptions
 
@@ -151,7 +154,7 @@ Before creating or running Fabric workloads, users should confirm:
 - [ ] I have avoided unnecessary refreshes or repeated heavy workloads
 - [ ] I know who owns the workspace
 - [ ] I know who to inform if I plan to run a heavy or recurring workload
-- [ ] I understand whether external collaborator licensing is relevant
+- [ ] I understand whether external collaborator licensing and guest access are relevant
 
 ## References and further learning
 
@@ -162,6 +165,7 @@ Before creating or running Fabric workloads, users should confirm:
 | [Microsoft Fabric pricing](https://azure.microsoft.com/en-us/pricing/details/microsoft-fabric/) | Shows Fabric capacity SKUs, including F64, and explains that capacity powers Fabric workloads |
 | [Microsoft Fabric capacity planning overview](https://learn.microsoft.com/en-us/fabric/enterprise/capacity-planning-overview) | Starting point for Microsoft’s Fabric capacity planning guidance |
 | [Scale for centralized and managed self-service analytics](https://learn.microsoft.com/en-us/fabric/enterprise/capacity-planning-enterprise-managed-self-service-solutions) | Useful for understanding capacity planning across centrally managed and self-service analytics scenarios |
+| [Distribute Power BI content to external guest users with Microsoft Entra B2B](https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/service-admin-entra-b2b) | Explains how Power BI supports external sharing through Microsoft Entra B2B guest users |
 
 ## Next section
 
