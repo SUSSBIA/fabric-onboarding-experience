@@ -16,8 +16,6 @@ At this stage, there is no formal shared or central workspace model for cross-de
 
 ![Placeholder: Fabric workspace operating model](../assets/images/fabric-workspace-operating-model.png)
 
-> Image placeholder: A simple three-part diagram showing Sandbox Workspace for learning and experimentation, Department Workspace for department-level exploration and development, and BIA Production Workspace for BIA-managed production analytics assets.
-
 ## Why the workspace model matters
 
 Users should not treat all workspaces the same.
