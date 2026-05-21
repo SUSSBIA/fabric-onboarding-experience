@@ -53,8 +53,6 @@ Users should not upload real confidential or restricted data for this pathway.
 
 ![Placeholder: Report consumer sandbox learning path](../../assets/images/report-consumer-sandbox-learning-path.png)
 
-> Image placeholder: A simple learning path showing a report consumer opening the sandbox workspace, accessing the HDB Resales report, checking report context, using filters and slicers, interpreting results, and raising questions responsibly.
-
 ## Activity 1: Open the HDB Resales sandbox report
 
 ### Goal
