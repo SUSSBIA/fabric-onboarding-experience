@@ -127,13 +127,14 @@ Before doing hands-on work in Fabric, make sure you can answer these questions:
 - Do I know whether my output is experimental or production-facing?
 - Do I know who to contact if I need help?
 
-## Related resources
+## References and further learning
 
-Supporting Microsoft documentation, Microsoft Learn materials, and curated video resources are maintained centrally in:
-
-[Curated Learning Resources](../08-curated-learning-resources/README.md)
-
-This avoids repeating the same reference links across every section.
+| Resource | Purpose |
+|---|---|
+| [Microsoft Fabric documentation](https://learn.microsoft.com/en-us/fabric/) | Official Microsoft documentation for Fabric concepts, workloads, and platform capabilities |
+| [What is Microsoft Fabric?](https://learn.microsoft.com/en-us/fabric/fundamentals/microsoft-fabric-overview) | Introduction to Fabric as an end-to-end analytics platform |
+| [Power BI service basic concepts](https://learn.microsoft.com/en-us/power-bi/fundamentals/service-basic-concepts) | Helpful for users new to workspaces, reports, dashboards, and semantic models |
+| [Power BI get started documentation](https://learn.microsoft.com/en-us/power-bi/fundamentals/) | Starting point for users learning how to navigate Power BI and related concepts |
 
 ## Next section
 
