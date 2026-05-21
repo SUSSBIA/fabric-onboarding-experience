@@ -22,7 +22,7 @@ This matters especially because Fabric is being used to support both BIA-managed
 
 ![Placeholder: Fabric licensing and capacity model](../assets/images/fabric-licensing-capacity-model.png)
 
-> Image placeholder: A simple diagram showing user licensing on one side, shared F64 Fabric capacity on the other side, and workspaces in the middle consuming compute from the capacity.
+> A simple diagram showing user licensing on one side, shared F64 Fabric capacity on the other side, and workspaces in the middle consuming compute from the capacity.
 
 ## Staff licensing
 
