@@ -51,8 +51,6 @@ They should first confirm:
 
 ![Placeholder: First safe steps in Fabric sandbox](../assets/images/first-safe-steps-in-fabric-sandbox.png)
 
-> Image placeholder: A simple checklist-style diagram showing the first safe steps in sandbox: sign in, open assigned sandbox workspace, review sample items, confirm safe data, complete guided activity, and remember that outputs are not production assets.
-
 ## Basic user journey
 
 A typical first-use journey should look like this:
