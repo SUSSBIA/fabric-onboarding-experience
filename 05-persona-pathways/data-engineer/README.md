@@ -57,8 +57,6 @@ Users should not upload real confidential or restricted data for this pathway.
 
 ![Placeholder: Data engineer sandbox learning path](../../assets/images/data-engineer-hdb-resales-learning-path.png)
 
-> Image placeholder: A learning path showing a data engineer loading HDB Resales data into a Lakehouse, inspecting files and tables, cleaning data, creating curated tables, documenting the data flow, and considering refresh and monitoring.
-
 ## Supporting artefact
 
 The starting Power BI file for this sandbox series is stored at:
