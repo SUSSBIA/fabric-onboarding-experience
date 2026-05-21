@@ -58,8 +58,6 @@ Users should not upload real confidential or restricted data for this pathway.
 
 ![Placeholder: Report developer sandbox learning path](../../assets/images/report-developer-sandbox-learning-path.png)
 
-> Image placeholder: A learning path showing a report developer opening the HDB Resales PBIX or sample semantic model, reviewing existing visuals, improving report layout, checking measures, validating outputs, and documenting assumptions before sharing within the sandbox.
-
 ## Supporting artefact
 
 The starting Power BI file for this sandbox series is stored at:
