@@ -4,7 +4,7 @@ This section helps users choose the Fabric learning pathway that best matches th
 
 Not every user needs to learn every Fabric capability. A report consumer does not need to start with pipelines and notebooks. A data engineering learner does not need to start with dashboard design. A department representative may need a broad understanding without becoming a technical expert.
 
-The persona pathways help users focus on what they need first.
+The persona pathways help users start with the learning track that is closest to their immediate need.
 
 ## Sandbox-first principle
 
@@ -19,238 +19,44 @@ For onboarding purposes, users should practise using:
 
 Department workspaces and BIA production workspaces are introduced conceptually, but hands-on onboarding activities should happen in sandbox unless BIA explicitly instructs otherwise.
 
-![Placeholder: Persona pathways in Fabric onboarding](../assets/images/persona-pathways-fabric-onboarding.png)
+![Persona pathways in Fabric onboarding](../assets/images/persona-pathways-fabric-onboarding.png)
 
-> Image placeholder: A pathway diagram showing different user personas starting from the sandbox workspace, then branching into report consumer, report developer, data analyst, data engineer, data scientist, department representative, workspace owner, and Fabric enthusiast pathways.
+> Image: A persona pathway map showing different user groups starting in the sandbox workspace before progressing into relevant learning activities and, where appropriate, department use cases.
 
-## How to choose your pathway
+## Choose your pathway
 
-Start by identifying the closest description of your role.
+Start with the persona closest to your current role or learning need.
 
-| Persona | Choose this pathway if you mainly need to... |
-|---|---|
-| Report Consumer | View and interpret approved reports or dashboards |
-| Report Developer | Build Power BI reports and work with semantic models |
-| Data Analyst | Explore data, prepare analysis, and create insights |
-| Data Engineer | Work with Lakehouses, pipelines, notebooks, and data movement |
-| Data Scientist | Explore modelling, machine learning, segmentation, or advanced analytics |
-| Department Representative | Coordinate department-level Fabric exploration and use cases |
-| Workspace Owner | Help manage access, ownership, organisation, and responsible use |
-| Fabric Enthusiast | Learn and experiment with Fabric before having a formal use case |
+| Persona | Choose this pathway if you mainly need to... | Pathway |
+|---|---|---|
+| Report Consumer | View, filter, and interpret approved reports or dashboards | [Report Consumer](./report-consumer/) |
+| Report Developer | Build Power BI reports and work with semantic models | [Report Developer](./report-developer/) |
+| Data Analyst | Explore data, prepare analysis, and create insights | [Data Analyst](./data-analyst/) |
+| Data Engineer | Work with Lakehouses, pipelines, notebooks, and data movement | [Data Engineer](./data-engineer/) |
+| Data Scientist | Explore modelling, machine learning, segmentation, or advanced analytics | [Data Scientist](./data-scientist/) |
+| Department Representative | Coordinate department-level Fabric exploration and use cases | [Department Representative](./department-representative/) |
+| Workspace Owner | Help manage access, ownership, organisation, and responsible use | [Workspace Owner](./workspace-owner/) |
+| Fabric Enthusiast | Learn and experiment with Fabric before having a formal use case | [Fabric Enthusiast](./fabric-enthusiast/) |
 
 Users may eventually follow more than one pathway, but they should start with the one closest to their immediate need.
 
-## Pathway 1: Report Consumer
+## How the pathways are structured
 
-Report consumers mainly view, filter, and interpret reports.
+Each pathway includes:
 
-They should learn how to:
+1. Who the pathway is for
+2. Learning objectives
+3. Prerequisites
+4. Sandbox activities
+5. Expected outputs
+6. Reflection questions
+7. Related sandbox experiments
+8. Recommended Microsoft Learn or documentation resources
+9. Suggested next step
 
-- Access assigned reports
-- Navigate report pages
-- Use filters and slicers
-- Check report title, owner, refresh date, and sensitivity label
-- Understand whether a report is official, draft, or sandbox-only
-- Avoid unauthorised sharing, screenshots, or exports
-- Raise questions when numbers appear incorrect
+The pathway pages provide the learning sequence. The detailed hands-on experiments are maintained separately in:
 
-Recommended sandbox activities:
-
-1. Open a sample report in the sandbox workspace.
-2. Use filters and slicers.
-3. Check the refresh date and sensitivity label.
-4. Identify the report owner or support contact.
-5. Write down one interpretation and one question about the report.
-
-Report consumers should not need to create Lakehouses, pipelines, notebooks, or semantic models at the start.
-
-## Pathway 2: Report Developer
-
-Report developers build reports and may work with semantic models.
-
-They should learn how to:
-
-- Build Power BI reports using approved or sample data
-- Understand the difference between a report and a semantic model
-- Reuse existing semantic models where appropriate
-- Create clear visual layouts
-- Define and use measures carefully
-- Apply naming conventions
-- Understand when Row-Level Security may be needed
-- Validate report numbers before sharing
-- Avoid creating duplicate or conflicting definitions
-
-Recommended sandbox activities:
-
-1. Open a sample semantic model.
-2. Create a simple report using the sample model.
-3. Add basic visuals and filters.
-4. Create or inspect simple measures.
-5. Compare report outputs against expected values.
-6. Save the report using a sandbox naming convention.
-
-Report developers should treat semantic models as reusable business layers, not just technical datasets.
-
-## Pathway 3: Data Analyst
-
-Data analysts explore data and turn it into useful insights.
-
-They may work across reports, data preparation, semantic models, and analytical interpretation.
-
-They should learn how to:
-
-- Understand the meaning and structure of a dataset
-- Check data quality
-- Prepare data for analysis
-- Use simple transformations
-- Build exploratory reports
-- Interpret patterns carefully
-- Document assumptions and limitations
-- Avoid overclaiming from incomplete data
-
-Recommended sandbox activities:
-
-1. Load or open a sample dataset.
-2. Inspect fields, missing values, and data types.
-3. Create simple derived fields.
-4. Build an exploratory report.
-5. Write a short insight summary.
-6. List assumptions, caveats, and follow-up questions.
-
-Data analysts should focus not only on producing charts, but also on explaining what the data can and cannot support.
-
-## Pathway 4: Data Engineer
-
-Data engineers work with data ingestion, storage, transformation, and workflow orchestration.
-
-They should learn how to:
-
-- Understand Lakehouse concepts
-- Load safe sample data into a Lakehouse
-- Distinguish between files and tables
-- Use pipelines or Dataflows Gen2 for ingestion
-- Use notebooks for transformation
-- Understand Bronze, Silver, and Gold layering
-- Document source, transformation, and output tables
-- Understand refresh, connections, credentials, and monitoring responsibilities
-
-Recommended sandbox activities:
-
-1. Create or open a sandbox Lakehouse.
-2. Load mocked or synthetic data.
-3. Create a table.
-4. Transform the data using a notebook, Dataflow Gen2, or pipeline.
-5. Write the output to a curated table.
-6. Query the table and verify the result.
-7. Document the source-to-output flow.
-
-Data engineering learners should understand that getting data to load once is not the same as operating a reliable data pipeline.
-
-## Pathway 5: Data Scientist
-
-Data scientists and advanced analytics users work with modelling, experimentation, prediction, segmentation, or machine learning.
-
-They should learn how to:
-
-- Use safe and appropriate datasets for modelling
-- Understand target variables and features
-- Prepare data for modelling
-- Apply exploratory analysis
-- Build simple models or clustering outputs
-- Evaluate model performance
-- Interpret results responsibly
-- Document limitations and intended use
-- Avoid treating model outputs as final truth
-
-Recommended sandbox activities:
-
-1. Open a synthetic dataset.
-2. Explore the dataset and define the analytical question.
-3. Prepare features.
-4. Run a basic model or clustering technique.
-5. Evaluate or profile the output.
-6. Create a simple dashboard or summary table.
-7. Write a short note on limitations and responsible use.
-
-Data science outputs should be treated as decision-support signals, not automated decisions.
-
-## Pathway 6: Department Representative
-
-Department representatives support department-level exploration and coordination.
-
-They may not need to become deep technical experts, but they should understand how Fabric fits into department use cases.
-
-They should learn how to:
-
-- Understand the sandbox-first onboarding model
-- Understand department workspace purpose
-- Identify potential department use cases
-- Coordinate with BIA where needed
-- Understand data sensitivity and access boundaries
-- Avoid treating prototypes as production assets
-- Help validate whether outputs make business sense
-- Escalate productionisation needs to BIA
-
-Recommended sandbox activities:
-
-1. Complete a basic report consumer activity.
-2. Complete one sandbox experiment relevant to the department.
-3. Identify a possible department use case.
-4. Describe what data may be needed.
-5. Identify the likely owner, audience, and sensitivity level.
-6. Discuss whether the use case is exploratory or production-facing.
-
-Department representatives play an important role in translating department needs into responsible analytics use cases.
-
-## Pathway 7: Workspace Owner
-
-Workspace owners or responsible representatives help manage workspace use.
-
-They should learn how to:
-
-- Understand workspace purpose
-- Coordinate access requests
-- Assign roles appropriately
-- Keep workspace content organised
-- Ensure sandbox, department, and production boundaries are respected
-- Understand who owns reports, semantic models, connections, and refreshes
-- Review whether assets are obsolete or duplicated
-- Escalate tenant setting, capacity, or productionisation requests to BIA
-
-Recommended sandbox activities:
-
-1. Review the contents of a sample workspace.
-2. Identify item owners and item types.
-3. Check whether naming is clear.
-4. Identify which items are experimental.
-5. Review a sample access request scenario.
-6. Decide whether a request should be approved, rejected, or escalated.
-
-Workspace ownership is not only technical. It includes accountability for safe and sustainable use.
-
-## Pathway 8: Fabric Enthusiast
-
-Fabric enthusiasts are users who want to explore Fabric before they have a formal department use case.
-
-They should learn how to:
-
-- Use sandbox safely
-- Practise with mocked, synthetic, public, or approved non-sensitive data
-- Try reports, Lakehouses, semantic models, pipelines, notebooks, and Dataflows Gen2
-- Follow guided sandbox experiments
-- Reflect on data meaning and responsible interpretation
-- Avoid uploading real restricted or confidential data
-- Avoid presenting sandbox outputs as official findings
-
-Recommended sandbox activities:
-
-1. Complete the first safe activity.
-2. Try one beginner sandbox experiment.
-3. Explore one Fabric item type that is new to you.
-4. Document what you created.
-5. Write down what would need to change before this could be used for a real department use case.
-
-The enthusiast pathway is useful for building future champions, but it should remain safe and clearly separated from production work.
+[Sandbox Experiments](../09-sandbox-experiments/)
 
 ## Suggested progression by maturity
 
@@ -263,6 +69,25 @@ Users can progress through three broad maturity levels.
 | Advanced | Apply analytics thinking to realistic scenarios | Can complete sandbox experiments and explain assumptions, risks, and limitations |
 
 Progression should be based on demonstrated understanding, not just tool usage.
+
+## Relationship between persona pathways and sandbox experiments
+
+Persona pathways explain **what a user should learn**.
+
+Sandbox experiments provide **guided practice activities**.
+
+For example:
+
+| Persona | Example sandbox experiment |
+|---|---|
+| Report Consumer | Open and interpret a sample dashboard |
+| Report Developer | Build a report from a sample semantic model |
+| Data Analyst | Explore a sample dataset and write an insight summary |
+| Data Engineer | Load data into a Lakehouse and create a curated table |
+| Data Scientist | Run applicant persona clustering on synthetic data |
+| Department Representative | Review a department use case scenario and identify data, audience, and ownership |
+| Workspace Owner | Review a sample workspace and assess access, naming, and ownership |
+| Fabric Enthusiast | Complete a beginner sandbox challenge |
 
 ## When to move beyond sandbox
 
@@ -292,7 +117,7 @@ Before moving towards BIA production, confirm:
 Before selecting a pathway, users should confirm:
 
 - [ ] I know my main purpose for using Fabric
-- [ ] I know whether I am consuming, building, engineering, modelling, coordinating, or experimenting
+- [ ] I know whether I am consuming, building, analysing, engineering, modelling, coordinating, owning, or experimenting
 - [ ] I know that onboarding starts in the sandbox workspace
 - [ ] I know what data I am allowed to use in sandbox
 - [ ] I understand that sandbox outputs are not production assets
@@ -314,4 +139,4 @@ Before selecting a pathway, users should confirm:
 
 Proceed to:
 
-[Deployment Lifecycle Management](../06-deployment-lifecycle-management/)
+[Report Consumer Pathway](./report-consumer/)
