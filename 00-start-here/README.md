@@ -32,7 +32,7 @@ Because of this, users should not jump straight into creating Fabric items witho
 
 The onboarding is layered so that users move progressively from awareness to safe hands-on use.
 
-![Placeholder: Layered Fabric onboarding journey](../assets/images/layered-fabric-onboarding-journey.png)
+![Layered Fabric onboarding journey](../assets/images/layered-fabric-onboarding-journey.png)
 
 > A simple left-to-right journey map showing users moving from security and access, to licensing and capacity, to workspace model, to hands-on Fabric use, to persona pathways, to deployment lifecycle, to connections and refresh monitoring, to semantic modelling, sandbox experiments, and productionisation review where applicable.
 
