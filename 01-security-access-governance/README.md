@@ -140,8 +140,4 @@ Before doing hands-on work in Fabric, users should confirm:
 
 Proceed to:
 
-```text
-02-licensing-capacity/
-```
-
-Licensing, capacity, and compute awareness should be understood before users begin creating or running Fabric workloads.
+[Licensing, Capacity and Compute Awareness](../02-licensing-capacity/)
