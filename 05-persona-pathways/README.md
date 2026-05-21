@@ -21,8 +21,6 @@ Department workspaces and BIA production workspaces are introduced conceptually,
 
 ![Persona pathways in Fabric onboarding](../assets/images/persona-pathways-fabric-onboarding.png)
 
-> Image: A persona pathway map showing different user groups starting in the sandbox workspace before progressing into relevant learning activities and, where appropriate, department use cases.
-
 ## Choose your pathway
 
 Start with the persona closest to your current role or learning need.
