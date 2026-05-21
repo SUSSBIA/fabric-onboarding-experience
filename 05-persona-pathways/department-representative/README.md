@@ -4,7 +4,7 @@ This pathway is for department representatives who are exploring how Microsoft F
 
 Department representatives do not need to become deep technical experts in every Fabric workload. Their role is to understand the operating model, identify possible use cases, coordinate with stakeholders, understand data and access boundaries, and work with BIA where support, review, or productionisation may be needed.
 
-This pathway uses the **HDB Resales** sandbox artefact as a safe example for thinking about department use cases, dashboard interpretation, ownership, and responsible analytics adoption.
+This pathway uses the **HDB Resales** sandbox report as a safe example for thinking about department use cases, dashboard interpretation, ownership, and responsible analytics adoption.
 
 ## Who this pathway is for
 
@@ -53,17 +53,18 @@ The HDB Resales report is used because it is based on public data and provides a
 
 Users should not upload real department data for this pathway unless explicitly instructed and approved.
 
-![Placeholder: Department representative learning path](../../assets/images/department-representative-learning-path.png)
+![Department representative learning path](../../assets/images/department-representative-learning-path.png)
 
-## Supporting artefact
+## Supporting artefacts
 
-The starting Power BI file for this sandbox series is stored at:
+This pathway uses the HDB Resales report as an example and a use case canvas as the main working artefact.
 
 ```text
 09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
+09-sandbox-experiments/hdb-resales/templates/use-case-canvas.md
 ```
 
-This file should be treated as a sandbox learning artefact and may be repurposed for onboarding activities.
+The HDB Resales report is used only as a safe example of how analytics outputs may support interpretation and discussion. The main focus of this pathway is not report development. The main focus is use case framing, ownership, access, sensitivity, and readiness for BIA discussion.
 
 ## Activity 1: Review the HDB Resales report as a business user
 
