@@ -140,8 +140,6 @@ Before doing hands-on work in Fabric, make sure you can answer these questions:
 
 Proceed to:
 
-```text
-01-security-access-governance/
-```
+[Security, Access and Governance](../01-security-access-governance/)
 
 Security, access, and governance should be understood before using Fabric hands-on.
