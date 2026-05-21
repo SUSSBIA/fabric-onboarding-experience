@@ -4,7 +4,7 @@ This pathway is for users who are responsible for helping manage a Fabric worksp
 
 Workspace owners do not need to be experts in every Fabric workload, but they should understand workspace purpose, role assignment, naming, item ownership, sensitivity expectations, refresh ownership, and when issues should be escalated to BIA.
 
-This pathway uses the **HDB Resales** sandbox workspace and artefacts as a safe example for practising workspace review and ownership thinking.
+This pathway uses a **sample workspace inventory** and **workspace health checklist** as the main working artefacts. The HDB Resales sandbox artefacts are used only as sample items to review.
 
 ## Who this pathway is for
 
@@ -51,21 +51,32 @@ Users should also know which sandbox workspace they have been assigned to.
 
 All hands-on activities in this pathway should be completed in the assigned sandbox workspace.
 
-The HDB Resales sandbox artefacts are used because they provide a safe way to practise reviewing workspace content, naming, ownership, and responsible use without using confidential institutional data.
+The HDB Resales sandbox artefacts are used because they provide safe sample items for reviewing workspace content, naming, ownership, and responsible use without involving confidential institutional data.
 
 Users should not upload real department data for this pathway unless explicitly instructed and approved.
 
-![Placeholder: Workspace owner learning path](../../assets/images/workspace-owner-learning-path.png)
+![Workspace owner learning path](../../assets/images/workspace-owner-learning-path.png)
 
-## Supporting artefact
+## Supporting artefacts
 
-The starting Power BI file for this sandbox series is stored at:
+This pathway mainly uses a workspace inventory template and workspace health checklist.
+
+```text
+09-sandbox-experiments/hdb-resales/templates/workspace-inventory-template.md
+09-sandbox-experiments/hdb-resales/templates/workspace-health-note.md
+11-templates-checklists/workspace-health-checklist.md
+```
+
+The HDB Resales sandbox items may be used as sample items to review, such as:
 
 ```text
 09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
+09-sandbox-experiments/hdb-resales/data/
+09-sandbox-experiments/hdb-resales/notebooks/
+09-sandbox-experiments/hdb-resales/templates/
 ```
 
-This file should be treated as a sandbox learning artefact and may be repurposed for onboarding activities.
+The main focus of this pathway is workspace ownership, not report development or data modelling.
 
 ## Activity 1: Review workspace purpose
 
