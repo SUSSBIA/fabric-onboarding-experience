@@ -4,7 +4,7 @@ This pathway is for users who need to explore data, identify patterns, prepare a
 
 Data analysts may work with reports, datasets, semantic models, Power Query, Dataflows Gen2, simple transformations, and exploratory analysis. They are not only expected to create charts, but also to understand what the data means, what assumptions are being made, and what conclusions can or cannot be supported.
 
-This pathway uses the **HDB Resales** sandbox dataset and report as the common learning artefact.
+This pathway uses the **HDB Resales** sandbox dataset and related learning templates as the common learning artefacts.
 
 ## Who this pathway is for
 
@@ -25,7 +25,7 @@ Choose this pathway if you mainly need to:
 By the end of this pathway, users should be able to:
 
 - Access the assigned sandbox workspace
-- Open the HDB Resales dataset or report
+- Open or use the HDB Resales dataset
 - Understand the basic structure of the dataset
 - Identify useful analytical questions
 - Check common data quality issues
@@ -56,17 +56,26 @@ The HDB Resales dataset is used because it is public, relatable, and rich enough
 
 Users should not upload real confidential or restricted data for this pathway.
 
-![Placeholder: Data analyst sandbox learning path](../../assets/images/data-analyst-hdb-resales-learning-path.png)
+![Data analyst sandbox learning path](../../assets/images/data-analyst-hdb-resales-learning-path.png)
 
-## Supporting artefact
+## Supporting artefacts
 
-The starting Power BI file for this sandbox series is stored at:
+This pathway mainly uses the HDB Resales source data, data dictionary, and analysis templates.
 
 ```text
-09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
+09-sandbox-experiments/hdb-resales/data/
+09-sandbox-experiments/hdb-resales/templates/insight-summary-template.md
 ```
 
-This file should be treated as a sandbox learning artefact and may be repurposed for onboarding activities.
+The HDB Resales PBIX may be used as a reference report, but the main focus of this pathway is data exploration, analytical questioning, pattern interpretation, and insight communication.
+
+Suggested supporting artefacts:
+
+```text
+09-sandbox-experiments/hdb-resales/data/hdb_resales_sample.csv
+09-sandbox-experiments/hdb-resales/data/hdb_resales_data_dictionary.md
+09-sandbox-experiments/hdb-resales/templates/insight-summary-template.md
+```
 
 ## Activity 1: Understand the dataset
 
@@ -77,7 +86,7 @@ Learn what the HDB Resales dataset contains before analysing it.
 ### Steps
 
 1. Open the assigned sandbox workspace.
-2. Open the HDB Resales report, dataset, or semantic model as instructed.
+2. Open the HDB Resales dataset, table, or semantic model as instructed.
 3. Review the available fields.
 4. Identify which fields describe location, flat characteristics, transaction timing, and price.
 5. Identify fields that may require explanation before analysis.
@@ -112,7 +121,7 @@ Practise moving from “looking at data” to asking useful analytical questions
 
 ### Steps
 
-1. Review the dataset and report.
+1. Review the dataset and reference report.
 2. Write three possible analytical questions.
 3. Classify each question as descriptive, comparative, trend-based, or explanatory.
 4. Choose one question to explore further.
@@ -369,7 +378,7 @@ Recommended sandbox activities for data analysts:
 Before completing this pathway, users should confirm:
 
 - [ ] I can access the assigned sandbox workspace
-- [ ] I can open the HDB Resales dataset or report
+- [ ] I can open the HDB Resales dataset, table, or reference report
 - [ ] I understand what one row in the dataset represents
 - [ ] I can identify key fields for analysis
 - [ ] I can write analytical questions
