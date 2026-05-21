@@ -57,8 +57,6 @@ Users should not upload real department data for this pathway unless explicitly 
 
 ![Placeholder: Workspace owner learning path](../../assets/images/workspace-owner-learning-path.png)
 
-> Image placeholder: A learning path showing a workspace owner reviewing a sandbox workspace, checking item types, ownership, naming, access requests, sensitivity labels, refresh ownership, and escalation needs.
-
 ## Supporting artefact
 
 The starting Power BI file for this sandbox series is stored at:
