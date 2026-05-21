@@ -51,7 +51,19 @@ The HDB Resales report is used because it is based on a public and relatable dat
 
 Users should not upload real confidential or restricted data for this pathway.
 
-![Placeholder: Report consumer sandbox learning path](../../assets/images/report-consumer-sandbox-learning-path.png)
+![Report consumer sandbox learning path](../../assets/images/report-consumer-sandbox-learning-path.png)
+
+## Supporting artefacts
+
+This pathway mainly uses the HDB Resales Power BI report as the learning artefact.
+
+```text
+09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
+```
+
+The PBIX may be published into the sandbox workspace as a sample report for users to open, filter, and interpret.
+
+Report consumers are not expected to modify the PBIX file. They should interact with the published report or assigned sample report in the sandbox workspace.
 
 ## Activity 1: Open the HDB Resales sandbox report
 
@@ -273,16 +285,6 @@ Recommended sandbox activity for report consumers:
 | [HDB Resales: Report Consumer Walkthrough](../../09-sandbox-experiments/hdb-resales/01-report-consumer-walkthrough/) | Practise opening, filtering, and interpreting a Power BI report using public HDB resale data | Planned |
 
 The HDB Resales sandbox series uses public HDB resale flat data as a safe and relatable dataset for Fabric onboarding.
-
-## Supporting artefact
-
-This pathway uses the HDB Resales Power BI report as the main learning artefact.
-
-```text
-09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
-```
-
-This file should be treated as a sandbox learning artefact and may be repurposed for onboarding activities.
 
 ## Minimum checklist
 
