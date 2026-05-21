@@ -27,8 +27,6 @@ The aim is not to slow users down. The aim is to help users work safely and cons
 
 ![Fabric access and governance layers](../assets/images/fabric-access-and-governance-layers.png)
 
-> A layered governance diagram showing user access, workspace role, item permission, sensitivity label, sharing control, row-level security, connection ownership, refresh monitoring, and production review as connected layers before users work with Fabric assets.
-
 ## Core access principles
 
 | Principle | Meaning |
