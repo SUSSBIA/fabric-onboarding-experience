@@ -276,7 +276,7 @@ The HDB Resales sandbox series uses public HDB resale flat data as a safe and re
 
 ## Supporting artefact
 
-The starting Power BI file for this sandbox series is stored at:
+This pathway uses the HDB Resales Power BI report as the main learning artefact.
 
 ```text
 09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
