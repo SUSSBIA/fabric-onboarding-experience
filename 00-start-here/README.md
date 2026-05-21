@@ -34,7 +34,7 @@ The onboarding is layered so that users move progressively from awareness to saf
 
 ![Placeholder: Layered Fabric onboarding journey](../assets/images/layered-fabric-onboarding-journey.png)
 
-> Image placeholder: A simple left-to-right journey map showing users moving from security and access, to licensing and capacity, to workspace model, to hands-on Fabric use, to persona pathways, to deployment lifecycle, to connections and refresh monitoring, to semantic modelling, sandbox experiments, and productionisation review where applicable.
+> A simple left-to-right journey map showing users moving from security and access, to licensing and capacity, to workspace model, to hands-on Fabric use, to persona pathways, to deployment lifecycle, to connections and refresh monitoring, to semantic modelling, sandbox experiments, and productionisation review where applicable.
 
 ## Who this repo is for
 
