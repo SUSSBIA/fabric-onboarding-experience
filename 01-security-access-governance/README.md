@@ -59,7 +59,9 @@ Having a higher workspace role does not mean a user should freely access, export
 
 Some Fabric capabilities may be controlled by tenant-level, capacity-level, or administrator-managed settings.
 
-This means a user may not be able to use a feature simply because they have workspace access. Examples may include:
+In our current operating model, BIA controls the relevant Fabric tenant-level settings for the University’s analytics environment. This means some capabilities may not be available to users even if they have workspace access.
+
+Examples may include:
 
 - Creating certain Fabric items
 - Sharing content externally
@@ -68,8 +70,11 @@ This means a user may not be able to use a feature simply because they have work
 - Using Copilot or AI-assisted features
 - Connecting to certain data sources
 - Using specific connectors or gateways
+- Enabling preview or advanced features
 
-Where a feature is unavailable, users should check whether the issue is related to:
+Where a feature is unavailable, users should not attempt to bypass controls or create alternative workarounds without review.
+
+Instead, users should check whether the issue is related to:
 
 - User licensing
 - Workspace role
@@ -77,6 +82,10 @@ Where a feature is unavailable, users should check whether the issue is related 
 - Capacity assignment
 - Tenant-level settings
 - Data source or gateway configuration
+
+If the issue appears to be related to tenant-level settings, capacity-level settings, or administrator-controlled Fabric features, the request should be escalated to BIA for review.
+
+BIA will assess whether the request is appropriate based on security, governance, licensing, capacity, operational impact, and alignment with the current Fabric operating model.
 
 ## Sensitivity label expectations
 
