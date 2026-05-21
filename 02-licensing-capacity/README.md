@@ -22,8 +22,6 @@ This matters especially because Fabric is being used to support both BIA-managed
 
 ![Placeholder: Fabric licensing and capacity model](../assets/images/fabric-licensing-capacity-model.png)
 
-> A simple diagram showing user licensing on one side, shared F64 Fabric capacity on the other side, and workspaces in the middle consuming compute from the capacity.
-
 ## Staff licensing
 
 All staff experience on Fabric is currently powered by the University’s Microsoft Office 365 Education A5 plan.
