@@ -4,7 +4,7 @@ This pathway is for users who need to understand how data is ingested, stored, t
 
 Data engineering learners should understand that getting data to load once is not the same as building a reliable data workflow. They need to think about source data, Lakehouses, tables, transformations, pipelines, notebooks, refresh, monitoring, and ownership.
 
-This pathway uses the **HDB Resales** sandbox dataset as the common learning artefact.
+This pathway uses the **HDB Resales** sandbox dataset and data engineering artefacts as the common learning materials.
 
 ## Who this pathway is for
 
@@ -29,7 +29,7 @@ By the end of this pathway, users should be able to:
 - Understand files versus tables
 - Inspect schema, data types, and basic data quality
 - Create a cleaned or curated table
-- Understand when to use Dataflow Gen2, pipeline, or notebook
+- Understand when to use Dataflow Gen2, pipeline, notebook, or SQL
 - Describe a simple Bronze, Silver, and Gold pattern
 - Document the source-to-output flow
 - Explain why ownership and monitoring matter
@@ -55,23 +55,26 @@ The HDB Resales dataset is used because it is public, relatable, and safe for le
 
 Users should not upload real confidential or restricted data for this pathway.
 
-![Placeholder: Data engineer sandbox learning path](../../assets/images/data-engineer-hdb-resales-learning-path.png)
+![Data engineer sandbox learning path](../../assets/images/data-engineer-hdb-resales-learning-path.png)
 
-## Supporting artefact
+## Supporting artefacts
 
-The starting Power BI file for this sandbox series is stored at:
-
-```text
-09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
-```
-
-This file should be treated as a sandbox learning artefact and may be repurposed for onboarding activities.
-
-If a source CSV or parquet file is provided later, it should be stored under:
+This pathway mainly uses the HDB Resales source data and data engineering materials.
 
 ```text
 09-sandbox-experiments/hdb-resales/data/
+09-sandbox-experiments/hdb-resales/notebooks/
 ```
+
+Suggested supporting artefacts:
+
+```text
+09-sandbox-experiments/hdb-resales/data/hdb_resales_sample.csv
+09-sandbox-experiments/hdb-resales/data/hdb_resales_data_dictionary.md
+09-sandbox-experiments/hdb-resales/notebooks/hdb_resales_data_preparation.ipynb
+```
+
+The HDB Resales PBIX may be used as a downstream reporting example, but the main focus of this pathway is ingestion, cleaning, transformation, table creation, and data flow documentation.
 
 ## Activity 1: Create or open a Lakehouse
 
@@ -388,7 +391,7 @@ At the end of this pathway, users should be able to provide:
 - A cleaned table or transformation output
 - A Bronze, Silver, and Gold mapping
 - A transformation method recommendation
-- A documented source-to-output flow
+- A documented source-to-output data flow
 - A refresh and monitoring note
 
 ## Related sandbox experiments
