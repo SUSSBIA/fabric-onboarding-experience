@@ -153,7 +153,7 @@ Users should treat Microsoft documentation as the official product reference. Cu
 | [Power BI implementation planning: Tenant-level workspace planning](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-tenant-level-workspace-planning) | Useful for workspace planning, ownership, and collaboration patterns |
 | [Microsoft Fabric adoption roadmap: System oversight](https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-system-oversight) | Guidance on governance, tenant administration, monitoring, and oversight |
 
-## Curated video learning
+## Curated video learning (Placeholder)
 
 Video resources can be useful for seeing concepts demonstrated in practice.
 
