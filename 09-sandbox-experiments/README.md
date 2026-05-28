@@ -23,8 +23,6 @@ A report consumer may start by interpreting an HDB resale dashboard. A report de
 
 ![Placeholder: HDB Resales sandbox experiment map](../assets/images/hdb-resales-sandbox-experiment-map.png)
 
-> Image placeholder: A map showing the HDB Resales sandbox series branching into report consumer, report developer, data analyst, data engineer, data scientist, department representative, workspace owner, and Fabric enthusiast activities.
-
 ## Sandbox-first principle
 
 Sandbox experiments should use only safe data.
