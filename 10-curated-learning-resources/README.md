@@ -4,6 +4,8 @@ This section collects useful Microsoft documentation, Microsoft Learn modules, a
 
 The main onboarding guide is written for our operating context. These resources provide official product documentation, deeper technical learning, and optional self-paced study.
 
+![Curated learning resources overview](../assets/images/curated-learning-resources-overview.png)
+
 ## How to use this section
 
 Use this section when you want to:
