@@ -10,7 +10,8 @@ The purpose of this experiment is to help learners become comfortable with repor
 
 In this experiment, learners will practise how to:
 
-* Open the HDB Resales report in the Fabric Sandbox Workspace
+* Access the Fabric Sandbox Workspace
+* Open the HDB Resales report
 * Check report context before interpreting visuals
 * Use filters and slicers carefully
 * Interact with visuals
@@ -96,11 +97,11 @@ The HDB Resales report is a learning artefact. It should not be treated as an of
 
 ![Report consumer walkthrough](../../../assets/images/report-consumer-sandbox-learning-path.png)
 
-## Activity 1: Open the HDB Resales report
+## Activity 1: Access the sandbox workspace and open the report
 
 ### Goal
 
-Find and open the HDB Resales report in the Fabric Sandbox Workspace.
+Access the Fabric Sandbox Workspace and open the HDB Resales report.
 
 ### Steps
 
@@ -248,7 +249,8 @@ Write one useful observation without overclaiming.
 2. Apply one appropriate filter, if useful.
 3. Write one observation.
 4. Add one caveat.
-5. Add one follow-up question.
+5. Identify one conclusion that would be too strong.
+6. Add one follow-up question.
 
 ### Output
 
@@ -260,6 +262,9 @@ The report appears to show that...
 
 Caveat:
 This should be interpreted carefully because...
+
+Conclusion that would be too strong:
+It would be too strong to conclude that...
 
 Follow-up question:
 Before using this for a real decision, I would ask...
@@ -274,6 +279,9 @@ The report appears to show that resale prices differ across towns and flat types
 Caveat:
 This should be interpreted carefully because price differences may also be affected by flat size, remaining lease, storey range, transaction year, and location-specific factors.
 
+Conclusion that would be too strong:
+It would be too strong to conclude that town alone causes resale price differences.
+
 Follow-up question:
 Before using this for a real decision, I would ask whether the report controls for flat type, floor area, remaining lease, and transaction period.
 ```
@@ -282,38 +290,14 @@ You may also use:
 
 [Insight Summary Template](../../../11-templates-checklists/templates/insight-summary-template.md)
 
-## Activity 6: Identify what not to conclude
-
-### Goal
-
-Recognise the limits of report interpretation.
-
-### Steps
-
-1. Review your observation from Activity 5.
-2. Identify one conclusion that would be too strong.
-3. Identify one missing context point.
-4. Identify one additional data item that would improve interpretation.
-
-### Output
-
-Complete the following:
-
-```text
-Observation reviewed:
-Conclusion that would be too strong:
-Missing context:
-Additional data needed:
-Why this matters:
-```
-
 ### Reflection questions
 
 * Does the report support explanation, or only description?
 * Could a user mistake correlation for causation?
 * Could a filtered view be mistaken for the whole picture?
+* What additional data would make the interpretation stronger?
 
-## Activity 7: Know what not to do
+## Activity 6: Know what not to do
 
 ### Goal
 
@@ -321,7 +305,11 @@ Understand responsible behaviour when using sandbox reports.
 
 ### Steps
 
-Review the following statements and confirm that you understand them.
+1. Review the report output you interacted with.
+2. Review your interpretation from Activity 5.
+3. Identify one action you should avoid.
+4. Explain why that action could create risk or misunderstanding.
+5. Identify who you should ask if you are unsure.
 
 Report consumers should not:
 
@@ -344,6 +332,12 @@ Why this matters:
 Who I should ask if unsure:
 ```
 
+### Reflection questions
+
+* What could go wrong if a screenshot is forwarded without the applied filters?
+* What could go wrong if a sandbox report is treated as production-ready?
+* What could go wrong if someone exports or shares data without permission?
+
 ## Completion evidence
 
 At the end of this experiment, learners should have:
@@ -352,14 +346,15 @@ At the end of this experiment, learners should have:
 * One filter or slicer observation
 * One visual interaction observation
 * One responsible interpretation with caveat
-* One note on what not to conclude
+* One statement on what would be too strong to conclude
 * One note on what not to do with sandbox reports
 
 ## Checklist
 
 Before completing this experiment, confirm:
 
-* [ ] I opened the HDB Resales report in the Fabric Sandbox Workspace
+* [ ] I accessed the Fabric Sandbox Workspace
+* [ ] I opened the HDB Resales report
 * [ ] I confirmed the report is a sandbox learning artefact
 * [ ] I checked report context
 * [ ] I used at least one filter or slicer
