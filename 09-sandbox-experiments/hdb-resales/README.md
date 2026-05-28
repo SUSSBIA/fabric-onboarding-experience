@@ -23,7 +23,7 @@ The HDB Resales dataset is useful because it is public, non-sensitive, and famil
 
 ## Sandbox-first principle
 
-All activities in this series should be completed in the assigned sandbox workspace.
+All activities in this series should be completed in the assigned Fabric Sandbox Workspace.
 
 This series should use only:
 
@@ -45,13 +45,43 @@ Do not use:
 
 Sandbox outputs are for learning and experimentation only. They are not official reports, production semantic models, operational dashboards, or formal decision-support tools.
 
+## Repo versus Fabric Sandbox Workspace
+
+The HDB Resales Sandbox Series uses both this GitHub repo and a Fabric Sandbox Workspace.
+
+The repo explains what to do. The Fabric Sandbox Workspace is where the hands-on work happens.
+
+| Area | Purpose |
+|---|---|
+| GitHub repo | Stores onboarding instructions, README files, templates, checklists, source references, and learning guidance |
+| Fabric Sandbox Workspace | Hosts the working artefacts that learners open, run, edit, copy, and practise with |
+
+Learners should perform hands-on work in the Fabric Sandbox Workspace, not directly inside the GitHub repo.
+
+## Where artefacts are stored
+
+| Artefact | Primary Location | Purpose |
+|---|---|---|
+| Learning instructions | GitHub repo | Guides learners through each exercise |
+| Templates and checklists | GitHub repo | Provides reusable documentation aids |
+| Source PBIX reference | GitHub repo, optional | Provides a version-controlled starter reference |
+| Published HDB Resales report | Fabric Sandbox Workspace | Used by report consumers and report developers |
+| HDB Resales semantic model | Fabric Sandbox Workspace | Used for report development and semantic model review |
+| HDB Resales Lakehouse | Fabric Sandbox Workspace | Used for ingestion, cleaning, and data engineering activities |
+| HDB Resales source data | Fabric Sandbox Workspace, with optional public copy in repo | Used for data loading, analysis, and modelling |
+| Notebooks | Fabric Sandbox Workspace, with optional source copy in repo | Used for data preparation, segmentation, and modelling |
+| Dataflows and pipelines | Fabric Sandbox Workspace | Used for orchestration and transformation practice |
+| Completed learner outputs | Fabric Sandbox Workspace | Stores sandbox outputs created during exercises |
+
 ## Learning map
 
 ![HDB Resales sandbox experiment map](../../assets/images/hdb-resales-sandbox-experiment-map.png)
 
-## Series structure
+> Image: Map of the HDB Resales Sandbox Series showing how one public dataset supports report consumption, report development, data analysis, data engineering, data science, workspace ownership, department use case framing, and AI-ready data learning.
 
-The HDB Resales Sandbox Series is organised as follows:
+## Repo structure
+
+The repo structure for this sandbox series is:
 
 ```text
 09-sandbox-experiments/
@@ -97,22 +127,44 @@ The HDB Resales Sandbox Series is organised as follows:
 
 Some artefacts may be added progressively as the sandbox series develops.
 
-## Supporting artefacts
+## Fabric Sandbox Workspace structure
 
-Different users will use different artefacts depending on their pathway.
+The Fabric Sandbox Workspace should contain the working artefacts used by learners.
+
+Suggested workspace items:
+
+| Fabric Item | Suggested Name | Purpose |
+|---|---|---|
+| Report | `sandbox_hdb_resales_report` | Published report used for report consumer and report developer activities |
+| Semantic model | `sandbox_hdb_resales_semantic_model` | Model used for reporting, measure review, and semantic model exercises |
+| Lakehouse | `sandbox_hdb_resales_lakehouse` | Stores HDB resale source data, cleaned tables, and curated tables |
+| Notebook | `sandbox_hdb_resales_data_preparation_notebook` | Prepares and cleans HDB resale data |
+| Notebook | `sandbox_hdb_resales_market_segmentation_notebook` | Supports clustering or segmentation exercises |
+| Notebook | `sandbox_hdb_resales_price_band_prediction_notebook` | Supports simple modelling or prediction exercises |
+| Dataflow Gen2 | `sandbox_hdb_resales_dataflow` | Optional low-code transformation exercise |
+| Pipeline | `sandbox_hdb_resales_pipeline` | Optional orchestration exercise |
+| Output table | `sandbox_hdb_resales_model_output` | Stores sandbox model or segmentation outputs |
+
+The exact workspace item names may vary, but they should clearly indicate that the artefacts are sandbox learning assets.
+
+## Supporting artefacts in the repo
+
+Different users will use different repo artefacts depending on their pathway.
 
 | Artefact Area | Purpose |
 |---|---|
-| `assets/` | Stores the starting Power BI file and other reusable static artefacts |
-| `data/` | Stores public HDB resale sample data and data dictionary files |
-| `notebooks/` | Stores Fabric notebook exercises for preparation, segmentation, and modelling |
+| `assets/` | Stores the starting PBIX reference file and other reusable static artefacts |
+| `data/` | Stores public HDB resale sample data and data dictionary files, if included |
+| `notebooks/` | Stores source copies of Fabric notebook exercises, if included |
 | `templates/` | Stores exercise-specific copies of templates used during sandbox activities |
-| `model-output/` | Stores sandbox model outputs, cluster profiles, prediction outputs, or other experiment outputs |
+| `model-output/` | Stores sample sandbox model outputs, if included |
 | Experiment folders | Store step-by-step README files for each guided activity |
+
+The repo version should be treated as the documentation and source reference. The Fabric Sandbox Workspace version should be treated as the hands-on working environment.
 
 ## Starting PBIX artefact
 
-The starting Power BI file is stored at:
+The starting Power BI file may be stored in the repo as a reference copy:
 
 ```text
 09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
@@ -120,6 +172,7 @@ The starting Power BI file is stored at:
 
 This file is mainly used for:
 
+- Publishing the HDB Resales report into the Fabric Sandbox Workspace
 - Report consumer walkthrough
 - Dashboard design and storytelling
 - Report developer practice
@@ -127,11 +180,15 @@ This file is mainly used for:
 - Measure and KPI definition review
 - Demonstrating how curated data becomes a report
 
-Learners should work on copies where instructed and should not overwrite the shared starter file.
+Learners should usually interact with the published report in the Fabric Sandbox Workspace.
+
+Report developers may work on a copy of the PBIX or report where instructed. They should not overwrite the shared starter artefact.
 
 ## Source data
 
-Source data should be stored under:
+Source data should be loaded into the Fabric Sandbox Workspace, usually through a Lakehouse.
+
+Suggested repo reference location:
 
 ```text
 09-sandbox-experiments/hdb-resales/data/
@@ -143,6 +200,26 @@ Suggested files:
 hdb_resales_sample.csv
 hdb_resales_data_dictionary.md
 hdb_resales_modelling_sample.csv
+```
+
+Suggested Fabric Sandbox Workspace location:
+
+```text
+sandbox_hdb_resales_lakehouse
+```
+
+Possible Lakehouse structure:
+
+```text
+Files/
+└── hdb-resales/
+    └── raw/
+
+Tables/
+├── hdb_resales_raw
+├── hdb_resales_cleaned
+├── hdb_resales_curated
+└── hdb_resales_modelling
 ```
 
 The source data supports:
@@ -157,7 +234,9 @@ The source data should be treated as public sandbox data. If any derived dataset
 
 ## Notebooks
 
-Notebooks should be stored under:
+Notebooks should primarily live in the Fabric Sandbox Workspace so learners can run them.
+
+Suggested repo reference location:
 
 ```text
 09-sandbox-experiments/hdb-resales/notebooks/
@@ -171,11 +250,19 @@ hdb_resales_market_segmentation.ipynb
 hdb_resales_price_band_prediction.ipynb
 ```
 
+Suggested Fabric Sandbox Workspace items:
+
+```text
+sandbox_hdb_resales_data_preparation_notebook
+sandbox_hdb_resales_market_segmentation_notebook
+sandbox_hdb_resales_price_band_prediction_notebook
+```
+
 Notebooks should be used only in sandbox unless reviewed and approved for a department or production use case.
 
 ## Templates
 
-Exercise-specific templates should be stored under:
+Exercise-specific templates may be stored under:
 
 ```text
 09-sandbox-experiments/hdb-resales/templates/
@@ -204,7 +291,7 @@ The HDB Resales versions may be copied or adapted for specific sandbox exercises
 
 | No. | Experiment | Main Persona | Purpose | Status |
 |---|---|---|---|---|
-| 01 | [Report Consumer Walkthrough](./01-report-consumer-walkthrough/) | Report Consumer | Practise opening, filtering, and interpreting the HDB Resales report | Planned |
+| 01 | [Report Consumer Walkthrough](./01-report-consumer-walkthrough/) | Report Consumer | Practise opening, filtering, and interpreting the HDB Resales report | Drafted |
 | 02 | [Dashboard Design and Storytelling](./02-dashboard-design-and-storytelling/) | Report Developer | Improve dashboard clarity, layout, and visual storytelling | Planned |
 | 03 | [Semantic Model and KPI Definitions](./03-semantic-model-and-kpi-definitions/) | Report Developer / Data Analyst | Practise measure definitions, semantic modelling, and reuse | Planned |
 | 04 | [Lakehouse Ingestion and Cleaning](./04-lakehouse-ingestion-and-cleaning/) | Data Engineer | Load, clean, and prepare HDB resale data in a Lakehouse | Planned |
@@ -252,6 +339,7 @@ sandbox_hdb_resales_report
 sandbox_hdb_resales_semantic_model
 sandbox_hdb_resales_lakehouse
 sandbox_hdb_resales_dataflow
+sandbox_hdb_resales_pipeline
 sandbox_hdb_resales_segmentation_notebook
 sandbox_hdb_resales_price_trend_analysis
 ```
@@ -271,10 +359,10 @@ copy_of_copy_final
 
 Before starting any HDB Resales sandbox experiment, confirm:
 
-- [ ] I am working in the assigned sandbox workspace
+- [ ] I am working in the assigned Fabric Sandbox Workspace
 - [ ] I am using only public, mocked, synthetic, or approved non-sensitive data
 - [ ] I understand the purpose of the experiment
-- [ ] I know which artefact I should use
+- [ ] I know which Fabric artefact I should use
 - [ ] I will not overwrite shared starter artefacts
 - [ ] I will name my work clearly
 - [ ] I understand that sandbox outputs are not production assets
