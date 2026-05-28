@@ -4,7 +4,7 @@ This section provides reusable templates and checklists for Fabric onboarding, s
 
 Templates help users document their thinking clearly. Checklists help users avoid missing important security, access, ownership, refresh, and governance considerations.
 
-## Why templates matter
+## Why this section exists
 
 Fabric onboarding is not only about learning where to click.
 
@@ -19,41 +19,22 @@ Users also need to learn how to:
 - Plan refresh and monitoring
 - Decide whether an asset should remain sandbox or move beyond sandbox
 
-Templates make these practices easier to repeat.
+Templates and checklists make these practices easier to repeat.
 
 ![Templates and checklists overview](../assets/images/templates-checklists-overview.png)
 
 > Image: Overview showing templates and checklists for report context, insight summaries, use case canvas, workspace health, production readiness, refresh ownership, RLS testing, and sandbox experiment review.
 
-## Suggested folder structure
+## How this section is organised
 
-Use this structure:
+This section contains two types of reusable resources.
 
-```text
-11-templates-checklists/
-├── README.md
-├── templates/
-│   ├── report-context-note.md
-│   ├── insight-summary-template.md
-│   ├── use-case-canvas.md
-│   ├── workspace-inventory-template.md
-│   ├── workspace-health-note.md
-│   ├── model-card-template.md
-│   ├── release-note-template.md
-│   └── refresh-failure-note.md
-│
-└── checklists/
-    ├── sandbox-readiness-checklist.md
-    ├── workspace-access-checklist.md
-    ├── report-review-checklist.md
-    ├── semantic-model-review-checklist.md
-    ├── rls-testing-checklist.md
-    ├── refresh-monitoring-checklist.md
-    ├── productionisation-readiness-checklist.md
-    └── external-collaborator-checklist.md
-```
+| Resource Type | Folder | Purpose |
+|---|---|---|
+| Templates | [`templates/`](./templates/) | Reusable documents for report notes, insight summaries, use case framing, workspace reviews, model cards, release notes, and refresh failure notes |
+| Checklists | [`checklists/`](./checklists/) | Practical checklists for sandbox readiness, access review, report review, semantic model review, RLS testing, refresh monitoring, productionisation, and external collaborators |
 
-Some templates may also be copied into the HDB Resales sandbox folder when they are used for specific exercises:
+Some templates may also be copied into specific sandbox experiment folders when they are used for guided exercises. For example:
 
 ```text
 09-sandbox-experiments/hdb-resales/templates/
@@ -87,9 +68,9 @@ The version in `11-templates-checklists/` should be treated as the general reusa
 | Productionisation Readiness Checklist | Supports review before moving assets beyond sandbox or department use | [productionisation-readiness-checklist.md](./checklists/productionisation-readiness-checklist.md) |
 | External Collaborator Checklist | Supports review of guest account, licensing, access, sensitivity, and removal planning | [external-collaborator-checklist.md](./checklists/external-collaborator-checklist.md) |
 
-## When to use each template
+## When to use each template or checklist
 
-| Situation | Recommended template or checklist |
+| Situation | Recommended resource |
 |---|---|
 | Reviewing a report | Report Context Note, Report Review Checklist |
 | Writing an analytical finding | Insight Summary Template |
@@ -98,26 +79,53 @@ The version in `11-templates-checklists/` should be treated as the general reusa
 | Checking workspace health | Workspace Health Note |
 | Documenting a model or clustering output | Model Card Template |
 | Preparing a release or update | Release Note Template |
-| Reporting refresh or gateway failure | Refresh Failure Note |
+| Reporting refresh, gateway, pipeline, or connection failure | Refresh Failure Note |
 | Starting sandbox work | Sandbox Readiness Checklist |
 | Reviewing access requests | Workspace Access Checklist |
+| Reviewing a semantic model | Semantic Model Review Checklist |
 | Testing Row-Level Security | RLS Testing Checklist |
+| Setting up recurring refresh | Refresh and Monitoring Checklist |
 | Preparing for productionisation | Productionisation Readiness Checklist |
 | Onboarding an external collaborator | External Collaborator Checklist |
 
-## How to use these templates
+## How to use these resources
 
-Users should copy the relevant template into the working folder for their exercise or project.
+Users should copy the relevant template or checklist into the working folder for their exercise or project.
 
-For example:
+For example, a sandbox experiment may use:
 
 ```text
 09-sandbox-experiments/hdb-resales/templates/
 ```
 
-or into a project-specific documentation folder.
+A department use case may use a project-specific documentation folder.
+
+When using a template:
+
+1. Copy the template.
+2. Complete only the sections that are relevant.
+3. Keep the wording clear and concise.
+4. Add caveats, assumptions, and ownership details where needed.
+5. Store the completed template with the related report, dataset, model, or workspace documentation.
 
 Templates should be kept simple enough for users to complete. The goal is to support good thinking, not create unnecessary paperwork.
+
+## Relationship with the HDB Resales sandbox series
+
+The HDB Resales sandbox series may reuse selected templates from this section.
+
+For example:
+
+| HDB Resales Activity | Useful Resource |
+|---|---|
+| Report consumer walkthrough | Report Context Note |
+| Dashboard design and storytelling | Report Review Checklist |
+| Price trend analysis | Insight Summary Template |
+| Department use case framing | Use Case Canvas |
+| Workspace owner activity | Workspace Inventory Template, Workspace Health Note |
+| Market segmentation | Model Card Template |
+| Lakehouse ingestion and cleaning | Refresh and Monitoring Checklist |
+| AI-ready data and semantic layer | Semantic Model Review Checklist |
 
 ## Maintenance expectations
 
