@@ -23,8 +23,6 @@ Templates and checklists make these practices easier to repeat.
 
 ![Templates and checklists overview](../assets/images/templates-checklists-overview.png)
 
-> Image: Overview showing templates and checklists for report context, insight summaries, use case canvas, workspace health, production readiness, refresh ownership, RLS testing, and sandbox experiment review.
-
 ## How this section is organised
 
 This section contains two types of reusable resources.
