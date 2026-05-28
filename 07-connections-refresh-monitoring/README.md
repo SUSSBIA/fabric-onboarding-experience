@@ -25,8 +25,6 @@ This section helps users understand the operational side of Fabric usage.
 
 ![Placeholder: Fabric connections refresh and monitoring model](../assets/images/fabric-connections-refresh-monitoring-model.png)
 
-> Image placeholder: A diagram showing source data, connection, credential, gateway where needed, Fabric item, refresh schedule, monitoring, failure alert, owner, and escalation path.
-
 ## Core principle
 
 A Fabric asset should have clear ownership across its lifecycle.
