@@ -25,8 +25,6 @@ Before an asset becomes department-facing or production-facing, users should con
 
 ![Placeholder: Fabric deployment lifecycle](../assets/images/fabric-deployment-lifecycle.png)
 
-> Image placeholder: A lifecycle diagram showing sandbox experimentation, department workspace exploration, validation and review, BIA production workspace where applicable, monitoring, and retirement.
-
 ## Current deployment model
 
 The current deployment model is intentionally simple.
