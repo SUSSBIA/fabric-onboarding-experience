@@ -87,8 +87,6 @@ Most learners will use the HDB Resales artefacts already prepared in the Fabric 
 
 ![HDB Resales sandbox experiment map](../../assets/images/hdb-resales-sandbox-experiment-map.png)
 
-> Image: Map of the HDB Resales Sandbox Series showing how one public dataset supports report consumption, report development, data analysis, data engineering, data science, workspace ownership, department use case framing, and AI-ready data learning.
-
 ## How this series is organised in the repo
 
 This folder contains the guide, supporting files, and experiment pages for the HDB Resales Sandbox Series.
