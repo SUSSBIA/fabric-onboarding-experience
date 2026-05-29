@@ -61,12 +61,21 @@ The repo explains what to do.
 
 The Fabric Sandbox Workspace is where the hands-on work happens.
 
+## Accessing sandbox artefacts
+
+Hands-on artefacts are accessed through the assigned Fabric Sandbox Workspace.
+
+The actual workspace and artefact links are shared through internal BIA onboarding channels and are not published in this public repo.
+
+Each sandbox series or experiment page will provide the specific instructions for the report, Lakehouse, notebook, semantic model, or other artefact used in that activity.
+
 ## How this section is organised
 
 This section contains the sandbox experiment catalogue and the learning series folders.
 
 ```text
 09-sandbox-experiments/
+├── README.md
 └── hdb-resales/
     ├── README.md
     ├── data/
