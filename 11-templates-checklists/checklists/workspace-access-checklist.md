@@ -35,7 +35,7 @@ This checklist helps workspace owners, deputy workspace owners, department repre
 | Personal Workspace | Used for private drafts and individual exploration; not suitable for shared department or production assets |
 | Sandbox Workspace | Suitable for onboarding, learning, and experimentation using safe data |
 | Department Workspace | Access should align with department use case, ownership, data approval, and continuity expectations |
-| BIA Production Workspace | Access should be tightly controlled and reviewed by BIA |
+| BIA Production Workspace | Restricted to BIA users only. Non-BIA users should not be granted direct workspace access; approved outputs should be shared through approved report/app sharing channels |
 
 Confirm:
 
@@ -43,7 +43,8 @@ Confirm:
 - [ ] The request is not using a personal workspace for shared department work
 - [ ] The request is not using a sandbox workspace for official reporting
 - [ ] The request is not using a department workspace for unmanaged production use
-- [ ] The request is not using a BIA production workspace for experimentation or casual testing
+- [ ] The request is not granting BIA Production Workspace access to non-BIA users
+- [ ] Approved production outputs for non-BIA users are shared through approved report/app sharing channels instead of direct workspace membership
 
 ## 4. Ownership Continuity Check
 
@@ -91,7 +92,7 @@ Complete this section if the requester is not University staff.
 
 ## 8. Production and Escalation Check
 
-- [ ] The request does not involve unauthorised access to BIA production workspace
+- [ ] The request does not involve direct BIA Production Workspace access for non-BIA users
 - [ ] The request does not bypass tenant-level or administrator-controlled settings
 - [ ] The request does not involve preview, advanced, or capacity-heavy features without review
 - [ ] The request does not involve productionisation without BIA review
