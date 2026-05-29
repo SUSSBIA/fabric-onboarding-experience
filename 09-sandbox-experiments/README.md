@@ -48,6 +48,19 @@ Sandbox experiments should not use:
 
 Sandbox outputs are for learning and experimentation only. They should not be treated as official reports, validated analytics products, operational dashboards, production semantic models, or formal decision-support tools.
 
+## Workspace boundary for sandbox experiments
+
+Sandbox experiments should be completed in the assigned Fabric Sandbox Workspace.
+
+They should not be completed in a personal workspace, department workspace, or BIA production workspace unless the experiment explicitly says so.
+
+| Workspace Type           | Use for Sandbox Experiments? | Reason                                                                                                           |
+| ------------------------ | ---------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Personal Workspace       | No, unless instructed        | Personal workspaces are for private drafts and individual exploration, not shared onboarding exercises           |
+| Sandbox Workspace        | Yes                          | This is the correct place for guided onboarding and safe experimentation                                         |
+| Department Workspace     | No, unless approved          | Department workspaces are for department-owned use cases and working assets                                      |
+| BIA Production Workspace | No                           | Production workspaces are restricted to BIA users and are for governed, validated, BIA-managed production assets |
+
 ## Repo versus Fabric Sandbox Workspace
 
 The GitHub repo and the Fabric Sandbox Workspace serve different purposes.
@@ -108,7 +121,7 @@ Each series folder contains the guidance and supporting files for a specific san
 | Series      | Experiment                                                                                            | Main Persona                      | Status  |
 | ----------- | ----------------------------------------------------------------------------------------------------- | --------------------------------- | ------- |
 | HDB Resales | [01 Report Consumer Walkthrough](./hdb-resales/01-report-consumer-walkthrough/)                       | Report Consumer                   | Drafted |
-| HDB Resales | [02 Dashboard Design and Storytelling](./hdb-resales/02-dashboard-design-and-storytelling/)           | Report Developer                  | Planned |
+| HDB Resales | [02 Dashboard Design and Storytelling](./hdb-resales/02-dashboard-design-and-storytelling/)           | Report Developer                  | Drafted |
 | HDB Resales | [03 Semantic Model and KPI Definitions](./hdb-resales/03-semantic-model-and-kpi-definitions/)         | Report Developer / Data Analyst   | Planned |
 | HDB Resales | [04 Lakehouse Ingestion and Cleaning](./hdb-resales/04-lakehouse-ingestion-and-cleaning/)             | Data Engineer                     | Planned |
 | HDB Resales | [05 Market Segmentation](./hdb-resales/05-market-segmentation/)                                       | Data Scientist                    | Planned |
@@ -213,6 +226,7 @@ Before moving beyond sandbox, confirm:
 
 * There is a real business question
 * There is a department owner
+* There is a deputy department workspace owner, if a department workspace is needed
 * The intended users are known
 * The data source is approved
 * Sensitivity and access expectations are understood
@@ -221,15 +235,18 @@ Before moving beyond sandbox, confirm:
 
 Sandbox work should not be copied into department or production workspaces without review.
 
+BIA Production Workspaces are restricted to BIA users. Non-BIA users should consume approved production outputs through approved report or app sharing channels, not direct BIA Production Workspace membership.
+
 ## Related sections
 
-| Section                                                                      | Purpose                                                             |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| [Persona Pathways](../05-persona-pathways/)                                  | Choose a role-based learning pathway                                |
-| [Deployment Lifecycle Management](../06-deployment-lifecycle-management/)    | Understand how assets move beyond sandbox                           |
-| [Connections, Refresh and Monitoring](../07-connections-refresh-monitoring/) | Understand operational ownership and refresh responsibilities       |
-| [Data and Semantic Modelling](../08-data-and-semantic-modelling/)            | Understand grain, measures, semantic models, RLS, and AI-ready data |
-| [Templates and Checklists](../11-templates-checklists/)                      | Use reusable templates and checklists for review and documentation  |
+| Section                                                                      | Purpose                                                                           |
+| ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| [Workspace Operating Model](../03-workspace-operating-model/)                | Understand personal, sandbox, department, and BIA production workspace boundaries |
+| [Persona Pathways](../05-persona-pathways/)                                  | Choose a role-based learning pathway                                              |
+| [Deployment Lifecycle Management](../06-deployment-lifecycle-management/)    | Understand how assets move beyond sandbox                                         |
+| [Connections, Refresh and Monitoring](../07-connections-refresh-monitoring/) | Understand operational ownership and refresh responsibilities                     |
+| [Data and Semantic Modelling](../08-data-and-semantic-modelling/)            | Understand grain, measures, semantic models, RLS, and AI-ready data               |
+| [Templates and Checklists](../11-templates-checklists/)                      | Use reusable templates and checklists for review and documentation                |
 
 ## References and further learning
 
