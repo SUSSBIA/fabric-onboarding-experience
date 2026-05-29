@@ -69,19 +69,20 @@ The repo explains what to do. The Fabric Sandbox Workspace is where the hands-on
 
 Learners should perform hands-on work in the Fabric Sandbox Workspace, not directly inside the GitHub repo.
 
-## Accessing Microsoft Fabric
+## Accessing the Fabric Sandbox Workspace
 
-To access the Fabric Sandbox Workspace:
+To begin the HDB Resales Sandbox Series:
 
 1. Go to https://app.fabric.microsoft.com/
 2. Sign in using your University account.
-3. Select **Workspaces** from the left navigation.
+3. In the left navigation menu, select **Workspaces**.
 4. Open the assigned Fabric Sandbox Workspace.
-5. Open the HDB Resales report or related sandbox artefact.
 
-The actual workspace and report links are shared through internal BIA onboarding channels and are not published in this public repo.
+The specific report, semantic model, Lakehouse, notebook, or other artefact to use will be stated in each experiment page.
 
-If you cannot see the assigned workspace or report, check with the workspace owner or BIA contact.
+The actual workspace and artefact links are shared through internal BIA onboarding channels and are not published in this public repo.
+
+If you cannot see the assigned Fabric Sandbox Workspace, check with the workspace owner or BIA contact.
 
 ## Access notes
 
