@@ -6,19 +6,40 @@ This is especially useful for workspace owners, report developers, data engineer
 
 ## 1. Failure Summary
 
-| Field                          | Response                                                                                      |
-| ------------------------------ | --------------------------------------------------------------------------------------------- |
-| Asset name                     |                                                                                               |
-| Workspace                      |                                                                                               |
-| Item type                      | Report / Semantic Model / Dataflow Gen2 / Pipeline / Notebook / Lakehouse / Warehouse / Other |
-| Owner                          |                                                                                               |
-| Reported by                    |                                                                                               |
-| Failure date and time          |                                                                                               |
-| Last successful refresh or run |                                                                                               |
-| Issue status                   | New / Investigating / Resolved / Escalated / Monitoring                                       |
-| Business impact                | Low / Medium / High / Unsure                                                                  |
+| Field                                 | Response                                                                                      |
+| ------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Asset name                            |                                                                                               |
+| Workspace                             |                                                                                               |
+| Workspace type                        | Personal / Sandbox / Department / BIA Production                                              |
+| Item type                             | Report / Semantic Model / Dataflow Gen2 / Pipeline / Notebook / Lakehouse / Warehouse / Other |
+| Asset status                          | Sandbox / Draft / Prototype / UAT / Department / Production                                   |
+| Owner                                 |                                                                                               |
+| Workspace owner                       |                                                                                               |
+| Deputy workspace owner, if applicable |                                                                                               |
+| Reported by                           |                                                                                               |
+| Failure date and time                 |                                                                                               |
+| Last successful refresh or run        |                                                                                               |
+| Issue status                          | New / Investigating / Resolved / Escalated / Monitoring                                       |
+| Business impact                       | Low / Medium / High / Unsure                                                                  |
 
-## 2. Data Source and Connection
+## 2. Workspace and Use Context
+
+| Question                                                                                     | Response                  |
+| -------------------------------------------------------------------------------------------- | ------------------------- |
+| Is this a sandbox learning artefact?                                                         | Yes / No / Unsure         |
+| Is this a department working asset?                                                          | Yes / No / Unsure         |
+| Is this production-facing?                                                                   | Yes / No / Unsure         |
+| Are users currently relying on this output?                                                  | Yes / No / Unsure         |
+| Is user communication needed if the data is stale?                                           | Yes / No / Unsure         |
+| If BIA Production Workspace is involved, is direct workspace access restricted to BIA users? | Yes / No / Not applicable |
+
+Notes:
+
+* Sandbox failures should be treated as learning or exercise issues unless the exercise owner says otherwise.
+* Department and production-facing failures should have clearer ownership, escalation, and communication.
+* Non-BIA users should consume approved production outputs through approved report or app sharing channels, not direct BIA Production Workspace membership.
+
+## 3. Data Source and Connection
 
 | Field                       | Response                                                                                           |
 | --------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -30,7 +51,7 @@ This is especially useful for workspace owners, report developers, data engineer
 | Gateway required?           | Yes / No / Unsure                                                                                  |
 | Gateway name, if known      |                                                                                                    |
 
-## 3. Refresh or Run Details
+## 4. Refresh or Run Details
 
 | Field                      | Response                                                    |
 | -------------------------- | ----------------------------------------------------------- |
@@ -42,7 +63,7 @@ This is especially useful for workspace owners, report developers, data engineer
 | Number of failed attempts  |                                                             |
 | Is this a recurring issue? | Yes / No / Unsure                                           |
 
-## 4. Error Message
+## 5. Error Message
 
 | Field                                               | Response |
 | --------------------------------------------------- | -------- |
@@ -51,7 +72,7 @@ This is especially useful for workspace owners, report developers, data engineer
 | Screenshot available?                               | Yes / No |
 | Link to failed run or refresh history, if available |          |
 
-## 5. Recent Changes
+## 6. Recent Changes
 
 | Question                                                                         | Response          |
 | -------------------------------------------------------------------------------- | ----------------- |
@@ -62,12 +83,14 @@ This is especially useful for workspace owners, report developers, data engineer
 | Did workspace access or permissions change?                                      | Yes / No / Unsure |
 | Did the gateway status change?                                                   | Yes / No / Unsure |
 | Was the report, semantic model, pipeline, notebook, or dataflow recently edited? | Yes / No / Unsure |
+| Did the workspace owner or deputy owner change recently?                         | Yes / No / Unsure |
 
-## 6. Initial Checks Completed
+## 7. Initial Checks Completed
 
 | Check                                                         | Response                  |
 | ------------------------------------------------------------- | ------------------------- |
 | Confirmed asset name and workspace                            | Yes / No                  |
+| Confirmed workspace type and asset status                     | Yes / No                  |
 | Checked refresh or run history                                | Yes / No                  |
 | Checked error message                                         | Yes / No                  |
 | Checked whether data source is available                      | Yes / No / Not applicable |
@@ -75,29 +98,31 @@ This is especially useful for workspace owners, report developers, data engineer
 | Checked whether gateway is online                             | Yes / No / Not applicable |
 | Checked whether source schema changed                         | Yes / No / Not applicable |
 | Checked whether capacity or performance issue may be involved | Yes / No / Unsure         |
+| Checked whether users need to be informed about stale data    | Yes / No / Unsure         |
 
-## 7. Impact
+## 8. Impact
 
-| Question                                                 | Response          |
-| -------------------------------------------------------- | ----------------- |
-| Who is affected?                                         |                   |
-| Which reports or downstream assets are affected?         |                   |
-| Are users currently relying on stale data?               | Yes / No / Unsure |
-| Is this used for official reporting or decision support? | Yes / No / Unsure |
-| Is communication to users needed?                        | Yes / No / Unsure |
+| Question                                                   | Response          |
+| ---------------------------------------------------------- | ----------------- |
+| Who is affected?                                           |                   |
+| Which reports or downstream assets are affected?           |                   |
+| Are users currently relying on stale data?                 | Yes / No / Unsure |
+| Is this used for official reporting or decision support?   | Yes / No / Unsure |
+| Is communication to users needed?                          | Yes / No / Unsure |
+| What is the potential impact if the issue is not resolved? |                   |
 
-## 8. Escalation
+## 9. Escalation
 
-| Field                                      | Response                                                           |
-| ------------------------------------------ | ------------------------------------------------------------------ |
-| Escalation needed?                         | Yes / No / Unsure                                                  |
-| Escalation route                           | BIA / IT / Vendor / Department owner / Source system owner / Other |
-| Reason for escalation                      |                                                                    |
-| Information still needed before escalation |                                                                    |
-| Person or team contacted                   |                                                                    |
-| Date escalated                             |                                                                    |
+| Field                                      | Response                                                                                    |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| Escalation needed?                         | Yes / No / Unsure                                                                           |
+| Escalation route                           | BIA / IT / Vendor / Department owner / Deputy workspace owner / Source system owner / Other |
+| Reason for escalation                      |                                                                                             |
+| Information still needed before escalation |                                                                                             |
+| Person or team contacted                   |                                                                                             |
+| Date escalated                             |                                                                                             |
 
-## 9. Resolution
+## 10. Resolution
 
 | Field                        | Response          |
 | ---------------------------- | ----------------- |
@@ -108,7 +133,7 @@ This is especially useful for workspace owners, report developers, data engineer
 | Follow-up monitoring needed? | Yes / No / Unsure |
 | Preventive action needed?    | Yes / No / Unsure |
 
-## 10. Follow-Up Actions
+## 11. Follow-Up Actions
 
 | Action | Owner | Target Date | Status                           |
 | ------ | ----- | ----------- | -------------------------------- |
@@ -116,7 +141,7 @@ This is especially useful for workspace owners, report developers, data engineer
 |        |       |             | Not started / In progress / Done |
 |        |       |             | Not started / In progress / Done |
 
-## 11. Notes
+## 12. Notes
 
 | Area                  | Response |
 | --------------------- | -------- |
