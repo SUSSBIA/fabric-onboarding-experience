@@ -2,11 +2,11 @@
 
 Welcome to the Fabric Onboarding Guide.
 
-This repo helps learners understand how to start using Microsoft Fabric safely, progressively, and responsibly.
+This section is the first orientation step for learners who are starting with Microsoft Fabric.
 
-It provides a structured self-service pathway for users who need to learn Fabric through practical, role-based guidance and sandbox activities.
+Before doing hands-on work, learners should understand why Fabric onboarding is layered, why sandbox practice matters, and what questions to ask before creating or sharing Fabric artefacts.
 
-## Why this repo exists
+## Why this guide exists
 
 Microsoft Fabric is a powerful analytics platform, but successful adoption depends on more than tool access.
 
@@ -22,7 +22,7 @@ Users need to understand:
 * Who owns the asset after it is created
 * Who monitors refresh, connections, and operational issues
 
-This repo helps learners build those foundations before moving into hands-on work.
+This guide helps learners build those foundations before moving into hands-on work.
 
 ## Why onboarding is layered
 
@@ -36,43 +36,9 @@ The onboarding is layered so that learners move progressively from awareness to 
 
 ![Layered Fabric onboarding journey](../assets/images/layered-fabric-onboarding-journey.png)
 
-## Repo versus Fabric Sandbox Workspace
+## How to begin
 
-The GitHub repo and the Fabric Sandbox Workspace serve different purposes.
-
-| Area                     | Purpose                                                                                                       |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| GitHub repo              | Stores onboarding instructions, README files, templates, checklists, source references, and learning guidance |
-| Fabric Sandbox Workspace | Hosts the working artefacts that learners open, run, edit, copy, and practise with                            |
-
-The repo explains what to do.
-
-The Fabric Sandbox Workspace is where the hands-on work happens.
-
-## Who this repo is for
-
-This repo is intended for several learner groups.
-
-| User Group                 | How this repo helps                                                                                        |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| New Fabric users           | Understand the basics before using Fabric                                                                  |
-| Report consumers           | Learn how to access, filter, and interpret reports responsibly                                             |
-| Report developers          | Learn how to build or improve Power BI reports and dashboards                                              |
-| Department representatives | Understand how department use cases, ownership, and workspace boundaries fit into the operating model      |
-| Fabric enthusiasts         | Practise safely in sandbox workspaces using safe data                                                      |
-| Data analysts              | Build analytical confidence through guided activities and reusable patterns                                |
-| Data engineers             | Learn common Fabric data patterns such as Lakehouse, pipeline, notebook, connection, and refresh workflows |
-| Data scientists            | Explore advanced analytics experiments using public, mocked, synthetic, or approved non-sensitive data     |
-| Workspace owners           | Understand ownership, access, refresh, review, and operational responsibilities                            |
-| BIA colleagues             | Use the guide to support consistent Fabric onboarding and safe adoption                                    |
-
-## How to use this repo
-
-Start with the foundation sections.
-
-Then choose the persona pathway that best matches your role or learning need.
-
-After that, complete the relevant sandbox experiments in the assigned Fabric Sandbox Workspace.
+Start with the foundation sections before moving into persona pathways and sandbox experiments.
 
 Recommended sequence:
 
@@ -113,7 +79,7 @@ Review / Productionisation, where applicable
 
 ## Two connected learning tracks
 
-This repo supports two connected learning tracks.
+This guide supports two connected learning tracks.
 
 ### Track 1: Fabric Onboarding
 
@@ -151,29 +117,17 @@ Sandbox experiments should use only:
 
 Sandbox outputs should not be treated as official reports, validated analytics products, production dashboards, or formal decision-support tools.
 
-## Workspace operating model in brief
+## Workspace boundary reminder
 
 Fabric work should happen in the correct workspace.
 
-| Workspace Type           | Purpose                                                                                      |
-| ------------------------ | -------------------------------------------------------------------------------------------- |
-| Personal Workspace       | Individual exploration and private drafts                                                    |
-| Sandbox Workspace        | Guided onboarding and safe experimentation                                                   |
-| Department Workspace     | Department-level exploration, prototyping, and working assets                                |
-| BIA Production Workspace | BIA-managed production analytics assets with direct workspace access restricted to BIA users |
+For onboarding and hands-on practice, learners should use the assigned Fabric Sandbox Workspace.
 
-Simple rule:
+The full workspace boundary model is explained in:
 
-```text
-Personal workspace = private draft
-Sandbox workspace = safe learning
-Department workspace = department-owned working asset
-BIA production workspace = governed production asset restricted to BIA workspace users
-```
+[Workspace Operating Model](../03-workspace-operating-model/)
 
-Non-BIA users should not be granted direct BIA Production Workspace membership.
-
-Where approved production outputs need to be shared with non-BIA users, sharing should happen through approved report or app sharing channels.
+Before moving work beyond sandbox, check with the workspace owner or BIA contact.
 
 ## Before you start
 
