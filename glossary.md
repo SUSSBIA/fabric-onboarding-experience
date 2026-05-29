@@ -1,8 +1,8 @@
 # Glossary
 
-This glossary explains key terms used in the Fabric Onboarding Experience.
+This glossary explains key terms used in the Fabric Onboarding Guide.
 
-The aim is to help users understand common Microsoft Fabric, Power BI, analytics, governance, and onboarding terms in plain language.
+The aim is to help learners understand common Microsoft Fabric, Power BI, analytics, governance, and onboarding terms in plain language.
 
 ## A
 
@@ -26,9 +26,9 @@ Analytics thinking is not only about using tools. It is about knowing what the d
 
 ### Artefact
 
-A file, report, notebook, template, dataset, model, or other output used in the onboarding repo.
+A file, report, notebook, template, dataset, model, or other output used in the onboarding guide or Fabric Sandbox Workspace.
 
-Examples include `HDB_Resales.pbix`, a use case canvas, a notebook, or a report review note.
+Examples include a published report, a semantic model, a notebook, a use case canvas, a report review note, or a model card.
 
 ## B
 
@@ -42,7 +42,9 @@ In this onboarding guide, BIA refers to the team responsible for supporting Fabr
 
 A Fabric workspace reserved for BIA-managed production analytics assets.
 
-Assets in BIA production workspaces should have stronger control, validation, monitoring, ownership, and release practices.
+Assets in BIA Production Workspaces should have stronger control, validation, monitoring, ownership, and release practices.
+
+Direct workspace access to BIA Production Workspaces is restricted to BIA users. Non-BIA users should consume approved production outputs through approved report or app sharing channels.
 
 ### Bronze Layer
 
@@ -142,11 +144,19 @@ A Fabric workspace used for approved department-level exploration, prototyping, 
 
 Department workspace outputs are not automatically production assets.
 
+Department workspace requests should identify both a workspace owner and deputy workspace owner so that ownership does not depend on one person.
+
 ### Deployment Pipeline
 
 A Fabric lifecycle management feature that can help move content between development, test, and production stages.
 
 Not every onboarding or department use case requires a deployment pipeline.
+
+### Deputy Workspace Owner
+
+A backup accountable person for a department workspace.
+
+The deputy workspace owner helps support continuity if the workspace owner leaves, changes role, or is unavailable.
 
 ### Direct Lake
 
@@ -161,6 +171,8 @@ Users do not need to master Direct Lake during basic onboarding, but they should
 A person outside the University who may need access to Fabric or Power BI content.
 
 External collaborators may require Microsoft Entra B2B guest access, licensing review, and additional governance checks.
+
+External collaborators should not be granted direct access to BIA Production Workspaces.
 
 ## F
 
@@ -188,6 +200,12 @@ An object created or managed in Fabric.
 
 Examples include reports, semantic models, Lakehouses, Warehouses, notebooks, pipelines, dataflows, and dashboards.
 
+### Fabric Sandbox Workspace
+
+A Fabric workspace assigned for onboarding, learning, and safe experimentation.
+
+Hands-on onboarding activities should normally happen in the assigned Fabric Sandbox Workspace using public, mocked, synthetic, or approved non-sensitive data.
+
 ## G
 
 ### Gateway
@@ -214,11 +232,11 @@ The level of detail represented by one row in a dataset.
 
 Examples:
 
-| Dataset | Grain |
-|---|---|
-| HDB resale transaction table | One row per resale transaction |
-| Course feedback table | One row per survey response |
-| Enrolment table | One row per student-course enrolment |
+| Dataset                      | Grain                                |
+| ---------------------------- | ------------------------------------ |
+| HDB resale transaction table | One row per resale transaction       |
+| Course feedback table        | One row per survey response          |
+| Enrolment table              | One row per student-course enrolment |
 
 Understanding grain is essential for correct analysis.
 
@@ -320,11 +338,19 @@ This includes ownership of connections, credentials, refresh, monitoring, suppor
 
 A Power BI Desktop file.
 
-In this repo, `HDB_Resales.pbix` is used as a sandbox learning artefact for the HDB Resales Sandbox Series.
+A PBIX file may contain report pages, model metadata, measures, data connection details, or imported data depending on how it was built.
+
+For the HDB Resales Sandbox Series, learners should use the published report in the Fabric Sandbox Workspace. The PBIX file is not stored in this repo.
 
 ### Persona Pathway
 
 A learning pathway designed for a specific type of user, such as report consumer, report developer, data analyst, data engineer, data scientist, department representative, workspace owner, or Fabric enthusiast.
+
+### Personal Workspace
+
+A Fabric workspace intended for individual exploration and private drafts.
+
+A personal workspace should not be used for shared department assets, official reporting, or production work.
 
 ### Pipeline
 
@@ -461,6 +487,8 @@ A collaboration area in Fabric where users create, manage, and access items such
 ### Workspace Owner
 
 A person or group responsible for helping manage a workspace, coordinate access, keep content organised, and support responsible use.
+
+For department workspaces, there should also be a deputy workspace owner.
 
 ### Workspace Role
 
