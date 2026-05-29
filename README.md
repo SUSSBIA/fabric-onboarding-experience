@@ -1,264 +1,270 @@
-# Fabric Onboarding Experience
+# Fabric Onboarding Guide
 
-This repository provides a structured self-service onboarding experience for Microsoft Fabric users in the University context.
+This repo provides a learner-facing onboarding guide for Microsoft Fabric.
 
-It is designed to help BIA scale Fabric onboarding beyond one-to-one support by giving staff, department representatives, workspace owners, and Fabric enthusiasts a clear pathway to learn, practise, and apply Fabric safely.
+It is designed to help users understand how to start safely, choose the right learning pathway, practise in a Fabric Sandbox Workspace, and recognise when an artefact should remain sandbox or move towards department or production review.
 
-## Why this repo exists
+The guide is especially useful for users who need to learn Fabric through practical, role-based activities rather than product documentation alone.
 
-As interest in Microsoft Fabric grows across the University, BIA cannot provide high-touch onboarding support to every potential learner or department representative.
+## Purpose
 
-This repo therefore acts as an onboarding-at-scale resource.
+The purpose of this repo is to support structured Fabric onboarding.
 
-It helps users understand the foundations before entering Fabric, practise safely in sandbox environments, and follow learning pathways appropriate to their role and maturity level.
+It helps learners understand:
 
-The goal is not only to teach users how to use Fabric features, but also to build responsible analytics thinking.
+* How Fabric fits into the analytics operating model
+* How workspace boundaries work
+* Which pathway to follow based on their role
+* How to practise safely using sandbox experiments
+* How to use public or approved non-sensitive data for learning
+* How to document assumptions, caveats, and limitations
+* How to avoid treating sandbox outputs as official reports
+* When BIA review is needed
 
-Users should understand:
+This repo is a guide and learning resource. It is not the place where learners perform the hands-on work.
 
-- What they are allowed to access
-- Which workspace they should use
-- What data they can use safely
-- How shared Fabric capacity is consumed
-- When outputs are experimental
-- When assets may need review before productionisation
-- Who owns the asset after it is created
-- Who monitors refresh, connections, and operational issues
+Hands-on work should happen in the assigned Fabric Sandbox Workspace.
 
-## Onboarding philosophy
+## Repo versus Fabric Sandbox Workspace
 
-Fabric onboarding should be layered.
+The GitHub repo and the Fabric Sandbox Workspace serve different purposes.
 
-Users should not jump straight into creating reports, Lakehouses, pipelines, notebooks, semantic models, or dataflows without first understanding access, security, licensing, capacity, workspace boundaries, and responsible use.
+| Area                     | Purpose                                                                                                       |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| GitHub repo              | Stores onboarding instructions, README files, templates, checklists, source references, and learning guidance |
+| Fabric Sandbox Workspace | Hosts the working artefacts that learners open, run, edit, copy, and practise with                            |
 
-The recommended onboarding flow is:
+The repo explains what to do.
+
+The Fabric Sandbox Workspace is where the hands-on work happens.
+
+## Public repo safety
+
+This repo is intended to be safe for learner-facing use.
+
+Do not place the following in this public repo:
+
+* Direct Fabric workspace links
+* Direct report links
+* Direct semantic model links
+* Direct Lakehouse links
+* Internal SharePoint or Teams links
+* Confidential institutional data
+* Restricted institutional data
+* Student personal data
+* Staff personal data
+* Financial records
+* Donor records
+* Operational production data
+* Secrets, tokens, credentials, or connection strings
+
+Use generic Microsoft Fabric access instructions where needed:
 
 ```text
-Start Here
-   ↓
-Security, Access and Governance
-   ↓
-Licensing, Capacity and Compute Awareness
-   ↓
-Workspace Operating Model
-   ↓
-Start Using Fabric
-   ↓
-Persona Pathways
-   ↓
-Deployment Lifecycle Management
-   ↓
-Connections, Refresh and Monitoring
-   ↓
-Data and Semantic Modelling
-   ↓
-Sandbox Experiments
-   ↓
-Department Use Case Exploration
-   ↓
-Review / Productionisation, where applicable
+https://app.fabric.microsoft.com/
 ```
 
-## Sandbox-first principle
+Actual workspace and artefact links should be shared through internal BIA onboarding channels.
 
-All learners start in sandbox.
+## Workspace operating principle
 
-Sandbox workspaces are used for learning, experimentation, and practice using safe data.
+Fabric work should happen in the correct workspace.
 
-Sandbox exercises should use:
+| Workspace Type           | Purpose                                                                                      |
+| ------------------------ | -------------------------------------------------------------------------------------------- |
+| Personal Workspace       | Individual exploration and private drafts                                                    |
+| Sandbox Workspace        | Guided onboarding and safe experimentation                                                   |
+| Department Workspace     | Department-level exploration, prototyping, and working assets                                |
+| BIA Production Workspace | BIA-managed production analytics assets with direct workspace access restricted to BIA users |
 
-- Public data
-- Mocked data
-- Synthetic data
-- Approved non-sensitive data
+Simple rule:
 
-Sandbox exercises should not use:
+```text
+Personal workspace = private draft
+Sandbox workspace = safe learning
+Department workspace = department-owned working asset
+BIA production workspace = governed production asset restricted to BIA workspace users
+```
 
-- Real confidential institutional data
-- Real restricted institutional data
-- Student personal data
-- Staff personal data
-- Financial records
-- Donor records
-- Operational data from production systems
-- Any data that has not been approved for sandbox use
+Non-BIA users should not be granted direct BIA Production Workspace membership.
 
-Sandbox outputs are not production assets. They should not be treated as official reports, validated analytics products, operational dashboards, or formal decision-support tools.
+Where approved production outputs need to be shared with non-BIA users, sharing should happen through approved report or app sharing channels.
 
-## Current Fabric operating model
+## Who this guide is for
 
-The current operating model is based on three workspace patterns.
+This guide supports several learner groups.
 
-| Workspace Type | Purpose |
-|---|---|
-| Sandbox Workspace | Learning, experimentation, and practice using safe data |
-| Department Workspace | Department-level exploration, prototyping, development, and capability building |
-| BIA Production Workspace | BIA-managed production analytics assets |
+| Learner Group             | Typical Need                                                          |
+| ------------------------- | --------------------------------------------------------------------- |
+| Report Consumer           | View, filter, and interpret reports responsibly                       |
+| Report Developer          | Build or improve Power BI reports and dashboards                      |
+| Data Analyst              | Explore data, develop insights, and support analytical interpretation |
+| Data Engineer             | Load, prepare, transform, and manage data assets                      |
+| Data Scientist            | Build models, experiments, and analytical outputs responsibly         |
+| Department Representative | Frame use cases, clarify needs, and coordinate department ownership   |
+| Workspace Owner           | Manage workspace purpose, access, ownership, and continuity           |
+| Fabric Enthusiast         | Explore Fabric capabilities safely and progressively                  |
 
-At this stage, there is no formal shared or central workspace model for cross-department analytics assets. This may evolve as analytics maturity across the University develops.
+## How to use this repo
 
-## Local licensing and capacity context
+Start with the foundation sections, then choose a persona pathway, then complete the relevant sandbox experiments.
 
-All staff experience on Fabric is currently powered by the University’s Microsoft Office 365 Education A5 plan, which includes Power BI Pro capabilities.
+Recommended sequence:
 
-BIA has provisioned an F64 Fabric capacity for the University’s analytics workloads.
-
-A simple way to understand Fabric capacity is to think of it as buying a fixed amount of electricity for a household. Every action or activity in Fabric consumes compute, just as every appliance consumes electricity.
-
-This means Fabric users should treat capacity as a shared institutional resource.
-
-External collaborators may require:
-
-- Microsoft Entra B2B guest access
-- Power BI Pro or Premium Per User licensing review
-- Workspace access review
-- Sensitivity and sharing review
-- Time-bound access planning
-- BIA review where needed
-
-## BIA role
-
-BIA acts as the platform steward for the University’s Fabric analytics environment.
-
-In this onboarding context, BIA may be involved in:
-
-- Fabric onboarding design
-- Sandbox workspace enablement
-- Department workspace guidance
-- Tenant-level settings review
-- Capacity and workload considerations
-- Security and access escalation
-- Productionisation review
-- BIA production workspace management
-- Guidance on semantic models, deployment, refresh, and operational ownership
-
-Requests involving tenant-level settings, capacity-level settings, preview features, external collaboration, elevated permissions, or productionisation should be escalated to BIA for review.
+1. Start with the foundation sections
+2. Read the workspace operating model
+3. Choose a persona pathway
+4. Complete the relevant HDB Resales sandbox experiment
+5. Use templates and checklists to document your work
+6. Ask BIA if the work may move beyond sandbox
 
 ## Repo structure
 
-| Section | Purpose |
-|---|---|
-| [00 Start Here](./00-start-here/) | Entry point for the onboarding experience |
-| [01 Security, Access and Governance](./01-security-access-governance/) | Security, access, sensitivity labels, RLS awareness, and escalation |
-| [02 Licensing, Capacity and Compute Awareness](./02-licensing-capacity/) | Staff licensing, Power BI Pro, F64 capacity, and responsible compute use |
-| [03 Fabric Workspace Operating Model](./03-workspace-operating-model/) | Sandbox, department, and BIA production workspace patterns |
-| [04 Start Using Fabric](./04-start-using-fabric/) | First safe hands-on activities in the sandbox workspace |
-| [05 Persona Pathways](./05-persona-pathways/) | Role-based learning tracks for different user groups |
-| [06 Deployment Lifecycle Management](./06-deployment-lifecycle-management/) | Movement from sandbox to department workspace to production review |
-| [07 Connections, Refresh and Monitoring](./07-connections-refresh-monitoring/) | Connections, credentials, gateways, refresh, monitoring, and failure handling |
-| [08 Data and Semantic Modelling](./08-data-and-semantic-modelling/) | Grain, measures, semantic models, RLS, reuse, and AI-ready data |
-| [09 Sandbox Experiments](./09-sandbox-experiments/) | Hands-on HDB Resales sandbox experiments |
-| [10 Curated Learning Resources](./10-curated-learning-resources/) | Microsoft documentation, Microsoft Learn, and curated video resources |
-| [11 Templates and Checklists](./11-templates-checklists/) | Reusable templates and checklists for onboarding and review |
-| [Glossary](./glossary.md) | Plain-language definitions of key terms |
-| [Roadmap](./roadmap.md) | Current status and planned evolution of the repo |
+```text
+fabric-onboarding-guide/
+├── README.md
+├── 00-start-here/
+├── 01-security-access-governance/
+├── 02-licensing-capacity/
+├── 03-workspace-operating-model/
+├── 04-start-using-fabric/
+├── 05-persona-pathways/
+│   ├── report-consumer/
+│   ├── report-developer/
+│   ├── data-analyst/
+│   ├── data-engineer/
+│   ├── data-scientist/
+│   ├── department-representative/
+│   ├── workspace-owner/
+│   └── fabric-enthusiast/
+├── 06-deployment-lifecycle-management/
+├── 07-connections-refresh-monitoring/
+├── 08-data-and-semantic-modelling/
+├── 09-sandbox-experiments/
+│   └── hdb-resales/
+├── 10-curated-learning-resources/
+├── 11-templates-checklists/
+└── assets/
+    └── images/
+```
+
+## Foundation sections
+
+| Section                                                               | Purpose                                                                         |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| [Start Here](./00-start-here/)                                        | Introduces the onboarding guide and how to begin                                |
+| [Security, Access and Governance](./01-security-access-governance/)   | Covers safe access, sharing, sensitivity, and governance expectations           |
+| [Licensing, Capacity and Compute Awareness](./02-licensing-capacity/) | Explains licensing, capacity, and compute considerations at a learner level     |
+| [Workspace Operating Model](./03-workspace-operating-model/)          | Explains personal, sandbox, department, and BIA production workspace boundaries |
+| [Start Using Fabric](./04-start-using-fabric/)                        | Helps learners begin navigating and using Fabric safely                         |
 
 ## Persona pathways
 
-Users should choose the pathway closest to their immediate need.
+Persona pathways explain what different learner groups should know.
 
-| Persona | Pathway |
-|---|---|
-| Report Consumer | [Report Consumer Pathway](./05-persona-pathways/report-consumer/) |
-| Report Developer | [Report Developer Pathway](./05-persona-pathways/report-developer/) |
-| Data Analyst | [Data Analyst Pathway](./05-persona-pathways/data-analyst/) |
-| Data Engineer | [Data Engineer Pathway](./05-persona-pathways/data-engineer/) |
-| Data Scientist | [Data Scientist Pathway](./05-persona-pathways/data-scientist/) |
+| Pathway                   | Start Here                                                                            |
+| ------------------------- | ------------------------------------------------------------------------------------- |
+| Report Consumer           | [Report Consumer Pathway](./05-persona-pathways/report-consumer/)                     |
+| Report Developer          | [Report Developer Pathway](./05-persona-pathways/report-developer/)                   |
+| Data Analyst              | [Data Analyst Pathway](./05-persona-pathways/data-analyst/)                           |
+| Data Engineer             | [Data Engineer Pathway](./05-persona-pathways/data-engineer/)                         |
+| Data Scientist            | [Data Scientist Pathway](./05-persona-pathways/data-scientist/)                       |
 | Department Representative | [Department Representative Pathway](./05-persona-pathways/department-representative/) |
-| Workspace Owner | [Workspace Owner Pathway](./05-persona-pathways/workspace-owner/) |
-| Fabric Enthusiast | [Fabric Enthusiast Pathway](./05-persona-pathways/fabric-enthusiast/) |
+| Workspace Owner           | [Workspace Owner Pathway](./05-persona-pathways/workspace-owner/)                     |
+| Fabric Enthusiast         | [Fabric Enthusiast Pathway](./05-persona-pathways/fabric-enthusiast/)                 |
 
-Users may eventually follow more than one pathway, but they should start with the one closest to their role, responsibility, or learning interest.
+Persona pathway READMEs act as curriculum maps. They explain role purpose, learning objectives, key principles, expected evidence, and recommended hands-on experiments.
+
+They should not duplicate detailed step-by-step sandbox exercises.
+
+## Sandbox experiments
+
+Sandbox experiments provide hands-on practice.
+
+| Sandbox Series                                                      | Purpose                                                                                                                                            |
+| ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [HDB Resales Sandbox Series](./09-sandbox-experiments/hdb-resales/) | Public-data learning project for report consumption, dashboard design, data analysis, data engineering, semantic modelling, and advanced analytics |
+
+Sandbox experiment READMEs act as lesson worksheets. They provide step-by-step hands-on activities, outputs, reflection questions, and completion evidence.
 
 ## HDB Resales Sandbox Series
 
-The first sandbox learning project is the **HDB Resales Sandbox Series**.
+The HDB Resales Sandbox Series is the first hands-on learning project in this repo.
 
-It uses public HDB resale flat data as a safe and relatable dataset for onboarding.
+It uses public HDB resale flat data as a safe, relatable, and practical dataset for learning Microsoft Fabric.
 
-The HDB Resales Sandbox Series supports:
+The series supports:
 
-- Report consumption
-- Dashboard design
-- Data analysis
-- Semantic modelling
-- Lakehouse ingestion and cleaning
-- Market segmentation
-- Price trend analysis
-- Town and flat type comparison
-- AI-ready data and semantic layer thinking
+* Report consumption
+* Dashboard design
+* Semantic model and KPI review
+* Lakehouse ingestion and cleaning
+* Market segmentation
+* Price trend and affordability analysis
+* Town and flat type comparison
+* Geospatial and location analysis
+* AI-ready data and semantic layer thinking
 
-The starting Power BI artefact is:
+Start here:
 
-```text
-09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
-```
+[HDB Resales Sandbox Series](./09-sandbox-experiments/hdb-resales/)
 
-This file should be treated as a sandbox learning artefact.
+## Templates and checklists
 
-## HDB Resales sandbox experiment catalogue
+Reusable templates and checklists are stored in:
 
-| No. | Experiment | Main Persona |
-|---|---|---|
-| 01 | [Report Consumer Walkthrough](./09-sandbox-experiments/hdb-resales/01-report-consumer-walkthrough/) | Report Consumer |
-| 02 | [Dashboard Design and Storytelling](./09-sandbox-experiments/hdb-resales/02-dashboard-design-and-storytelling/) | Report Developer |
-| 03 | [Semantic Model and KPI Definitions](./09-sandbox-experiments/hdb-resales/03-semantic-model-and-kpi-definitions/) | Report Developer / Data Analyst |
-| 04 | [Lakehouse Ingestion and Cleaning](./09-sandbox-experiments/hdb-resales/04-lakehouse-ingestion-and-cleaning/) | Data Engineer |
-| 05 | [Market Segmentation](./09-sandbox-experiments/hdb-resales/05-market-segmentation/) | Data Scientist |
-| 06 | [Price Trend and Affordability Analysis](./09-sandbox-experiments/hdb-resales/06-price-trend-and-affordability-analysis/) | Data Analyst / Data Scientist |
-| 07 | [Town and Flat Type Comparison](./09-sandbox-experiments/hdb-resales/07-town-and-flat-type-comparison/) | Data Analyst |
-| 08 | [Geospatial and Location Analysis](./09-sandbox-experiments/hdb-resales/08-geospatial-location-analysis/) | Advanced Analyst |
-| 09 | [AI-Ready Data and Semantic Layer](./09-sandbox-experiments/hdb-resales/09-ai-ready-data-and-semantic-layer/) | Advanced User / Fabric Enthusiast |
+[Templates and Checklists](./11-templates-checklists/)
 
-Some experiment pages may be developed progressively. Check the [roadmap](./roadmap.md) for current status.
+These resources help learners and reviewers document:
 
-## Important cautions
+* Report context
+* Insight summaries
+* Use case framing
+* Workspace inventory
+* Workspace health
+* Model cards
+* Release notes
+* Refresh failures
+* Sandbox readiness
+* Workspace access
+* Report review
+* Semantic model review
+* RLS testing
+* Refresh monitoring
+* Productionisation readiness
+* External collaborator review
 
-### Sandbox outputs are not official
+## Important governance reminders
 
-Sandbox reports, models, notebooks, and datasets are for learning and experimentation.
+* Sandbox outputs are learning artefacts
+* Sandbox outputs are not official reports
+* Sandbox outputs should not be copied into department or production workspaces without review
+* Department workspaces require clear ownership
+* Department workspace requests should identify both a workspace owner and deputy workspace owner
+* BIA Production Workspaces are restricted to BIA users
+* Non-BIA users should consume approved production outputs through approved report/app sharing channels
+* Workspace access does not automatically mean permission to export, reuse, or redistribute data
+* Confidential or restricted institutional data should not be used in sandbox unless explicitly approved
 
-They should not be used for formal reporting, operational decision-making, or wider sharing unless reviewed and approved.
+## When to ask BIA
 
-### Workspace access does not equal data approval
+Ask BIA when:
 
-Having access to a workspace does not mean a user is approved to use all data, export all outputs, or share content freely.
+* You are unsure which workspace should be used
+* A sandbox output may become a department use case
+* A department workspace request does not have both an owner and deputy owner
+* A department asset may become production-facing
+* Confidential or restricted data may be involved
+* External collaborators need access
+* RLS may be required
+* A semantic model is intended for reuse
+* A report is intended for wider sharing
+* A connection, gateway, or refresh setup needs operational support
+* A tenant-level or capacity-level setting is involved
+* A non-BIA user needs access to an approved BIA production output
 
-Users should still follow sensitivity label guidance, access expectations, and sharing rules.
+## Getting started
 
-### Licensing does not override governance
+Begin with:
 
-Having Power BI Pro or Fabric access does not override workspace roles, item permissions, data sensitivity, RLS, or production review.
-
-### Getting something to work once is not productionisation
-
-A report, pipeline, notebook, semantic model, or dashboard that works once in sandbox is not automatically ready for department or production use.
-
-Productionisation requires review, validation, ownership, refresh planning, access control, and support arrangements.
-
-## Suggested first steps
-
-New users should start here:
-
-1. Read [Start Here](./00-start-here/)
-2. Read [Security, Access and Governance](./01-security-access-governance/)
-3. Read [Licensing, Capacity and Compute Awareness](./02-licensing-capacity/)
-4. Read [Fabric Workspace Operating Model](./03-workspace-operating-model/)
-5. Complete [Start Using Fabric](./04-start-using-fabric/)
-6. Choose a pathway from [Persona Pathways](./05-persona-pathways/)
-7. Practise using the [HDB Resales Sandbox Series](./09-sandbox-experiments/)
-
-## Status
-
-This repository is evolving.
-
-Current focus:
-
-- Establish foundation onboarding materials
-- Build persona pathways
-- Develop the HDB Resales Sandbox Series
-- Add reusable templates and checklists
-- Curate Microsoft documentation, Microsoft Learn, and video resources
-- Prepare the repo for internal sharing and onboarding at scale
-
-See the [roadmap](./roadmap.md) for the current build status and planned next steps.
+[Start Here](./00-start-here/)
