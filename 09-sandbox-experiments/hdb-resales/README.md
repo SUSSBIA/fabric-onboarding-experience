@@ -1,8 +1,10 @@
 # HDB Resales Sandbox Series
 
-The HDB Resales Sandbox Series is the first hands-on learning project for the Fabric Onboarding Experience.
+The HDB Resales Sandbox Series is the first hands-on learning project for the Fabric Onboarding Guide.
 
-It uses public HDB resale flat data as a safe, relatable, and practical dataset for learning Microsoft Fabric. The same sandbox project supports different learning pathways, from basic report consumption to dashboard design, data analysis, data engineering, semantic modelling, and advanced analytics.
+It uses public HDB resale flat data as a safe, relatable, and practical dataset for learning Microsoft Fabric.
+
+The same sandbox project supports different learning pathways, from basic report consumption to dashboard design, data analysis, data engineering, semantic modelling, and advanced analytics.
 
 ## Why HDB Resales is used
 
@@ -16,7 +18,7 @@ The HDB Resales dataset is useful for onboarding because it is:
 * Useful for semantic modelling and measure definition exercises
 * Extendable into segmentation, modelling, geospatial thinking, and AI-ready data discussions
 
-This makes it a good anchor project for onboarding at scale.
+This makes it a good anchor project for safe Fabric practice.
 
 ## What this series helps learners practise
 
@@ -56,6 +58,25 @@ Do not use:
 
 Sandbox outputs are for learning and experimentation only. They are not official reports, production semantic models, operational dashboards, or formal decision-support tools.
 
+## Workspace boundary for this series
+
+The HDB Resales Sandbox Series should be completed in the assigned Fabric Sandbox Workspace.
+
+Do not complete these exercises in:
+
+* A personal workspace
+* A department workspace
+* A BIA Production Workspace
+
+unless the exercise explicitly instructs you to do so.
+
+| Workspace Type           | Use for HDB Resales Sandbox Series? | Reason                                                                                                           |
+| ------------------------ | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Personal Workspace       | No, unless instructed               | Personal workspaces are for private drafts and individual exploration, not shared sandbox exercises              |
+| Sandbox Workspace        | Yes                                 | This is the correct place for guided onboarding and safe experimentation                                         |
+| Department Workspace     | No, unless approved                 | Department workspaces are for department-owned use cases and working assets                                      |
+| BIA Production Workspace | No                                  | Production workspaces are restricted to BIA users and are for governed, validated, BIA-managed production assets |
+
 ## Repo versus Fabric Sandbox Workspace
 
 The HDB Resales Sandbox Series uses both this GitHub repo and a Fabric Sandbox Workspace.
@@ -91,6 +112,7 @@ If you cannot see the assigned Fabric Sandbox Workspace, check with the workspac
 * Do not use **Publish to web**.
 * Do not upload confidential or restricted institutional data into the sandbox workspace.
 * Do not treat access to the workspace as permission to reuse, export, or redistribute data.
+* Do not copy sandbox outputs into a department or production workspace without review.
 
 ## Where learners will work
 
@@ -180,15 +202,15 @@ The exact workspace item names may vary, but the artefacts should be clearly lab
 
 ## Supporting files in the repo
 
-The repo stores learning materials and source references.
+The repo provides supporting learning materials for the HDB Resales Sandbox Series.
 
-| Folder             | Purpose                                                                        |
-| ------------------ | ------------------------------------------------------------------------------ |
-| `data/`            | Stores public HDB resale sample data and data dictionary files, where provided |
-| `notebooks/`       | Stores source copies of notebook exercises, where provided                     |
-| `templates/`       | Stores exercise-specific copies of templates used during sandbox activities    |
-| `model-output/`    | Stores sample sandbox model outputs, where provided                            |
-| Experiment folders | Store step-by-step README files for each guided activity                       |
+| Folder             | Purpose                                                    |
+| ------------------ | ---------------------------------------------------------- |
+| `data/`            | Public sample data and data dictionary files for reference |
+| `notebooks/`       | Notebook source copies for selected learning activities    |
+| `templates/`       | Exercise-specific templates used during sandbox activities |
+| `model-output/`    | Sample sandbox model outputs for review or interpretation  |
+| Experiment folders | Step-by-step README files for each guided activity         |
 
 The repo version is for documentation and source reference.
 
@@ -359,6 +381,7 @@ Before moving beyond sandbox, confirm:
 
 * There is a real business question
 * There is a department owner
+* There is a deputy workspace owner, if a department workspace is needed
 * The intended users are known
 * The data source is approved
 * Sensitivity and access expectations are understood
@@ -366,6 +389,8 @@ Before moving beyond sandbox, confirm:
 * BIA is involved if productionisation may be required
 
 Sandbox work should not be copied into department or production workspaces without review.
+
+BIA Production Workspaces are restricted to BIA users. Non-BIA users should consume approved production outputs through approved report or app sharing channels, not direct BIA Production Workspace membership.
 
 ## Related sections
 
