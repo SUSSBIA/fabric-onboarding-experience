@@ -1,6 +1,6 @@
 # Report Consumer Pathway
 
-This pathway is for users who mainly need to view, filter, interpret, and use Power BI reports or dashboards responsibly.
+This pathway is for learners who mainly need to view, filter, interpret, and use Power BI reports or dashboards responsibly.
 
 Report consumers are not expected to build data pipelines, create Lakehouses, write notebooks, or design semantic models. Their main responsibility is to understand how to use reports safely, interpret outputs correctly, and avoid inappropriate sharing or export.
 
@@ -20,7 +20,7 @@ Choose this pathway if you mainly need to:
 
 ## Learning objectives
 
-By the end of this pathway, users should be able to:
+By the end of this pathway, learners should be able to:
 
 * Explain what a report consumer does
 * Access the assigned Fabric Sandbox Workspace
@@ -35,7 +35,7 @@ By the end of this pathway, users should be able to:
 
 ## Prerequisites
 
-Before starting this pathway, users should complete:
+Before starting this pathway, learners should complete:
 
 1. [Start Here](../../00-start-here/)
 2. [Security, Access and Governance](../../01-security-access-governance/)
@@ -43,13 +43,13 @@ Before starting this pathway, users should complete:
 4. [Fabric Workspace Operating Model](../../03-workspace-operating-model/)
 5. [Start Using Fabric](../../04-start-using-fabric/)
 
-Users should also know which Fabric Sandbox Workspace they have been assigned to.
+Learners should also know which Fabric Sandbox Workspace they have been assigned to.
 
 ## What report consumers should understand
 
 Report consumers should understand that a report is not just a set of visuals.
 
-Before interpreting a report, users should check:
+Before interpreting a report, learners should check:
 
 | Area        | Question                                                                    |
 | ----------- | --------------------------------------------------------------------------- |
@@ -69,11 +69,13 @@ This habit helps reduce misinterpretation and prevents sandbox outputs from bein
 
 All hands-on practice for this pathway should be completed in the assigned Fabric Sandbox Workspace.
 
-The HDB Resales sandbox report is used because it is based on public and relatable data. It allows users to practise report consumption and interpretation without using confidential institutional data.
+The HDB Resales sandbox report is used because it is based on public and relatable data. It allows learners to practise report consumption and interpretation without using confidential institutional data.
 
-Users should not upload real confidential or restricted data for this pathway.
+Learners should not upload real confidential or restricted data for this pathway.
 
 ![Report consumer sandbox learning path](../../assets/images/report-consumer-sandbox-learning-path.png)
+
+> Image: Report consumer sandbox learning path showing how learners access the sandbox workspace, open a report, check report context, use filters, interact with visuals, interpret one insight responsibly, and identify what not to do.
 
 ## Recommended hands-on experiment
 
@@ -83,7 +85,7 @@ Start with:
 
 This experiment gives step-by-step practice in:
 
-* Opening the HDB Resales report in the Fabric Sandbox Workspace
+* Opening the HDB Resales report in the assigned Fabric Sandbox Workspace
 * Checking report context
 * Using filters and slicers
 * Interacting with visuals
@@ -128,6 +130,14 @@ If numbers look incorrect, outdated, or confusing, ask the report owner, workspa
 
 Do not quietly rely on a report that appears questionable.
 
+## BIA production output reminder
+
+BIA Production Workspaces are restricted to BIA users.
+
+Non-BIA users should not be granted direct BIA Production Workspace membership.
+
+Where approved BIA production reports or outputs need to be shared with non-BIA users, access should be provided through approved report or app sharing channels.
+
 ## What report consumers should not do
 
 Report consumers should not:
@@ -144,7 +154,7 @@ Report consumers should not:
 
 ## Expected completion evidence
 
-At the end of this pathway, users should be able to provide:
+At the end of this pathway, learners should be able to provide:
 
 * The name of the report used for practice
 * A completed report context note
@@ -157,15 +167,15 @@ The hands-on evidence is produced through the HDB Resales report consumer walkth
 
 ## Related templates and checklists
 
-| Resource                                                                                        | Purpose                                                                                           |
-| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| [Report Context Note](../../11-templates-checklists/templates/report-context-note.md)           | Helps users record report purpose, owner, refresh date, sensitivity label, caveats, and questions |
-| [Insight Summary Template](../../11-templates-checklists/templates/insight-summary-template.md) | Helps users write an observation with caveat and follow-up question                               |
-| [Report Review Checklist](../../11-templates-checklists/checklists/report-review-checklist.md)  | Helps users review whether a report is clear, safe, and fit for use                               |
+| Resource                                                                                        | Purpose                                                                                              |
+| ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [Report Context Note](../../11-templates-checklists/templates/report-context-note.md)           | Helps learners record report purpose, owner, refresh date, sensitivity label, caveats, and questions |
+| [Insight Summary Template](../../11-templates-checklists/templates/insight-summary-template.md) | Helps learners write an observation with caveat and follow-up question                               |
+| [Report Review Checklist](../../11-templates-checklists/checklists/report-review-checklist.md)  | Helps learners review whether a report is clear, safe, and fit for use                               |
 
 ## Minimum checklist
 
-Before completing this pathway, users should confirm:
+Before completing this pathway, learners should confirm:
 
 * [ ] I understand the role of a report consumer
 * [ ] I can access the assigned Fabric Sandbox Workspace
@@ -177,6 +187,7 @@ Before completing this pathway, users should confirm:
 * [ ] I can write one insight with a caveat
 * [ ] I understand that sandbox reports are not official production reports
 * [ ] I know not to export, screenshot, or share unless permitted
+* [ ] I know that direct BIA Production Workspace access is restricted to BIA users
 * [ ] I know who to ask if something looks wrong
 
 ## References and further learning
