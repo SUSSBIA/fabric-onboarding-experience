@@ -10,6 +10,7 @@ Productionisation means preparing an asset for formal, wider-facing, monitored, 
 | ---------------------- | --------------------------------------------------------------------------------------------------------- |
 | Asset name             |                                                                                                           |
 | Workspace              |                                                                                                           |
+| Current workspace type | Personal / Sandbox / Department / BIA Production                                                          |
 | Asset type             | Report / Semantic Model / Lakehouse / Warehouse / Notebook / Pipeline / Dataflow Gen2 / Dashboard / Other |
 | Current status         | Sandbox / Draft / Prototype / UAT / Department / Production candidate                                     |
 | Proposed status        | Department working asset / BIA production asset / Other                                                   |
@@ -34,7 +35,7 @@ Productionisation means preparing an asset for formal, wider-facing, monitored, 
 * [ ] Business owner is identified
 * [ ] Technical owner is identified
 * [ ] Workspace owner is identified
-* [ ] Deputy workspace owner is identified
+* [ ] Deputy workspace owner is identified, especially for department workspace assets
 * [ ] Ownership continuity is confirmed if the current owner leaves, changes role, or is unavailable
 * [ ] Data owner is identified
 * [ ] Data steward or subject matter expert is identified, if applicable
@@ -121,6 +122,7 @@ Productionisation means preparing an asset for formal, wider-facing, monitored, 
 * [ ] Git integration or deployment pipeline need is assessed
 * [ ] User communication is prepared, if needed
 * [ ] Retirement or replacement of older assets is considered
+* [ ] Sandbox or prototype artefacts are not copied directly into production without review
 
 ## 11. BIA Review
 
@@ -135,14 +137,15 @@ Productionisation means preparing an asset for formal, wider-facing, monitored, 
 
 ## 12. Readiness Decision
 
-| Decision Area               | Response                                                                            |
-| --------------------------- | ----------------------------------------------------------------------------------- |
-| Productionisation readiness | Ready / Ready with caveats / Not ready / Keep as department asset / Keep as sandbox |
-| Main reasons                |                                                                                     |
-| Required fixes              |                                                                                     |
-| Approval or reviewer        |                                                                                     |
-| Follow-up owner             |                                                                                     |
-| Target date                 |                                                                                     |
+| Decision Area                           | Response                                                                            |
+| --------------------------------------- | ----------------------------------------------------------------------------------- |
+| Productionisation readiness             | Ready / Ready with caveats / Not ready / Keep as department asset / Keep as sandbox |
+| Main reasons                            |                                                                                     |
+| Required fixes                          |                                                                                     |
+| Approval or reviewer                    |                                                                                     |
+| Approved sharing channel, if applicable | Report sharing / App sharing / Other / Not applicable                               |
+| Follow-up owner                         |                                                                                     |
+| Target date                             |                                                                                     |
 
 ## 13. Final Checklist
 
@@ -150,7 +153,7 @@ Productionisation means preparing an asset for formal, wider-facing, monitored, 
 * [ ] Business owner is identified
 * [ ] Technical owner is identified
 * [ ] Workspace owner is identified
-* [ ] Deputy workspace owner is identified
+* [ ] Deputy workspace owner is identified, especially for department workspace assets
 * [ ] Data owner or subject matter expert is identified
 * [ ] Data source is approved
 * [ ] Sensitivity label is applied where needed
