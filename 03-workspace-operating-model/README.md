@@ -135,24 +135,29 @@ A report, semantic model, Lakehouse, notebook, pipeline, dataflow, or dashboard 
 
 ## BIA production workspace boundary
 
-BIA production workspaces are reserved for BIA-managed production analytics assets.
+BIA production workspaces are reserved for BIA-managed production analytics assets and are restricted to BIA users.
 
 These workspaces are suitable for:
 
-* Validated production reports
-* Governed semantic models
-* Monitored production dashboards
-* Analytics assets with clear ownership, refresh, access control, and support arrangements
-* Assets that have been reviewed for wider or official use
+- Validated production reports
+- Governed semantic models
+- Monitored production dashboards
+- Analytics assets with clear ownership, refresh, access control, and support arrangements
+- Assets that have been reviewed for wider or official use
 
 BIA production workspaces are not suitable for:
 
-* Personal experimentation
-* Early prototypes
-* Unreviewed department reports
-* Training exercises
-* Casual testing
-* Unclear or unsupported assets
+- Personal experimentation
+- Early prototypes
+- Unreviewed department reports
+- Training exercises
+- Casual testing
+- Unclear or unsupported assets
+- Direct workspace access by non-BIA users
+
+Non-BIA users should not be added directly to BIA production workspaces.
+
+Where approved production reports or outputs need to be shared with non-BIA users, sharing should happen through approved report/app sharing channels, not by granting direct workspace membership.
 
 Assets should only move into BIA production workspaces after review.
 
@@ -181,7 +186,8 @@ Use this guide when deciding where work should happen.
 | I am building something for a department use case | Department Workspace                                                  |
 | I am working with confidential or restricted data | Department Workspace or BIA Production Workspace, subject to approval |
 | I am preparing an official report                 | Department Workspace or BIA Production Workspace, subject to review   |
-| I am building a BIA-managed production report     | BIA Production Workspace                                              |
+| I am building or maintaining a BIA-managed production report as a BIA user | BIA Production Workspace |
+| I am a non-BIA user who needs to view an approved production output | Approved report/app sharing channel, not direct BIA Production Workspace access |
 | I am unsure where this should go                  | Ask the workspace owner or BIA                                        |
 
 ## Movement between workspaces
