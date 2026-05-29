@@ -132,7 +132,6 @@ fabric-onboarding-guide/
 │   └── hdb-resales/
 ├── 10-curated-learning-resources/
 ├── 11-templates-checklists/
-├── CONTRIBUTING.md
 └── assets/
     └── images/
 ```
