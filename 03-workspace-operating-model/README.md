@@ -76,7 +76,7 @@ Personal workspaces are not suitable for:
 * Work that other users need to maintain
 * Artefacts that should survive beyond the individual creator
 
-If an artefact becomes useful beyond personal learning, it should be moved into the appropriate sandbox or department workspace after review.
+If an artefact becomes useful beyond personal learning, it should be reviewed before being recreated, copied, or transitioned into the appropriate sandbox or department workspace.
 
 ## Sandbox workspace boundary
 
