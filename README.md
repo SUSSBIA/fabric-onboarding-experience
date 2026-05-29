@@ -38,33 +38,21 @@ The repo explains what to do.
 
 The Fabric Sandbox Workspace is where the hands-on work happens.
 
-## Public repo safety
+## Accessing Fabric artefacts
 
-This repo is intended to be safe for learner-facing use.
+This repo does not contain direct links to internal Fabric workspaces, reports, semantic models, Lakehouses, or other internal artefacts.
 
-Do not place the following in this public repo:
-
-* Direct Fabric workspace links
-* Direct report links
-* Direct semantic model links
-* Direct Lakehouse links
-* Internal SharePoint or Teams links
-* Confidential institutional data
-* Restricted institutional data
-* Student personal data
-* Staff personal data
-* Financial records
-* Donor records
-* Operational production data
-* Secrets, tokens, credentials, or connection strings
-
-Use generic Microsoft Fabric access instructions where needed:
+To access Microsoft Fabric:
 
 ```text
 https://app.fabric.microsoft.com/
 ```
 
-Actual workspace and artefact links should be shared through internal BIA onboarding channels.
+Sign in using your University account and follow the instructions in the relevant onboarding section or sandbox experiment.
+
+For hands-on activities, learners will use the assigned Fabric Sandbox Workspace. The specific workspace and artefact access details will be provided through internal BIA onboarding channels.
+
+If you cannot find the assigned workspace or artefact, check with the workspace owner or BIA contact.
 
 ## Workspace operating principle
 
@@ -144,6 +132,7 @@ fabric-onboarding-guide/
 │   └── hdb-resales/
 ├── 10-curated-learning-resources/
 ├── 11-templates-checklists/
+├── CONTRIBUTING.md
 └── assets/
     └── images/
 ```
@@ -262,6 +251,14 @@ Ask BIA when:
 * A connection, gateway, or refresh setup needs operational support
 * A tenant-level or capacity-level setting is involved
 * A non-BIA user needs access to an approved BIA production output
+
+## Maintainer and contributor notes
+
+This repo should remain learner-facing and public-safe.
+
+Repo maintenance guidance, including public repo safety rules, should be placed in:
+
+[CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## Getting started
 
