@@ -8,8 +8,6 @@ Understanding workspace boundaries is important because not all work belongs in 
 
 ![Fabric workspace operating model](../assets/images/fabric-workspace-operating-model.png)
 
-> Image: Overview of the personal, sandbox, department, and BIA production workspace patterns, including their purposes, expected users, data expectations, output status, and typical workspace journey.
-
 ## Why workspace operating model matters
 
 Microsoft Fabric makes it easy to create and share analytics artefacts. Without a clear workspace operating model, users may accidentally create confusion, duplication, access risks, or unsupported assets.
