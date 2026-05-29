@@ -149,7 +149,9 @@ fabric-onboarding-guide/
 
 ## Persona pathways
 
-Persona pathways explain what different learner groups should know.
+Persona pathway pages help learners understand what they should know for their role before starting hands-on practice.
+
+Each pathway explains the role purpose, learning objectives, key principles, expected evidence, and recommended sandbox experiments.
 
 | Pathway                   | Start Here                                                                            |
 | ------------------------- | ------------------------------------------------------------------------------------- |
@@ -162,19 +164,15 @@ Persona pathways explain what different learner groups should know.
 | Workspace Owner           | [Workspace Owner Pathway](./05-persona-pathways/workspace-owner/)                     |
 | Fabric Enthusiast         | [Fabric Enthusiast Pathway](./05-persona-pathways/fabric-enthusiast/)                 |
 
-Persona pathway READMEs act as curriculum maps. They explain role purpose, learning objectives, key principles, expected evidence, and recommended hands-on experiments.
-
-They should not duplicate detailed step-by-step sandbox exercises.
-
 ## Sandbox experiments
 
-Sandbox experiments provide hands-on practice.
+Sandbox experiment pages provide the hands-on practice activities.
+
+Each experiment guides learners through practical tasks, expected outputs, reflection questions, and completion evidence.
 
 | Sandbox Series                                                      | Purpose                                                                                                                                            |
 | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [HDB Resales Sandbox Series](./09-sandbox-experiments/hdb-resales/) | Public-data learning project for report consumption, dashboard design, data analysis, data engineering, semantic modelling, and advanced analytics |
-
-Sandbox experiment READMEs act as lesson worksheets. They provide step-by-step hands-on activities, outputs, reflection questions, and completion evidence.
 
 ## HDB Resales Sandbox Series
 
@@ -251,14 +249,6 @@ Ask BIA when:
 * A connection, gateway, or refresh setup needs operational support
 * A tenant-level or capacity-level setting is involved
 * A non-BIA user needs access to an approved BIA production output
-
-## Maintainer and contributor notes
-
-This repo should remain learner-facing and public-safe.
-
-Repo maintenance guidance, including public repo safety rules, should be placed in:
-
-[CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## Getting started
 
