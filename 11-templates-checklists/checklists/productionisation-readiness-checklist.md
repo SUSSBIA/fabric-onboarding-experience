@@ -36,6 +36,9 @@ Productionisation means preparing an asset for formal, wider-facing, monitored, 
 - [ ] Support contact is identified
 - [ ] Escalation route is identified
 - [ ] Ownership will not depend only on the original creator
+- [ ] Workspace owner is identified
+- [ ] Deputy workspace owner is identified
+- [ ] Ownership continuity is confirmed if the current owner leaves, changes role, or is unavailable
 
 ## 4. Data Source and Approval
 
