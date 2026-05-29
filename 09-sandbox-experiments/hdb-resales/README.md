@@ -69,25 +69,27 @@ The repo explains what to do. The Fabric Sandbox Workspace is where the hands-on
 
 Learners should perform hands-on work in the Fabric Sandbox Workspace, not directly inside the GitHub repo.
 
-## Fabric Sandbox Workspace link
+## Accessing Microsoft Fabric
 
-Use the links below to access the Fabric Sandbox Workspace and the HDB Resales artefacts.
+To access the Fabric Sandbox Workspace:
 
-```text
-Fabric Sandbox Workspace URL:
-[insert Fabric Sandbox Workspace URL here]
+1. Go to https://app.fabric.microsoft.com/
+2. Sign in using your University account.
+3. Select **Workspaces** from the left navigation.
+4. Open the assigned Fabric Sandbox Workspace.
+5. Open the HDB Resales report or related sandbox artefact.
 
-HDB Resales Report URL:
-[insert published HDB Resales report URL here]
+The actual workspace and report links are shared through internal BIA onboarding channels and are not published in this public repo.
 
-HDB Resales Semantic Model URL:
-[insert semantic model URL here, if available]
+If you cannot see the assigned workspace or report, check with the workspace owner or BIA contact.
 
-HDB Resales Lakehouse URL:
-[insert Lakehouse URL here, if available]
-```
+## Access notes
 
-If you cannot access the workspace or artefacts, check with the workspace owner or BIA contact.
+* Do not request access unless you are part of the onboarding activity.
+* Do not forward internal workspace or report links publicly.
+* Do not use **Publish to web**.
+* Do not upload confidential or restricted institutional data into the sandbox workspace.
+* Do not treat access to the workspace as permission to reuse, export, or redistribute data.
 
 ## Where learners will work
 
@@ -106,8 +108,6 @@ Most learners will use the HDB Resales artefacts prepared in the Fabric Sandbox 
 ## Learning map
 
 ![HDB Resales sandbox experiment map](../../assets/images/hdb-resales-sandbox-experiment-map.png)
-
-> Image: Map of the HDB Resales Sandbox Series showing how one public dataset supports report consumption, report development, data analysis, data engineering, data science, workspace ownership, department use case framing, and AI-ready data learning.
 
 ## How this series is organised in the repo
 
@@ -198,14 +198,6 @@ The Fabric Sandbox Workspace version is for hands-on practice.
 The HDB Resales report is published in the Fabric Sandbox Workspace.
 
 Learners should access the report directly from the Fabric Sandbox Workspace rather than downloading a PBIX file from this repo.
-
-```text
-Fabric Sandbox Workspace URL:
-[insert Fabric Sandbox Workspace URL here]
-
-HDB Resales Report URL:
-[insert published HDB Resales report URL here]
-```
 
 The published report is used for:
 
