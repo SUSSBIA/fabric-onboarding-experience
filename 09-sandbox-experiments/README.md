@@ -67,10 +67,8 @@ This section contains the sandbox experiment catalogue and the learning series f
 
 ```text
 09-sandbox-experiments/
-├── README.md
 └── hdb-resales/
     ├── README.md
-    ├── assets/
     ├── data/
     ├── notebooks/
     ├── templates/
