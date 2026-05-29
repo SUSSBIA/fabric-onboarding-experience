@@ -2,7 +2,9 @@
 
 Sandbox experiments provide guided hands-on practice activities for Microsoft Fabric onboarding.
 
-This section is the main catalogue for sandbox learning activities in this repo. Each sandbox series is built around a safe dataset, a clear learning purpose, and guided activities that help learners practise Fabric skills without using confidential institutional data.
+This section helps learners find practical activities that can be completed safely in the assigned Fabric Sandbox Workspace.
+
+Each sandbox series uses a safe dataset, a clear learning purpose, and guided activities that help learners practise Fabric skills without using confidential institutional data.
 
 The first sandbox series is the **HDB Resales Sandbox Series**.
 
@@ -26,7 +28,7 @@ Sandbox experiments are learning activities. They are not production projects.
 
 ## Sandbox-first principle
 
-All hands-on onboarding activities should start in a Fabric Sandbox Workspace.
+All hands-on onboarding activities should start in the assigned Fabric Sandbox Workspace.
 
 Sandbox experiments should use only:
 
@@ -80,11 +82,11 @@ Hands-on artefacts are accessed through the assigned Fabric Sandbox Workspace.
 
 The actual workspace and artefact links are shared through internal BIA onboarding channels and are not published in this public repo.
 
-Each sandbox series or experiment page will provide the specific instructions for the report, Lakehouse, notebook, semantic model, or other artefact used in that activity.
+Each sandbox series or experiment page provides the specific instructions for the report, Lakehouse, notebook, semantic model, or other artefact used in that activity.
 
-## How this section is organised
+## How to find a sandbox experiment
 
-This section contains the sandbox experiment catalogue and the learning series folders.
+Use this section to find the sandbox series and activity that matches your pathway or learning need.
 
 ```text
 09-sandbox-experiments/
@@ -105,8 +107,6 @@ This section contains the sandbox experiment catalogue and the learning series f
     ├── 08-geospatial-location-analysis/
     └── 09-ai-ready-data-and-semantic-layer/
 ```
-
-The top-level `09-sandbox-experiments/README.md` is the sandbox experiment directory.
 
 Each series folder contains the guidance and supporting files for a specific sandbox learning project.
 
@@ -132,7 +132,7 @@ Each series folder contains the guidance and supporting files for a specific san
 
 ## How sandbox experiments connect to persona pathways
 
-Persona pathways explain what users should learn.
+Persona pathways explain what learners should understand for their role.
 
 Sandbox experiments provide the hands-on practice.
 
@@ -157,11 +157,13 @@ Sandbox experiments can support different levels of learning.
 | Practitioner | Data preparation, semantic modelling, dashboard design, analytical comparison           | Build visuals, define measures, load data, compare trends                         |
 | Advanced     | Modelling, segmentation, geospatial analysis, AI-ready data and semantic layer thinking | Run notebooks, profile clusters, prepare model outputs, document semantic meaning |
 
-Users should not rush into advanced activities before understanding safe data use, workspace context, and responsible interpretation.
+Learners should not rush into advanced activities before understanding safe data use, workspace context, and responsible interpretation.
 
-## Sandbox experiment design pattern
+## What each sandbox experiment includes
 
-Each sandbox experiment follows a consistent pattern.
+Each sandbox experiment page guides learners through a practical activity.
+
+Most experiment pages include:
 
 | Section                          | Purpose                                                         |
 | -------------------------------- | --------------------------------------------------------------- |
@@ -174,8 +176,6 @@ Each sandbox experiment follows a consistent pattern.
 | Completion evidence              | States what the learner should produce                          |
 | Related templates and checklists | Links to reusable documentation aids                            |
 | Next experiment                  | Points the learner forward                                      |
-
-This keeps the learning experience consistent across sandbox series.
 
 ## Naming convention for sandbox work
 
