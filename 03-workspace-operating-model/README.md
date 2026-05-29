@@ -18,6 +18,7 @@ A workspace operating model helps users understand:
 * Where department work should happen
 * Where production assets should live
 * Who owns the workspace
+* Who acts as backup owner
 * Who can access the workspace
 * What data is allowed
 * What outputs can be shared
@@ -121,6 +122,7 @@ Department workspaces are suitable for:
 Department workspaces should have:
 
 * A clear workspace owner
+* A clear deputy workspace owner
 * A clear business purpose
 * Defined users and roles
 * Sensitivity and access review
@@ -206,6 +208,7 @@ Before moving an artefact beyond sandbox, check:
 
 * Is there a real business purpose?
 * Is there a department owner?
+* Is there a deputy owner?
 * Is the data approved for use?
 * Is the sensitivity level understood?
 * Is access controlled appropriately?
@@ -256,7 +259,9 @@ Access should be reviewed when:
 
 ## Workspace ownership
 
-Every non-personal workspace should have a clear owner.
+Every non-personal workspace should have clear ownership.
+
+For department workspaces, this means both a named workspace owner and a named deputy workspace owner.
 
 A workspace owner should help ensure that:
 
@@ -270,6 +275,60 @@ A workspace owner should help ensure that:
 * Escalation routes are known
 
 Workspace ownership is not only about having admin rights. It is also about maintaining clarity and accountability.
+
+## Department workspace owner and deputy requirement
+
+Every department workspace request should identify both:
+
+* A workspace owner
+* A deputy workspace owner
+
+This is required so that the workspace does not depend on a single person.
+
+The owner and deputy should be able to help with access requests, ownership questions, refresh or connection issues, clean-up decisions, and continuity when one person is unavailable or leaves the University.
+
+| Role                   | Responsibility                                                                          |
+| ---------------------- | --------------------------------------------------------------------------------------- |
+| Workspace owner        | Primary accountable person for the department workspace                                 |
+| Deputy workspace owner | Backup accountable person who can support workspace continuity or take over when needed |
+
+The workspace owner and deputy should preferably be from the requesting department or business area. They should understand the purpose of the workspace, who should have access, what data is being used, and who should be contacted when issues arise.
+
+A department workspace request should not proceed if no owner or deputy owner is identified.
+
+## Why a deputy owner is required
+
+A deputy owner is required because:
+
+* Staff may leave the University
+* Staff may change role or department
+* Staff may be unavailable during urgent issues
+* Access requests may still need to be reviewed
+* Refresh or connection issues may need attention
+* Department assets may require continuity
+* BIA should not become the default owner of unclear department assets
+
+The deputy owner helps ensure that the department workspace remains accountable and maintainable.
+
+## Minimum ownership information for department workspace requests
+
+A department workspace request should include:
+
+| Field                        | Required      |
+| ---------------------------- | ------------- |
+| Department workspace name    | Yes           |
+| Business purpose             | Yes           |
+| Workspace owner              | Yes           |
+| Deputy workspace owner       | Yes           |
+| Requesting department        | Yes           |
+| Intended users               | Yes           |
+| Data source or data category | Yes           |
+| Sensitivity level, if known  | Yes           |
+| Expected artefacts           | Yes           |
+| Refresh or operational needs | If applicable |
+| External collaborators       | If applicable |
+
+If the owner or deputy owner changes, the workspace ownership record should be updated.
 
 ## Naming expectations
 
@@ -341,6 +400,7 @@ Sandbox workspace outputs should remain clearly marked as learning or experiment
 In a department workspace, users should:
 
 * Have a clear department owner
+* Have a clear deputy workspace owner
 * Use approved data sources
 * Document business purpose
 * Define intended users
@@ -349,6 +409,7 @@ In a department workspace, users should:
 * Identify support and escalation routes
 * Avoid uncontrolled duplication of reports and semantic models
 * Review assets before wider sharing
+* Update workspace ownership records when owners change
 
 Department workspace assets may support real department work, but they are not automatically BIA production assets.
 
@@ -414,6 +475,7 @@ Ask BIA when:
 
 * You are unsure which workspace should be used
 * A sandbox output may become a department use case
+* A department workspace request does not have both an owner and deputy owner
 * A department asset may become production-facing
 * External collaborators need access
 * Confidential or restricted data may be involved
@@ -444,6 +506,7 @@ Before completing this section, users should confirm:
 * [ ] I know why sandbox is the default place for onboarding exercises
 * [ ] I know that personal workspace content is not official or team-owned
 * [ ] I know that department workspaces require ownership and approved use
+* [ ] I know that department workspace requests require both an owner and deputy owner
 * [ ] I know that BIA production workspaces are for governed production assets
 * [ ] I understand that sandbox outputs are not official reports
 * [ ] I understand that workspace access does not automatically allow data export or redistribution
