@@ -30,19 +30,27 @@ In this experiment, learners will practise how to:
 | Main artefact       | HDB Resales sandbox report                                    |
 | Workspace           | Fabric Sandbox Workspace                                      |
 
-## Fabric Sandbox Workspace link
+## Accessing Microsoft Fabric
 
-Use the link below to access the Fabric Sandbox Workspace or the published HDB Resales report.
+To access the Fabric Sandbox Workspace:
 
-```text
-Fabric Sandbox Workspace URL:
-[insert Fabric Sandbox Workspace URL here]
+1. Go to https://app.fabric.microsoft.com/
+2. Sign in using your University account.
+3. Select **Workspaces** from the left navigation.
+4. Open the assigned Fabric Sandbox Workspace.
+5. Open the HDB Resales report.
 
-HDB Resales Report URL:
-[insert published HDB Resales report URL here]
-```
+The actual workspace and report links are shared through internal BIA onboarding channels and are not published in this public repo.
 
-If you cannot access the workspace or report, check with the workspace owner or BIA contact.
+If you cannot see the assigned workspace or report, check with the workspace owner or BIA contact.
+
+## Access notes
+
+* Do not request access unless you are part of the onboarding activity.
+* Do not forward internal workspace or report links publicly.
+* Do not use **Publish to web**.
+* Do not upload confidential or restricted institutional data into the sandbox workspace.
+* Do not treat access to the workspace as permission to reuse, export, or redistribute data.
 
 ## Before you start
 
@@ -62,13 +70,9 @@ You should also understand the role expectations in:
 
 For this walkthrough, use the published HDB Resales report in the Fabric Sandbox Workspace.
 
-The source PBIX reference file is stored in the repo at:
+Report consumers should interact with the published report in reading mode. They are not expected to download, edit, or upload a PBIX file.
 
-```text
-09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
-```
-
-Report consumers should usually interact with the published report in the Fabric Sandbox Workspace. They are not expected to edit the PBIX file.
+The PBIX file is not stored in this repo.
 
 ## Safety reminder
 
@@ -97,6 +101,8 @@ The HDB Resales report is a learning artefact. It should not be treated as an of
 
 ![Report consumer walkthrough](../../../assets/images/report-consumer-sandbox-learning-path.png)
 
+> Image: Six-stage overview of the report consumer walkthrough using the HDB Resales sandbox report.
+
 ## Activity 1: Access the sandbox workspace and open the report
 
 ### Goal
@@ -106,7 +112,7 @@ Access the Fabric Sandbox Workspace and open the HDB Resales report.
 ### Steps
 
 1. Sign in to Microsoft Fabric.
-2. Open the Fabric Sandbox Workspace using the provided link.
+2. Open the assigned Fabric Sandbox Workspace.
 3. Locate the HDB Resales report.
 4. Open the report in reading mode.
 5. Identify the report title.
