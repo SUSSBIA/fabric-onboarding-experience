@@ -101,8 +101,6 @@ The HDB Resales report is a learning artefact. It should not be treated as an of
 
 ![Report consumer walkthrough](../../../assets/images/report-consumer-sandbox-learning-path.png)
 
-> Image: Six-stage overview of the report consumer walkthrough using the HDB Resales sandbox report.
-
 ## Activity 1: Access the sandbox workspace and open the report
 
 ### Goal
