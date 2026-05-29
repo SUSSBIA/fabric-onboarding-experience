@@ -32,12 +32,12 @@ The goal is not to stop experimentation. The goal is to make sure experimentatio
 
 Fabric users may encounter different workspace types.
 
-| Workspace Type           | Main Purpose                                                  |
-| ------------------------ | ------------------------------------------------------------- |
-| Personal Workspace       | Individual exploration and private drafts                     |
-| Sandbox Workspace        | Guided onboarding and safe experimentation                    |
-| Department Workspace     | Department-level exploration, prototyping, and working assets |
-| BIA Production Workspace | BIA-managed production analytics assets                       |
+| Workspace Type           | Main Purpose                                                                                 |
+| ------------------------ | -------------------------------------------------------------------------------------------- |
+| Personal Workspace       | Individual exploration and private drafts                                                    |
+| Sandbox Workspace        | Guided onboarding and safe experimentation                                                   |
+| Department Workspace     | Department-level exploration, prototyping, and working assets                                |
+| BIA Production Workspace | BIA-managed production analytics assets with direct workspace access restricted to BIA users |
 
 Each workspace type has a different boundary and expectation.
 
@@ -45,12 +45,12 @@ Each workspace type has a different boundary and expectation.
 
 Fabric users should understand the boundary between personal workspace, sandbox workspace, department workspace, and BIA production workspace.
 
-| Workspace Type           | Purpose                                                       | Suitable Use                                                                              | Not Suitable For                                                                         |
-| ------------------------ | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| Personal Workspace       | Individual exploration and private drafts                     | Personal learning, quick trials, temporary report drafts                                  | Team learning, department assets, shared reports, production work                        |
-| Sandbox Workspace        | Guided onboarding and safe experimentation                    | Training exercises, public data practice, HDB Resales sandbox activities, learning copies | Official reporting, confidential or restricted institutional data, production dashboards |
-| Department Workspace     | Department-level exploration, prototyping, and working assets | Approved department use cases, team collaboration, department-owned reports or models     | BIA-managed production assets, unmanaged cross-department sharing, unclear ownership     |
-| BIA Production Workspace | BIA-managed production analytics assets                       | Validated reports, governed semantic models, monitored production outputs                 | Personal experimentation, unreviewed prototypes, casual testing                          |
+| Workspace Type           | Purpose                                                       | Suitable Use                                                                              | Not Suitable For                                                                                          |
+| ------------------------ | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Personal Workspace       | Individual exploration and private drafts                     | Personal learning, quick trials, temporary report drafts                                  | Team learning, department assets, shared reports, production work                                         |
+| Sandbox Workspace        | Guided onboarding and safe experimentation                    | Training exercises, public data practice, HDB Resales sandbox activities, learning copies | Official reporting, confidential or restricted institutional data, production dashboards                  |
+| Department Workspace     | Department-level exploration, prototyping, and working assets | Approved department use cases, team collaboration, department-owned reports or models     | BIA-managed production assets, unmanaged cross-department sharing, unclear ownership                      |
+| BIA Production Workspace | BIA-managed production analytics assets                       | Validated reports, governed semantic models, monitored production outputs managed by BIA  | Personal experimentation, unreviewed prototypes, casual testing, direct workspace access by non-BIA users |
 
 ## Personal workspace boundary
 
@@ -139,25 +139,26 @@ BIA production workspaces are reserved for BIA-managed production analytics asse
 
 These workspaces are suitable for:
 
-- Validated production reports
-- Governed semantic models
-- Monitored production dashboards
-- Analytics assets with clear ownership, refresh, access control, and support arrangements
-- Assets that have been reviewed for wider or official use
+* Validated production reports
+* Governed semantic models
+* Monitored production dashboards
+* Analytics assets with clear ownership, refresh, access control, and support arrangements
+* Assets that have been reviewed for wider or official use
+* BIA-managed production operations
 
 BIA production workspaces are not suitable for:
 
-- Personal experimentation
-- Early prototypes
-- Unreviewed department reports
-- Training exercises
-- Casual testing
-- Unclear or unsupported assets
-- Direct workspace access by non-BIA users
+* Personal experimentation
+* Early prototypes
+* Unreviewed department reports
+* Training exercises
+* Casual testing
+* Unclear or unsupported assets
+* Direct workspace access by non-BIA users
 
 Non-BIA users should not be added directly to BIA production workspaces.
 
-Where approved production reports or outputs need to be shared with non-BIA users, sharing should happen through approved report/app sharing channels, not by granting direct workspace membership.
+Where approved production reports or outputs need to be shared with non-BIA users, sharing should happen through approved report or app sharing channels, not by granting direct workspace membership.
 
 Assets should only move into BIA production workspaces after review.
 
@@ -169,7 +170,7 @@ Use this rule:
 Personal workspace = private draft
 Sandbox workspace = safe learning
 Department workspace = department-owned working asset
-BIA production workspace = governed production asset
+BIA production workspace = governed production asset restricted to BIA workspace users
 ```
 
 When unsure, start in sandbox and ask before moving work elsewhere.
@@ -178,17 +179,17 @@ When unsure, start in sandbox and ask before moving work elsewhere.
 
 Use this guide when deciding where work should happen.
 
-| Scenario                                          | Recommended Workspace                                                 |
-| ------------------------------------------------- | --------------------------------------------------------------------- |
-| I am learning Fabric for the first time           | Sandbox Workspace                                                     |
-| I am doing the HDB Resales exercise               | Sandbox Workspace                                                     |
-| I am trying something privately with safe data    | Personal Workspace or Sandbox Workspace                               |
-| I am building something for a department use case | Department Workspace                                                  |
-| I am working with confidential or restricted data | Department Workspace or BIA Production Workspace, subject to approval |
-| I am preparing an official report                 | Department Workspace or BIA Production Workspace, subject to review   |
-| I am building or maintaining a BIA-managed production report as a BIA user | BIA Production Workspace |
-| I am a non-BIA user who needs to view an approved production output | Approved report/app sharing channel, not direct BIA Production Workspace access |
-| I am unsure where this should go                  | Ask the workspace owner or BIA                                        |
+| Scenario                                                                   | Recommended Workspace or Access Pattern                                            |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| I am learning Fabric for the first time                                    | Sandbox Workspace                                                                  |
+| I am doing the HDB Resales exercise                                        | Sandbox Workspace                                                                  |
+| I am trying something privately with safe data                             | Personal Workspace or Sandbox Workspace                                            |
+| I am building something for a department use case                          | Department Workspace                                                               |
+| I am working with confidential or restricted data                          | Department Workspace or BIA Production Workspace, subject to approval              |
+| I am preparing an official report                                          | Department Workspace or BIA Production Workspace, subject to review                |
+| I am building or maintaining a BIA-managed production report as a BIA user | BIA Production Workspace                                                           |
+| I am a non-BIA user who needs to view an approved production output        | Approved report or app sharing channel, not direct BIA Production Workspace access |
+| I am unsure where this should go                                           | Ask the workspace owner or BIA                                                     |
 
 ## Movement between workspaces
 
@@ -222,6 +223,7 @@ Before moving an artefact beyond sandbox, check:
 * Who owns the connection or credential?
 * Who will support the asset after it is created?
 * Is BIA review needed?
+* If the asset is moving to BIA production, will direct workspace access remain restricted to BIA users?
 
 ## Workspace roles
 
@@ -240,20 +242,23 @@ Not every learner needs edit rights.
 
 Report consumers usually need view access only. Report developers, analysts, engineers, or data scientists may need contributor-level access in sandbox depending on the exercise.
 
+BIA Production Workspace membership should be restricted to BIA users. Non-BIA users should consume approved production outputs through approved sharing channels rather than direct workspace access.
+
 ## Least privilege principle
 
 Users should receive only the minimum access needed for their role or task.
 
 Examples:
 
-| User Need                                  | Likely Access                                              |
-| ------------------------------------------ | ---------------------------------------------------------- |
-| View a sandbox report                      | Viewer                                                     |
-| Complete report development practice       | Contributor in sandbox                                     |
-| Create a notebook during a guided exercise | Contributor in sandbox                                     |
-| Manage workspace users and settings        | Admin, only if authorised                                  |
-| Review department reports                  | Viewer or Contributor, depending on role                   |
-| Maintain department assets                 | Contributor, Member, or Admin, depending on responsibility |
+| User Need                                                | Likely Access                                                                          |
+| -------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| View a sandbox report                                    | Viewer                                                                                 |
+| Complete report development practice                     | Contributor in sandbox                                                                 |
+| Create a notebook during a guided exercise               | Contributor in sandbox                                                                 |
+| Manage workspace users and settings                      | Admin, only if authorised                                                              |
+| Review department reports                                | Viewer or Contributor, depending on role                                               |
+| Maintain department assets                               | Contributor, Member, or Admin, depending on responsibility                             |
+| View an approved BIA production output as a non-BIA user | Approved report or app sharing channel, not direct BIA Production Workspace membership |
 
 Access should be reviewed when:
 
@@ -262,6 +267,7 @@ Access should be reviewed when:
 * A temporary exercise ends
 * An external collaborator no longer needs access
 * A workspace moves closer to department use or production use
+* An output is being shared beyond the workspace
 
 ## Workspace ownership
 
@@ -375,12 +381,12 @@ Names should reduce confusion, not create more of it.
 
 Different workspaces have different data expectations.
 
-| Workspace Type           | Data Expectations                                                                         |
-| ------------------------ | ----------------------------------------------------------------------------------------- |
-| Personal Workspace       | Public, mocked, synthetic, or approved non-sensitive data for private exploration         |
-| Sandbox Workspace        | Public, mocked, synthetic, or approved non-sensitive data for guided learning             |
-| Department Workspace     | Department-approved data for approved use cases, subject to access and sensitivity review |
-| BIA Production Workspace | Governed production data with clear ownership, validation, access control, and monitoring |
+| Workspace Type           | Data Expectations                                                                                                                          |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Personal Workspace       | Public, mocked, synthetic, or approved non-sensitive data for private exploration                                                          |
+| Sandbox Workspace        | Public, mocked, synthetic, or approved non-sensitive data for guided learning                                                              |
+| Department Workspace     | Department-approved data for approved use cases, subject to access and sensitivity review                                                  |
+| BIA Production Workspace | Governed production data with clear ownership, validation, access control, monitoring, and direct workspace access restricted to BIA users |
 
 Do not upload confidential or restricted institutional data into a sandbox workspace unless explicitly approved through the proper process.
 
@@ -433,8 +439,11 @@ In a BIA production workspace, assets should have:
 * Documented refresh and monitoring
 * Support and escalation arrangements
 * Release or change management where needed
+* Direct workspace access restricted to BIA users
 
 Productionisation is not simply moving a report into a production workspace. It requires review and readiness.
+
+Non-BIA users should consume approved production outputs through approved report or app sharing channels, not direct BIA Production Workspace membership.
 
 ## External collaborators
 
@@ -450,7 +459,9 @@ External collaborators may require:
 * Access removal planning
 * BIA review where required
 
-External collaborators should not be added casually to sandbox, department, or production workspaces.
+External collaborators should not be added casually to sandbox or department workspaces.
+
+External collaborators should not be granted direct access to BIA Production Workspaces. If an approved production output needs to be shared externally, this must go through the appropriate review and approved sharing channel.
 
 Use the relevant checklist:
 
@@ -490,6 +501,7 @@ Ask BIA when:
 * A report is intended for wider sharing
 * A connection, gateway, or refresh setup needs operational support
 * A tenant-level or capacity-level setting is involved
+* A non-BIA user needs access to an approved BIA production output
 
 It is better to ask early than to move an artefact into the wrong workspace.
 
@@ -514,6 +526,8 @@ Before completing this section, users should confirm:
 * [ ] I know that department workspaces require ownership and approved use
 * [ ] I know that department workspace requests require both an owner and deputy owner
 * [ ] I know that BIA production workspaces are for governed production assets
+* [ ] I know that BIA Production Workspace membership is restricted to BIA users
+* [ ] I understand that non-BIA users should consume approved production outputs through approved sharing channels
 * [ ] I understand that sandbox outputs are not official reports
 * [ ] I understand that workspace access does not automatically allow data export or redistribution
 * [ ] I know that tenant-level and capacity-level requests should be escalated to BIA
