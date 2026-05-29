@@ -69,9 +69,29 @@ The repo explains what to do. The Fabric Sandbox Workspace is where the hands-on
 
 Learners should perform hands-on work in the Fabric Sandbox Workspace, not directly inside the GitHub repo.
 
+## Fabric Sandbox Workspace link
+
+Use the links below to access the Fabric Sandbox Workspace and the HDB Resales artefacts.
+
+```text
+Fabric Sandbox Workspace URL:
+[insert Fabric Sandbox Workspace URL here]
+
+HDB Resales Report URL:
+[insert published HDB Resales report URL here]
+
+HDB Resales Semantic Model URL:
+[insert semantic model URL here, if available]
+
+HDB Resales Lakehouse URL:
+[insert Lakehouse URL here, if available]
+```
+
+If you cannot access the workspace or artefacts, check with the workspace owner or BIA contact.
+
 ## Where learners will work
 
-Most learners will use the HDB Resales artefacts already prepared in the Fabric Sandbox Workspace.
+Most learners will use the HDB Resales artefacts prepared in the Fabric Sandbox Workspace.
 
 | Artefact                   | Where Learners Use It    | Purpose                                                                           |
 | -------------------------- | ------------------------ | --------------------------------------------------------------------------------- |
@@ -87,6 +107,8 @@ Most learners will use the HDB Resales artefacts already prepared in the Fabric 
 
 ![HDB Resales sandbox experiment map](../../assets/images/hdb-resales-sandbox-experiment-map.png)
 
+> Image: Map of the HDB Resales Sandbox Series showing how one public dataset supports report consumption, report development, data analysis, data engineering, data science, workspace ownership, department use case framing, and AI-ready data learning.
+
 ## How this series is organised in the repo
 
 This folder contains the guide, supporting files, and experiment pages for the HDB Resales Sandbox Series.
@@ -95,8 +117,6 @@ This folder contains the guide, supporting files, and experiment pages for the H
 09-sandbox-experiments/
 └── hdb-resales/
     ├── README.md
-    ├── assets/
-    │   └── HDB_Resales.pbix
     ├── data/
     │   ├── hdb_resales_sample.csv
     │   ├── hdb_resales_data_dictionary.md
@@ -135,7 +155,9 @@ This folder contains the guide, supporting files, and experiment pages for the H
 
 The experiment folders contain the step-by-step learning activities.
 
-The `assets`, `data`, `notebooks`, `templates`, and `model-output` folders provide supporting materials and references for the series.
+The `data`, `notebooks`, `templates`, and `model-output` folders provide supporting materials and references for the series.
+
+The PBIX file is not stored in this repo. Learners should access the published HDB Resales report directly from the Fabric Sandbox Workspace.
 
 ## Working artefacts in the Fabric Sandbox Workspace
 
@@ -159,28 +181,33 @@ The exact workspace item names may vary, but the artefacts should be clearly lab
 
 The repo stores learning materials and source references.
 
-| Folder             | Purpose                                                                     |
-| ------------------ | --------------------------------------------------------------------------- |
-| `assets/`          | Stores the HDB Resales PBIX reference file and other static artefacts       |
-| `data/`            | Stores public HDB resale sample data and data dictionary files              |
-| `notebooks/`       | Stores source copies of notebook exercises                                  |
-| `templates/`       | Stores exercise-specific copies of templates used during sandbox activities |
-| `model-output/`    | Stores sample sandbox model outputs, where provided                         |
-| Experiment folders | Store step-by-step README files for each guided activity                    |
+| Folder             | Purpose                                                                        |
+| ------------------ | ------------------------------------------------------------------------------ |
+| `data/`            | Stores public HDB resale sample data and data dictionary files, where provided |
+| `notebooks/`       | Stores source copies of notebook exercises, where provided                     |
+| `templates/`       | Stores exercise-specific copies of templates used during sandbox activities    |
+| `model-output/`    | Stores sample sandbox model outputs, where provided                            |
+| Experiment folders | Store step-by-step README files for each guided activity                       |
 
 The repo version is for documentation and source reference.
 
 The Fabric Sandbox Workspace version is for hands-on practice.
 
-## Starting PBIX artefact
+## HDB Resales report
 
-The starting Power BI file is stored in the repo as a reference copy:
+The HDB Resales report is published in the Fabric Sandbox Workspace.
+
+Learners should access the report directly from the Fabric Sandbox Workspace rather than downloading a PBIX file from this repo.
 
 ```text
-09-sandbox-experiments/hdb-resales/assets/HDB_Resales.pbix
+Fabric Sandbox Workspace URL:
+[insert Fabric Sandbox Workspace URL here]
+
+HDB Resales Report URL:
+[insert published HDB Resales report URL here]
 ```
 
-The published report in the Fabric Sandbox Workspace is used for:
+The published report is used for:
 
 * Report consumer walkthrough
 * Dashboard design and storytelling
@@ -189,9 +216,9 @@ The published report in the Fabric Sandbox Workspace is used for:
 * Measure and KPI definition review
 * Demonstrating how curated data becomes a report
 
-Learners should usually interact with the published report in the Fabric Sandbox Workspace.
+Report consumers should interact with the published report in reading mode.
 
-Report developers may work on a copy of the PBIX or report where instructed. They should not overwrite the shared starter artefact.
+Report developers may work on a copy of the report or semantic model inside the Fabric Sandbox Workspace where instructed. They should not overwrite the shared starter artefact.
 
 ## HDB Resales data
 
