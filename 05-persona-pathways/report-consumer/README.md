@@ -75,8 +75,6 @@ Learners should not upload real confidential or restricted data for this pathway
 
 ![Report consumer sandbox learning path](../../assets/images/report-consumer-sandbox-learning-path.png)
 
-> Image: Report consumer sandbox learning path showing how learners access the sandbox workspace, open a report, check report context, use filters, interact with visuals, interpret one insight responsibly, and identify what not to do.
-
 ## Recommended hands-on experiment
 
 Start with:
