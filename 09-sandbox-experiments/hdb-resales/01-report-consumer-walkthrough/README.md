@@ -32,13 +32,13 @@ In this experiment, learners will practise how to:
 
 ## Accessing Microsoft Fabric
 
-To access the Fabric Sandbox Workspace:
+To access the HDB Resales report:
 
 1. Go to https://app.fabric.microsoft.com/
 2. Sign in using your University account.
-3. Select **Workspaces** from the left navigation.
+3. In the left navigation menu, select **Workspaces**.
 4. Open the assigned Fabric Sandbox Workspace.
-5. Open the HDB Resales report.
+5. Locate and open the HDB Resales report.
 
 The actual workspace and report links are shared through internal BIA onboarding channels and are not published in this public repo.
 
