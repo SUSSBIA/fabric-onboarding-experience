@@ -6,18 +6,19 @@ This checklist helps workspace owners, deputy workspace owners, department repre
 
 ## 1. Request Information
 
-| Field                        | Response                                         |
-| ---------------------------- | ------------------------------------------------ |
-| Requester name               |                                                  |
-| Requester department or team |                                                  |
-| Request date                 |                                                  |
-| Workspace requested          |                                                  |
-| Workspace type               | Personal / Sandbox / Department / BIA Production |
-| Requested role               | Viewer / Contributor / Member / Admin / Unsure   |
-| Requested duration           | Temporary / Ongoing / Unsure                     |
-| Workspace owner              |                                                  |
-| Deputy workspace owner       |                                                  |
-| Reviewer                     |                                                  |
+| Field                        | Response                                                                   |
+| ---------------------------- | -------------------------------------------------------------------------- |
+| Requester name               |                                                                            |
+| Requester department or team |                                                                            |
+| Request date                 |                                                                            |
+| Workspace requested          |                                                                            |
+| Workspace type               | Personal / Sandbox / Department / BIA Production                           |
+| Access pattern               | Workspace membership / Item sharing / Report sharing / App sharing / Other |
+| Requested role               | Viewer / Contributor / Member / Admin / Unsure                             |
+| Requested duration           | Temporary / Ongoing / Unsure                                               |
+| Workspace owner              |                                                                            |
+| Deputy workspace owner       |                                                                            |
+| Reviewer                     |                                                                            |
 
 ## 2. Purpose Check
 
@@ -27,12 +28,13 @@ This checklist helps workspace owners, deputy workspace owners, department repre
 * [ ] The requester understands the purpose of the workspace
 * [ ] The requester understands whether the workspace is personal, sandbox, department, or production-facing
 * [ ] The requested access is not broader than the stated purpose
+* [ ] The requested access pattern is appropriate for the purpose
 
 ## 3. Workspace Boundary Check
 
 | Workspace Type           | Access Review Consideration                                                                                                                                               |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Personal Workspace       | Used for private drafts and individual exploration; not suitable for shared department or production assets                                                               |
+| Personal Workspace       | Used for private drafts and individual exploration. Access requests to another user’s personal workspace are usually not appropriate for shared University work.          |
 | Sandbox Workspace        | Suitable for onboarding, learning, and experimentation using public, mocked, synthetic, or approved non-sensitive data                                                    |
 | Department Workspace     | Access should align with department use case, ownership, data approval, and continuity expectations                                                                       |
 | BIA Production Workspace | Restricted to BIA users only. Non-BIA users should not be granted direct workspace access; approved outputs should be shared through approved report/app sharing channels |
@@ -66,6 +68,7 @@ Complete this section for department workspace requests.
 * [ ] Admin access is only considered for workspace owners, deputy workspace owners, or authorised administrators
 * [ ] The requested role is not higher than necessary
 * [ ] Elevated access is justified and documented
+* [ ] Item, report, or app sharing is considered where workspace membership is not needed
 
 ## 6. Data Sensitivity Check
 
@@ -90,6 +93,7 @@ Complete this section if the requester is not University staff.
 * [ ] Owner for access removal is identified
 * [ ] BIA review is requested where required
 * [ ] External collaborators are not granted direct access to BIA Production Workspaces
+* [ ] Approved production outputs for external collaborators are shared only through approved channels, where applicable
 
 ## 8. Production and Escalation Check
 
@@ -101,15 +105,17 @@ Complete this section if the requester is not University staff.
 
 ## 9. Decision
 
-| Decision Area                             | Response                                                  |
-| ----------------------------------------- | --------------------------------------------------------- |
-| Recommended role                          | Viewer / Contributor / Member / Admin / Reject / Escalate |
-| Access duration                           | Temporary / Ongoing / Time-bound until:                   |
-| Conditions or caveats                     |                                                           |
-| Reviewer decision                         | Approved / Rejected / Escalated                           |
-| Reason                                    |                                                           |
-| Follow-up required                        | Yes / No                                                  |
-| Access removal review date, if applicable |                                                           |
+| Decision Area                             | Response                                                                   |
+| ----------------------------------------- | -------------------------------------------------------------------------- |
+| Recommended access pattern                | Workspace membership / Item sharing / Report sharing / App sharing / Other |
+| Recommended role                          | Viewer / Contributor / Member / Admin / Reject / Escalate                  |
+| Approved sharing channel, if applicable   | Workspace access / Report sharing / App sharing / Other / Not applicable   |
+| Access duration                           | Temporary / Ongoing / Time-bound until:                                    |
+| Conditions or caveats                     |                                                                            |
+| Reviewer decision                         | Approved / Rejected / Escalated                                            |
+| Reason                                    |                                                                            |
+| Follow-up required                        | Yes / No                                                                   |
+| Access removal review date, if applicable |                                                                            |
 
 ## 10. Post-Approval Reminder
 
@@ -120,3 +126,4 @@ Complete this section if the requester is not University staff.
 * [ ] User knows who to contact for questions
 * [ ] Workspace owner and deputy owner are recorded, where applicable
 * [ ] Access review or removal date is noted, if applicable
+* [ ] Non-BIA users are not granted direct BIA Production Workspace access
