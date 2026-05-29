@@ -1,6 +1,6 @@
 # HDB Resales: Report Consumer Walkthrough
 
-This hands-on experiment helps learners practise opening, filtering, and interpreting a Power BI report responsibly in the Fabric Sandbox Workspace.
+This hands-on experiment helps learners practise opening, filtering, and interpreting a Power BI report responsibly in the assigned Fabric Sandbox Workspace.
 
 It supports the [Report Consumer Pathway](../../../05-persona-pathways/report-consumer/) and uses the HDB Resales sandbox report as the practice artefact.
 
@@ -10,7 +10,7 @@ The purpose of this experiment is to help learners become comfortable with repor
 
 In this experiment, learners will practise how to:
 
-* Access the Fabric Sandbox Workspace
+* Access the assigned Fabric Sandbox Workspace
 * Open the HDB Resales report
 * Check report context before interpreting visuals
 * Use filters and slicers carefully
@@ -28,7 +28,7 @@ In this experiment, learners will practise how to:
 | Supporting personas | Department Representative, Fabric Enthusiast, Workspace Owner |
 | Estimated time      | 30 to 45 minutes                                              |
 | Main artefact       | HDB Resales sandbox report                                    |
-| Workspace           | Fabric Sandbox Workspace                                      |
+| Workspace           | Assigned Fabric Sandbox Workspace                             |
 
 ## Accessing Microsoft Fabric
 
@@ -51,6 +51,7 @@ If you cannot see the assigned workspace or report, check with the workspace own
 * Do not use **Publish to web**.
 * Do not upload confidential or restricted institutional data into the sandbox workspace.
 * Do not treat access to the workspace as permission to reuse, export, or redistribute data.
+* Do not copy sandbox outputs into a department or production workspace without review.
 
 ## Before you start
 
@@ -68,7 +69,7 @@ You should also understand the role expectations in:
 
 ## Required artefacts
 
-For this walkthrough, use the published HDB Resales report in the Fabric Sandbox Workspace.
+For this walkthrough, use the published HDB Resales report in the assigned Fabric Sandbox Workspace.
 
 Report consumers should interact with the published report in reading mode. They are not expected to download, edit, or upload a PBIX file.
 
@@ -97,6 +98,8 @@ Do not upload or use:
 
 The HDB Resales report is a learning artefact. It should not be treated as an official report, valuation tool, production dashboard, or formal decision-support tool.
 
+BIA Production Workspaces are restricted to BIA users. Non-BIA users should consume approved production outputs through approved report or app sharing channels, not direct BIA Production Workspace membership.
+
 ## Walkthrough overview
 
 ![Report consumer walkthrough](../../../assets/images/report-consumer-sandbox-learning-path.png)
@@ -105,7 +108,7 @@ The HDB Resales report is a learning artefact. It should not be treated as an of
 
 ### Goal
 
-Access the Fabric Sandbox Workspace and open the HDB Resales report.
+Access the assigned Fabric Sandbox Workspace and open the HDB Resales report.
 
 ### Steps
 
@@ -357,7 +360,7 @@ At the end of this experiment, learners should have:
 
 Before completing this experiment, confirm:
 
-* [ ] I accessed the Fabric Sandbox Workspace
+* [ ] I accessed the assigned Fabric Sandbox Workspace
 * [ ] I opened the HDB Resales report
 * [ ] I confirmed the report is a sandbox learning artefact
 * [ ] I checked report context
